@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Marquee from 'react-fast-marquee';
 import "./Banner.css";
 
 const Banner = () => {
@@ -28,6 +29,9 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
+            <Marquee className="w-[80%] text-xl font-bold italic banner-marquee">
+                ** Navantis pharma for your better Health, Happiness and Beauty **
+            </Marquee>
         </>
     );
 };
