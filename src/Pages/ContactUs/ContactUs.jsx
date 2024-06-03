@@ -1,6 +1,7 @@
 import { MdAlternateEmail } from 'react-icons/md';
 import CoverBanner from '../../Components/CoverBanner/CoverBanner';
 import { FiPhoneCall } from 'react-icons/fi';
+import { FaLocationDot } from 'react-icons/fa6';
 
 const ContactUs = () => {
     return (
@@ -53,6 +54,24 @@ const ContactUs = () => {
                             </span>
                         </p>
                         <hr className='mt-3 border border-[#0B5F82]' />
+                    </div>
+                </div>
+                <div className="my-5 flex flex-col lg:flex-row justify-between items-center">
+                    <div className="w-1/2 flex flex-col justify-center items-center">
+                        <p className="flex justify-center items-center text-xl lg:text-2xl text-gray-600 font-bold font serif"><FaLocationDot className="mr-1" />Registered Office</p>
+                        <address className="my-3 text-center">
+                            59,60 North Rajashon,<br />
+                            Birulia Road, Savar,<br />
+                            Dhaka-1340, Bangladesh <br />
+                        </address>
+                    </div>
+                    <div className="w-1/2 flex flex-col justify-center items-center">
+                        <p className="flex justify-center items-center text-xl lg:text-2xl text-gray-600 font-bold font serif"><FaLocationDot className="mr-1" />Distribution Office</p>
+                        <address className="my-3 text-center">
+                            59,60 North Rajashon,<br />
+                            Birulia Road, Savar,<br />
+                            Dhaka-1340, Bangladesh <br />
+                        </address>
                     </div>
                 </div>
             </div>
