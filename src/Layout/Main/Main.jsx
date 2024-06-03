@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Outlet } from "react-router-dom";
 import Navbar from "../../Pages/Shared/Navbar/Navbar";
+import Footer from '../../Pages/Shared/Footer/Footer';
 
 
 const Main = () => {
@@ -14,6 +15,7 @@ const Main = () => {
         <div className="font-quicksand">
             <Navbar />
             <Outlet />
+            <Footer />
         </div>
     );
 };
