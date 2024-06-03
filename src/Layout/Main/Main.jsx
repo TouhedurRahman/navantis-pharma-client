@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../../Pages/Shared/Navbar/Navbar";
 import Footer from '../../Pages/Shared/Footer/Footer';
 import ScrollToTop from '../../Components/ScrollToTop/ScrollToTop';
+import ClickToTop from '../../Components/ClickToTop/ClickToTop';
 
 
 const Main = () => {
@@ -17,6 +18,7 @@ const Main = () => {
             <Navbar />
             <Outlet />
             <Footer />
+            <ClickToTop />
             <ScrollToTop />
         </div>
     );
