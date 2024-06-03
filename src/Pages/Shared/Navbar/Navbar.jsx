@@ -21,9 +21,9 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className="bg-white text-[#080567] font-mono font-bold">
+        <div className="bg-white text-[#0B5F82] font-mono font-bold">
             <div
-                className={`navbar z-10 px-5 lg:px-[40px] ${isScrolled ? 'fixed top-0 scroll-smooth bg-white text-[#080567]' : 'bg-gray-50 text-[#080567] scroll-smooth'
+                className={`navbar z-10 px-5 lg:px-[40px] ${isScrolled ? 'fixed top-0 scroll-smooth bg-white text-[#0B5F82]' : 'bg-gray-50 text-[#0B5F82] scroll-smooth'
                     }`}
             >
                 <div className="navbar-start w-full">
@@ -33,7 +33,7 @@ const Navbar = () => {
                         </div>
 
                         {/***** for small screen *****/}
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white text-[#080567] rounded-b-lg w-[320px] -left-5">
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white text-[#0B5F82] rounded-b-lg w-[320px] -left-5">
                             <li>
                                 <li><Link reloadDocument>ABOUT US</Link></li>
                                 <ul className="p-2">
@@ -65,7 +65,8 @@ const Navbar = () => {
 
                             <li>
                                 <li><Link>CAREER</Link></li>
-                                <li><Link to='/careers/job-opportunities' reloadDocument>JOB OPPRTUNITIES</Link></li>
+                                <li><Link to='/careers/company-career' reloadDocument>COMPANY CAREER</Link></li>
+                                <li><Link to='/careers/job-opportunities' reloadDocument>CAREER OPPORTUNITIES</Link></li>
                             </li>
 
                             <li><Link to='/contact-us' reloadDocument>CONTACT US</Link></li>
@@ -114,7 +115,7 @@ const Navbar = () => {
                                     <div className="group">
                                         <span className="cursor-pointer flex justify-center items-center">
                                             ABOUT US
-                                            <span className="text-[#080567] text-xl">
+                                            <span className="text-[#0B5F82] text-xl">
                                                 <TiArrowSortedDown />
                                             </span>
                                         </span>
@@ -129,7 +130,7 @@ const Navbar = () => {
                                     <div className="group">
                                         <span className="cursor-pointer flex justify-center items-center">
                                             PRODUCTS
-                                            <span className="text-[#080567] text-xl">
+                                            <span className="text-[#0B5F82] text-xl">
                                                 <TiArrowSortedDown />
                                             </span>
                                         </span>
@@ -143,7 +144,7 @@ const Navbar = () => {
                                     <div className="group">
                                         <span className="cursor-pointer flex justify-center items-center">
                                             PARTNER
-                                            <span className="text-[#080567] text-xl">
+                                            <span className="text-[#0B5F82] text-xl">
                                                 <TiArrowSortedDown />
                                             </span>
                                         </span>
@@ -156,7 +157,7 @@ const Navbar = () => {
                                     <div className="group">
                                         <span className="cursor-pointer  flex justify-center items-center">
                                             MEDIA
-                                            <span className="text-[#080567] text-xl">
+                                            <span className="text-[#0B5F82] text-xl">
                                                 <TiArrowSortedDown />
                                             </span>
                                         </span>
@@ -170,11 +171,12 @@ const Navbar = () => {
                                     <div className="group">
                                         <span className="cursor-pointer  flex justify-center items-center">
                                             CARRER
-                                            <span className="text-[#080567] text-xl">
+                                            <span className="text-[#0B5F82] text-xl">
                                                 <TiArrowSortedDown />
                                             </span>
                                         </span>
                                         <ul className="p-2 w-[205px] absolute left-0 bg-white border border-gray-300 hidden">
+                                            <li><Link to='/careers/company-career' className="dropdown-link" reloadDocument>COMPANY CAREER</Link></li>
                                             <li><Link to='/careers/job-opportunities' className="dropdown-link" reloadDocument>CAREER OPPORTUNITIES</Link></li>
                                         </ul>
                                     </div>

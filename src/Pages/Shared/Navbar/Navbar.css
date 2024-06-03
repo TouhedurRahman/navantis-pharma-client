@@ -28,7 +28,7 @@
 .menu li:hover .group ul {
     left: -1;
     display: block;
-    border-top: solid #8224E3;
+    border-top: solid  #FB923C;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
