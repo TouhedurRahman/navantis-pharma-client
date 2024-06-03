@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import { Outlet } from "react-router-dom";
 import Navbar from "../../Pages/Shared/Navbar/Navbar";
 import Footer from '../../Pages/Shared/Footer/Footer';
+import ScrollToTop from '../../Components/ScrollToTop/ScrollToTop';
 
 
 const Main = () => {
@@ -16,6 +17,7 @@ const Main = () => {
             <Navbar />
             <Outlet />
             <Footer />
+            <ScrollToTop />
         </div>
     );
 };
