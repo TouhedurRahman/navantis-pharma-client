@@ -49,7 +49,7 @@ const WelcomeHome = () => {
                         <SiWelcometothejungle /> elcome Voice
                     </p>
                     <p className='my-5 text-justify font-bold'>
-                        Your trusted partner in healthcare solutions across Bangladesh! We take immense pride in importing high-quality medicines from around the globe to ensure the well-being of our communities. With a commitment to excellence and innovation, we strive to deliver top-notch pharmaceutical products that meet the diverse needs of our customers. At Navantis, we envision a healthier future for all, and we look forward to serving you with integrity, dedication, and compassion. Together, let's embark on a journey towards enhanced health and vitality. Welcome aboard!
+                        Your trusted partner in healthcare solutions across Bangladesh! We take immense pride in importing high-quality medicines from around the globe to ensure the well-being of our communities. With a commitment to excellence and innovation, we strive to deliver top-notch pharmaceutical products that meet the diverse needs of our customers. At Navantis, we envision a healthier future for all, and we look forward to serving you with integrity, dedication, and compassion. Together, let&apos;s embark on a journey towards enhanced health and vitality. Welcome aboard!
                     </p>
                     <Link to='/about-us'>
                         <button className='welcomebtn'>
