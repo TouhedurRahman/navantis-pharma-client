@@ -6,6 +6,7 @@ import ImportedBrands from "../../Pages/Partner/ImportedBrands/ImportedBrands";
 import AboutUs from "../../Layout/AboutUs/AboutUs";
 import CompanyProfile from "../../Pages/AboutUs/CompanyProfile/CompanyProfile";
 import Leadership from "../../Pages/AboutUs/Leadership/Leadership";
+import OurValues from "../../Pages/AboutUs/OurValues/OurValues";
 
 export const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
                     {
                         path: "leadership",
                         element: <Leadership />
+                    },
+                    {
+                        path: "our-values",
+                        element: <OurValues />
                     },
                 ]
             },
