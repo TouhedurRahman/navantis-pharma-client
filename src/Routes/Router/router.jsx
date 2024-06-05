@@ -8,6 +8,7 @@ import CompanyProfile from "../../Pages/AboutUs/CompanyProfile/CompanyProfile";
 import Leadership from "../../Pages/AboutUs/Leadership/Leadership";
 import OurValues from "../../Pages/AboutUs/OurValues/OurValues";
 import Career from "../../Layout/Career/Career";
+import CompanyCareer from "../../Pages/CompanyCareer/CompanyCareer";
 
 export const router = createBrowserRouter([
     {
@@ -43,6 +44,12 @@ export const router = createBrowserRouter([
             {
                 path: "/careers",
                 element: <Career />,
+                children: [
+                    {
+                        path: "company-career",
+                        element: <CompanyCareer />
+                    },
+                ]
             },
             {
                 path: "/contact-us",
