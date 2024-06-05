@@ -7,6 +7,7 @@ import AboutUs from "../../Layout/AboutUs/AboutUs";
 import CompanyProfile from "../../Pages/AboutUs/CompanyProfile/CompanyProfile";
 import Leadership from "../../Pages/AboutUs/Leadership/Leadership";
 import OurValues from "../../Pages/AboutUs/OurValues/OurValues";
+import Career from "../../Layout/Career/Career";
 
 export const router = createBrowserRouter([
     {
@@ -40,9 +41,13 @@ export const router = createBrowserRouter([
                 element: <ImportedBrands />
             },
             {
+                path: "/careers",
+                element: <Career />,
+            },
+            {
                 path: "/contact-us",
                 element: <ContactUs />
-            }
+            },
         ]
     },
 ]);
