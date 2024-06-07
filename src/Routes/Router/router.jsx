@@ -9,6 +9,7 @@ import Leadership from "../../Pages/AboutUs/Leadership/Leadership";
 import OurValues from "../../Pages/AboutUs/OurValues/OurValues";
 import Career from "../../Layout/Career/Career";
 import CompanyCareer from "../../Pages/Career/CompanyCareer/CompanyCareer";
+import CareerOpportunities from "../../Pages/Career/CareerOpportunities/CareerOpportunities";
 
 export const router = createBrowserRouter([
     {
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
                     {
                         path: "company-career",
                         element: <CompanyCareer />
+                    },
+                    {
+                        path: "career-opportunities",
+                        element: <CareerOpportunities />
                     },
                 ]
             },

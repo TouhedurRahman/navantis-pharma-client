@@ -66,7 +66,7 @@ const Navbar = () => {
                             <li>
                                 <li><Link>CAREER</Link></li>
                                 <li><Link to='/careers/company-career' reloadDocument>COMPANY CAREER</Link></li>
-                                <li><Link to='/careers/job-opportunities' reloadDocument>CAREER OPPORTUNITIES</Link></li>
+                                <li><Link to='/careers/career-opportunities' reloadDocument>CAREER OPPORTUNITIES</Link></li>
                             </li>
 
                             <li><Link to='/contact-us' reloadDocument>CONTACT US</Link></li>
@@ -177,7 +177,7 @@ const Navbar = () => {
                                         </span>
                                         <ul className="p-2 w-[205px] absolute left-0 bg-white border border-gray-300 hidden">
                                             <li><Link to='/careers/company-career' className="dropdown-link" reloadDocument>COMPANY CAREER</Link></li>
-                                            <li><Link to='/careers/job-opportunities' className="dropdown-link" reloadDocument>CAREER OPPORTUNITIES</Link></li>
+                                            <li><Link to='/careers/career-opportunities' className="dropdown-link" reloadDocument>CAREER OPPORTUNITIES</Link></li>
                                         </ul>
                                     </div>
                                 </li>

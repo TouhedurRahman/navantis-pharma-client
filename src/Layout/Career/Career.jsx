@@ -1,13 +1,22 @@
-import { useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 import { FaChevronRight } from 'react-icons/fa';
 import CoverBanner from '../../Components/CoverBanner/CoverBanner';
 
 const Career = () => {
-    const [selected, setSelected] = useState('career');
+    const location = useLocation();
+    const [selected, setSelected] = useState('');
 
-    const handleSelection = (selected) => {
-        setSelected(selected);
+    useEffect(() => {
+        if (location.pathname.includes('/careers/company-career')) {
+            setSelected('career');
+        } else if (location.pathname.includes('/careers/career-opportunities')) {
+            setSelected('opportunities');
+        }
+    }, [location.pathname]);
+
+    const handleSelection = (selection) => {
+        setSelected(selection);
     }
 
     return (
@@ -32,23 +41,20 @@ const Career = () => {
                             <ul>
                                 <Link to="/careers/company-career">
                                     <li
-                                        className={`mb-3 border-2 border-[#0B5F82] hover:border-orange-400 p-3 rounded-lg  ${selected === "career" && 'bg-[#0B5F82] text-white font-bold'}`}
+                                        className={`mb-3 border-2 border-[#0B5F82] hover:border-orange-400 p-3 rounded-lg ${selected === "career" && 'bg-[#0B5F82] text-white font-bold'}`}
                                         onClick={() => handleSelection("career")}
                                     >
-                                        <div
-                                            className='flex justify-start items-center'
-                                        >
-                                            <FaChevronRight className='mr-2' />Company Career</div>
+                                        <div className='flex justify-start items-center'>
+                                            <FaChevronRight className='mr-2' />Company Career
+                                        </div>
                                     </li>
                                 </Link>
-                                <Link to="/careers/job-opportunities">
+                                <Link to="/careers/career-opportunities">
                                     <li
-                                        className={`my-3 border-2 border-[#0B5F82] hover:border-orange-400 p-3 rounded-lg  ${selected === "opportunities" && 'bg-[#0B5F82] text-white font-bold'}`}
+                                        className={`my-3 border-2 border-[#0B5F82] hover:border-orange-400 p-3 rounded-lg ${selected === "opportunities" && 'bg-[#0B5F82] text-white font-bold'}`}
                                         onClick={() => handleSelection("opportunities")}
                                     >
-                                        <div
-                                            className='flex justify-start items-center'
-                                        >
+                                        <div className='flex justify-start items-center'>
                                             <FaChevronRight className='mr-2' />Career Opportunities
                                         </div>
                                     </li>
