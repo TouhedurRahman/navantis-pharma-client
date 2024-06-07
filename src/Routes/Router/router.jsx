@@ -8,7 +8,7 @@ import CompanyProfile from "../../Pages/AboutUs/CompanyProfile/CompanyProfile";
 import Leadership from "../../Pages/AboutUs/Leadership/Leadership";
 import OurValues from "../../Pages/AboutUs/OurValues/OurValues";
 import Career from "../../Layout/Career/Career";
-import CompanyCareer from "../../Pages/CompanyCareer/CompanyCareer";
+import CompanyCareer from "../../Pages/Career/CompanyCareer/CompanyCareer";
 
 export const router = createBrowserRouter([
     {
