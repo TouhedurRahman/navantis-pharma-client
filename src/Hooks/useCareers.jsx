@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 
-const useCareer = () => {
+const useCareers = () => {
     const { data: careers = [], isLoading: loading, refetch } = useQuery({
         queryKey: ['careers'],
         queryFn: async () => {
@@ -13,4 +13,4 @@ const useCareer = () => {
     return [careers, loading, refetch];
 };
 
-export default useCareer;
+export default useCareers;

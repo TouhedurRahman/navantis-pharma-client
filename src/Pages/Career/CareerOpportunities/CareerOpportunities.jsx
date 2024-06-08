@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { ImSearch } from 'react-icons/im';
-import useCareer from '../../../Hooks/useCareer';
 import CareerCardList from '../CareerCardList/CareerCardList';
+import useCareers from '../../../Hooks/useCareers';
 
 const CareerOpportunities = () => {
-    const [careers] = useCareer();
+    const [careers] = useCareers();
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedDepartment, setSelectedDepartment] = useState('');
     const [selectedLocation, setSelectedLocation] = useState('');

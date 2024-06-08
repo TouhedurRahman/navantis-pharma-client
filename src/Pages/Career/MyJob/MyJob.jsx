@@ -1,4 +1,4 @@
-import useCareer from '../../../Hooks/useCareer';
+import useCareer from '../../../Hooks/useCareers';
 import { useParams } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
