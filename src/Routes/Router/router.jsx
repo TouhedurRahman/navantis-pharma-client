@@ -12,7 +12,8 @@ import CompanyCareer from "../../Pages/Career/CompanyCareer/CompanyCareer";
 import CareerOpportunities from "../../Pages/Career/CareerOpportunities/CareerOpportunities";
 import MyJob from "../../Pages/Career/MyJob/MyJob";
 import Media from "../../Layout/Media/Media";
-import Advertisements from "../../Pages/Career/Advertisements/Advertisements";
+import Advertisements from "../../Pages/Media/Advertisements/Advertisements";
+import NewsAndEvets from "../../Pages/Media/NewsAndEvets/NewsAndEvets";
 
 export const router = createBrowserRouter([
     {
@@ -49,6 +50,10 @@ export const router = createBrowserRouter([
                 path: "/media",
                 element: <Media />,
                 children: [
+                    {
+                        path: "news-events",
+                        element: <NewsAndEvets />
+                    },
                     {
                         path: "advertisements",
                         element: <Advertisements />
