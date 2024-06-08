@@ -1,38 +1,110 @@
-import { Link } from 'react-router-dom';
-import Marquee from 'react-fast-marquee';
-import "./Banner.css";
+import { useState, useEffect } from 'react';
 
 const Banner = () => {
+    const images = [
+        {
+            _id: 1,
+            title: "Health",
+            subtitle: "Clear Skin, Clear Confidence",
+            img: "https://i.ibb.co/SrrbYrt/health.jpg"
+        },
+        {
+            _id: 2,
+            title: "Happiness",
+            subtitle: "Clear Skin, Clear Confidence",
+            img: "https://i.ibb.co/PMtKmhT/happiness.jpg"
+        },
+        {
+            _id: 3,
+            title: "Beauty",
+            subtitle: "Clear Skin, Clear Confidence",
+            img: "https://i.ibb.co/kMz5wr4/beauty.jpg"
+        }
+    ]
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 4000); // Change image every 4 seconds
+
+        return () => clearInterval(interval);
+    }, [images.length]);
+
     return (
-        <>
-            <div className="hero h-[400px] font" style={{ backgroundImage: `url("https://i.ibb.co/jgGWgz9/Home-Banner-Medicine.jpg")` }}>
-                <div className="hero-overlay bg-opacity-80"></div>
-                <div className="hero-content text-neutral-content">
-                    <div className="text-center">
-                        <h1 className="mb-5 text-4xl text-white font-bold" data-aos="fade-right" data-aos-duration="2000">
-                            Navantis Pharma Limited
-                        </h1>
-                        <p className="mb-5 text-2xl font-bold text-white">Health • Happiness • Beauty</p>
-
-                        <Link style={{ '--clr': '#FB923C' }} className="button" href="#">
-                            <span className="button__icon-wrapper">
-                                <svg width="10" className="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
-                                    <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
-                                </svg>
-
-                                <svg className="button__icon-svg  button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg" width="10" fill="none" viewBox="0 0 14 15">
-                                    <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
-                                </svg>
-                            </span>
-                            Explore All
-                        </Link>
+        <div className="relative w-full mx-auto overflow-hidden">
+            <div
+                className="flex transition-transform duration-700"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+                {images.map((image) => (
+                    <div key={image._id} className="w-full flex-shrink-0 relative">
+                        <img
+                            src={image.img}
+                            alt={`Slide ${image._id}`}
+                            className="object-cover"
+                            data-aos="fade-right"
+                        />
+                        <div
+                            className='absolute inset-0 right-[120px] flex items-center justify-end'
+                            data-aos="fade-left"
+                        >
+                            <div className='flex flex-col justify-center items-end bg-white py-60 px-20 opacity-50'>
+                                <div className='text-center flex flex-col justify-center items-center'>
+                                    <p className='font-quicksand text-transparent text-4xl font-bold z-1'>
+                                        {image.title}
+                                    </p>
+                                    <hr className='mt-3 w-36 border-2 border-[#FB923C] rounded' />
+                                    <p className='mt-10'>
+                                        {image.subtitle}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            className='absolute inset-0 right-[120px] flex items-center justify-end'
+                            data-aos="fade-left"
+                        >
+                            <div className='flex flex-col justify-center items-end py-60 px-20'>
+                                <div className='text-center flex flex-col justify-center items-center'>
+                                    <p className='font-quicksand text-4xl font-bold'>
+                                        {image.title}
+                                    </p>
+                                    <hr className='mt-3 w-36 border-2 border-[#FB923C] rounded' />
+                                    <p className='mt-10'>
+                                        {image.subtitle}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                ))}
             </div>
-            <Marquee className="w-[80%] text-xl font-bold italic banner-marquee">
-                ** Navantis pharma for your better Health, Happiness and Beauty **
-            </Marquee>
-        </>
+            <div className="absolute inset-0 flex items-center justify-between p-4 opacity-10">
+                <button
+                    onClick={() => setCurrentIndex((currentIndex - 1 + images.length) % images.length)}
+                    className="bg-gray-800 text-white p-2 rounded-full"
+                >
+                    &#10094;
+                </button>
+                <button
+                    onClick={() => setCurrentIndex((currentIndex + 1) % images.length)}
+                    className="bg-gray-800 text-white p-2 rounded-full"
+                >
+                    &#10095;
+                </button>
+            </div>
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                {images.map((_, index) => (
+                    <div
+                        key={index}
+                        onClick={() => setCurrentIndex(index)}
+                        className={`h-2 rounded-full ${currentIndex === index ? 'bg-[#FB923C] w-24' : 'bg-white w-8'}`}
+                    />
+                ))}
+            </div>
+        </div>
     );
 };
 
