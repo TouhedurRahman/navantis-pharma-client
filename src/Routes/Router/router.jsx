@@ -10,6 +10,7 @@ import OurValues from "../../Pages/AboutUs/OurValues/OurValues";
 import Career from "../../Layout/Career/Career";
 import CompanyCareer from "../../Pages/Career/CompanyCareer/CompanyCareer";
 import CareerOpportunities from "../../Pages/Career/CareerOpportunities/CareerOpportunities";
+import MyJob from "../../Pages/Career/MyJob/MyJob";
 
 export const router = createBrowserRouter([
     {
@@ -55,6 +56,10 @@ export const router = createBrowserRouter([
                         element: <CareerOpportunities />
                     },
                 ]
+            },
+            {
+                path: "/jobs/:id",
+                element: <MyJob />
             },
             {
                 path: "/contact-us",
