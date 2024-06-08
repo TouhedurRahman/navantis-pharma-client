@@ -28,9 +28,6 @@ const ExploreHome = () => {
                         data-aos="fade-right"
                         data-aos-duration="2000"
                     >
-                        {/* <span className="avatar w-8 h-16 rounded">
-                            <img src="https://i.ibb.co/4d7LsvY/navantis-3d-logo.gif" className="w-full h-full object-cover" alt="Avatar Image" />
-                        </span> */}
                         <span>Explore Navantis</span>
                         <div className='flex justify-center items-center'>
                             <hr className='mt-3 w-36 border-2 border-[#FB923C] rounded' />

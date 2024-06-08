@@ -1,6 +1,6 @@
 import Banner from "../Banner/Banner";
 import ExploreHome from "../ExploreHome/ExploreHome";
-import ImportedHome from "../ImportedHome/ImportedHome";
+import OurObjective from "../OurObjective/OurObjective";
 import WelcomeHome from "../WelcomeHome/WelcomeHome";
 
 
@@ -10,7 +10,7 @@ const Home = () => {
             <Banner />
             <WelcomeHome />
             <ExploreHome />
-            <ImportedHome />
+            <OurObjective />
         </div>
     );
 };
