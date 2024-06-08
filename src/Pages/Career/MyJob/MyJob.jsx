@@ -1,9 +1,10 @@
 import useCareer from '../../../Hooks/useCareer';
 import { useParams } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import Swal from 'sweetalert2';
 import CoverBanner from '../../../Components/CoverBanner/CoverBanner';
 
-const MyJobs = () => {
+const MyJob = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const [careers] = useCareer();
@@ -12,9 +13,40 @@ const MyJobs = () => {
     const job = careers.find(career => career._id == id);
 
     const onSubmit = data => {
-        console.log(data);
-        // reset the form
-        reset();
+        let timerInterval;
+        Swal.fire({
+            title: "Submitting...",
+            html: "Application submitting in <b></b> milliseconds.",
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading();
+                const timer = Swal.getPopup().querySelector("b");
+                timerInterval = setInterval(() => {
+                    timer.textContent = `${Swal.getTimerLeft()}`;
+                }, 100);
+            },
+            willClose: () => {
+                clearInterval(timerInterval);
+            }
+        }).then((result) => {
+            /* Data Saved to DB*/
+            console.log(data);
+
+            // reset the form
+            reset();
+
+            // successfull submission alert
+            if (result.dismiss === Swal.DismissReason.timer) {
+                Swal.fire({
+                    // position: "top-end",
+                    icon: "success",
+                    title: "Application Submission Successful!",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            }
+        });
     };
 
     return (
@@ -207,4 +239,4 @@ const MyJobs = () => {
     );
 };
 
-export default MyJobs;
+export default MyJob;
