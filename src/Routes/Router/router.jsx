@@ -11,6 +11,7 @@ import Career from "../../Layout/Career/Career";
 import CompanyCareer from "../../Pages/Career/CompanyCareer/CompanyCareer";
 import CareerOpportunities from "../../Pages/Career/CareerOpportunities/CareerOpportunities";
 import MyJob from "../../Pages/Career/MyJob/MyJob";
+import Media from "../../Layout/Media/Media";
 
 export const router = createBrowserRouter([
     {
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
             {
                 path: '/imported-brands',
                 element: <ImportedBrands />
+            },
+            {
+                path: "/media",
+                element: <Media />
             },
             {
                 path: "/careers",
