@@ -14,6 +14,7 @@ import MyJob from "../../Pages/Career/MyJob/MyJob";
 import Media from "../../Layout/Media/Media";
 import Advertisements from "../../Pages/Media/Advertisements/Advertisements";
 import NewsAndEvets from "../../Pages/Media/NewsAndEvets/NewsAndEvets";
+import SingleEvent from "../../Pages/Media/SingleEvent/SingleEvent";
 
 export const router = createBrowserRouter([
     {
@@ -60,6 +61,10 @@ export const router = createBrowserRouter([
                     }
 
                 ]
+            },
+            {
+                path: "news-events/event/:id",
+                element: <SingleEvent />
             },
             {
                 path: "/careers",
