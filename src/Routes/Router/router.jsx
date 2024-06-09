@@ -17,6 +17,7 @@ import NewsAndEvets from "../../Pages/Media/NewsAndEvets/NewsAndEvets";
 import SingleEvent from "../../Pages/Media/SingleEvent/SingleEvent";
 import Products from "../../Layout/Products/Products";
 import ImportedProducts from "../../Pages/Products/ImportedProducts/ImportedProducts";
+import Categories from "../../Pages/Products/Categories/Categories";
 
 export const router = createBrowserRouter([
     {
@@ -52,7 +53,11 @@ export const router = createBrowserRouter([
                     {
                         path: 'imported-products',
                         element: <ImportedProducts />
-                    }
+                    },
+                    {
+                        path: 'categories',
+                        element: <Categories />
+                    },
                 ]
             },
             {
