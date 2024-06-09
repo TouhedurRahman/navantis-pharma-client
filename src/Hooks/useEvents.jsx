@@ -4,7 +4,7 @@ const useEvents = () => {
     const { data: events = [], isLoading: loading, refetch } = useQuery({
         queryKey: ['events'],
         queryFn: async () => {
-            const url = '/events.json';
+            const url = 'http://localhost:5000/events';
             const result = await fetch(url);
             return result.json();
         }

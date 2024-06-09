@@ -4,7 +4,7 @@ const useCareers = () => {
     const { data: careers = [], isLoading: loading, refetch } = useQuery({
         queryKey: ['careers'],
         queryFn: async () => {
-            const url = '/careers.json';
+            const url = 'http://localhost:5000/careers';
             const result = await fetch(url);
             return result.json();
         }
