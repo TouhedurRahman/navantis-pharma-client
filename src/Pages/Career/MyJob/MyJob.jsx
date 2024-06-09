@@ -1,8 +1,9 @@
 import useCareer from '../../../Hooks/useCareers';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import CoverBanner from '../../../Components/CoverBanner/CoverBanner';
+import axios from 'axios';
 
 const MyJob = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -10,9 +11,22 @@ const MyJob = () => {
     const [careers] = useCareer();
     const { id } = useParams();
 
+    const navigate = useNavigate();
+
     const job = careers.find(career => career._id == id);
 
     const onSubmit = data => {
+        const newApplication = {
+            designation: job.designation,
+            department: job.department,
+            name: data.name,
+            email: data.email,
+            phone: data.phone,
+            coverLetter: data.coverLetter,
+            cvLink: data.link,
+            jobLocation: job.location
+        }
+
         let timerInterval;
         Swal.fire({
             title: "Submitting...",
@@ -31,21 +45,24 @@ const MyJob = () => {
             }
         }).then((result) => {
             /* Data Saved to DB*/
-            console.log(data);
+            axios.post('http://localhost:5000/applications', newApplication)
+                .then(data => {
+                    if (data.data.insertedId) {
+                        reset();
+                        navigate('/');
 
-            // reset the form
-            reset();
-
-            // successfull submission alert
-            if (result.dismiss === Swal.DismissReason.timer) {
-                Swal.fire({
-                    // position: "top-end",
-                    icon: "success",
-                    title: "Application Submission Successful!",
-                    showConfirmButton: false,
-                    timer: 1500
+                        // successfull submission alert
+                        if (result.dismiss === Swal.DismissReason.timer) {
+                            Swal.fire({
+                                // position: "top-end",
+                                icon: "success",
+                                title: "Application Submission Successful!",
+                                showConfirmButton: false,
+                                timer: 1500
+                            });
+                        }
+                    }
                 });
-            }
         });
     };
 
@@ -177,10 +194,6 @@ const MyJob = () => {
                                         placeholder='01XXXXXXXXX'
                                         {...register('phone', {
                                             required: 'Phone number is required',
-                                            pattern: {
-                                                value: /^[0-9]{11}$/,
-                                                message: '11 digits mobile number only'
-                                            }
                                         })}
                                         className='w-full h-12 border-2 rounded-full px-3'
                                     />
@@ -200,7 +213,7 @@ const MyJob = () => {
                                     {errors.coverLetter && <p className='text-red-600 font-mono font-thin'>{errors.coverLetter.message}</p>}
                                 </div>
 
-                                <div className='flex flex-col justify-center items-start'>
+                                {/* <div className='flex flex-col justify-center items-start'>
                                     <label className='text-xl font-bold my-3'>
                                         Upload CV/Resume  <span className='text-red-600 font-bold'>*</span>
                                     </label>
@@ -210,6 +223,19 @@ const MyJob = () => {
                                         className="file-input file-input-bordered w-full"
                                     />
                                     {errors.resume && <p className='text-red-600 font-mono font-thin'>{errors.resume.message}</p>}
+                                </div> */}
+
+                                <div className='flex flex-col justify-center items-start'>
+                                    <label className='text-xl font-bold my-3'>
+                                        Link CV/Resume <span className='text-red-600 font-bold'>*</span>
+                                    </label>
+                                    <input
+                                        type='link'
+                                        placeholder='CV/Resume Link only'
+                                        {...register('link', { required: 'Only CV/Resume Link is required' })}
+                                        className='w-full h-12 border-2 rounded-full px-3'
+                                    />
+                                    {errors.link && <p className='text-red-600 font-mono font-thin'>{errors.link.message}</p>}
                                 </div>
 
                                 <div className='flex flex-col justify-center items-start mt-3'>
