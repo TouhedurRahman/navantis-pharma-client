@@ -7,11 +7,16 @@ import { SiNamecheap } from "react-icons/si";
 import { FaLocationDot } from "react-icons/fa6";
 import Swal from "sweetalert2";
 import './ContactUs.css';
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const ContactUs = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const navigate = useNavigate();
 
     const onSubmit = data => {
+        const newQuery = data;
+
         Swal.fire({
             title: "Are you sure?",
             text: "You won't be able to revert this!",
@@ -23,16 +28,18 @@ const ContactUs = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 // get the data
-                console.log(data);
-
-                // reset form
-                reset();
-
-                Swal.fire({
-                    title: "Submitted!",
-                    text: "We reply you as soon as possible.",
-                    icon: "success"
-                });
+                axios.post('http://localhost:5000/queries', newQuery)
+                    .then(data => {
+                        if (data.data.insertedId) {
+                            reset();
+                            navigate('/');
+                            Swal.fire({
+                                title: "Submitted!",
+                                text: "We reply you as soon as possible.",
+                                icon: "success"
+                            });
+                        }
+                    });
             }
         });
 
