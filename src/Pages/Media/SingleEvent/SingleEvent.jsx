@@ -35,7 +35,7 @@ const SingleEvent = () => {
     return (
         <div>
             <CoverBanner
-                img={"https://i.ibb.co/6XJTMtb/sale-advertisement.jpg"}
+                img={"https://i.ibb.co/jgGWgz9/Home-Banner-Medicine.jpg"}
                 title={"Event"}
                 from={"Home"}
                 to={"Media"}
