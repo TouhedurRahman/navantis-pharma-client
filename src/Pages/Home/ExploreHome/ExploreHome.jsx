@@ -4,19 +4,19 @@ const ExploreHome = () => {
             _id: 1,
             img: "https://i.ibb.co/DKkk4tm/health-cycle.jpg",
             title: "Health",
-            subtitle: ""
+            subtitle: "Safeguarded through our unwavering commitment to excellence."
         },
         {
             _id: 2,
             img: "https://i.ibb.co/vmKwpT0/happiness-family.jpg",
             title: "Happiness",
-            subtitle: ""
+            subtitle: "Where well-being begins with a confident and vibrant smile."
         },
         {
             _id: 3,
             img: "https://i.ibb.co/pfSPzJB/beauty-face.jpg",
             title: "Beauty",
-            subtitle: ""
+            subtitle: "Unfolds through innovation, progress, and boundless possibilities."
         }
     ]
 
@@ -44,7 +44,7 @@ const ExploreHome = () => {
                                         <figure><img src={content.img} alt="Shoes" /></figure>
                                         <div className="card-body flex flex-col justify-center items-center my-auto">
                                             <h2 className="text-white text-3xl">{content.title}</h2>
-                                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                                            <p>{content.subtitle}</p>
                                         </div>
                                     </div>
                                 </div>

@@ -5,13 +5,13 @@ const Banner = () => {
         {
             _id: 1,
             title: "Health",
-            subtitle: "Clear Skin, Clear Confidence",
+            subtitle: "Your Health Our Properties",
             img: "https://i.ibb.co/SrrbYrt/health.jpg"
         },
         {
             _id: 2,
             title: "Happiness",
-            subtitle: "Clear Skin, Clear Confidence",
+            subtitle: "Healthy Smile Healthy Life",
             img: "https://i.ibb.co/PMtKmhT/happiness.jpg"
         },
         {
@@ -81,7 +81,7 @@ const Banner = () => {
                     </div>
                 ))}
             </div>
-            <div className="absolute inset-0 flex items-center justify-between p-4 opacity-10">
+            <div className="absolute inset-0 flex items-center justify-between p-4 opacity-50">
                 <button
                     onClick={() => setCurrentIndex((currentIndex - 1 + images.length) % images.length)}
                     className="bg-gray-800 text-white p-2 rounded-full"

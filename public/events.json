@@ -3,70 +3,49 @@
         "_id": 1,
         "title": "Monthly First Meeting on May 2024",
         "imageURL": "https://i.ibb.co/D8BmSLJ/Meeting-01.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi asperiores commodi minima pariatur debitis aut non nulla culpa deleniti est, maiores impedit. Rem nemo id laudantium voluptatum, quaerat repellat.",
+        "description": "The first monthly meeting of May 2024 will be held to discuss recent progress and upcoming goals. It will focus on reviewing the achievements of the previous month and planning strategies for the current month. Participants will share their insights, provide updates on ongoing projects, and address any challenges faced. Additionally, new initiatives and opportunities will be explored. The meeting aims to foster collaboration, ensure alignment with organizational objectives, and enhance overall productivity. It will be an interactive session where team members can engage in discussions, offer suggestions, and seek clarifications. The agenda will include presentations, Q&A sessions, and brainstorming activities. Overall, the meeting serves as a platform for effective communication, decision-making, and collective problem-solving.",
         "date": "May 01, 2024"
     },
     {
         "_id": 2,
         "title": "Monthly First Meeting on April 2024",
         "imageURL": "https://i.ibb.co/VMZ6DCt/Meeting-02.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi asperiores commodi minima pariatur debitis aut non nulla culpa deleniti est, maiores impedit. Rem nemo id laudantium voluptatum, quaerat repellat.",
-        "date": "May 01, 2024"
+        "description": "The April 2024 monthly meeting is scheduled to convene on April 5th, 2024. This session will primarily focus on evaluating the outcomes of the initiatives launched in March and planning new strategies for the upcoming month. It will involve a comprehensive review of the performance metrics, financial updates, and key milestones achieved. Team members will have the opportunity to discuss their individual contributions, share best practices, and address any roadblocks hindering progress. Moreover, the meeting will provide a platform for announcing upcoming events, recognizing outstanding achievements, and fostering a sense of unity among team members. The agenda will include presentations, interactive discussions, and action planning sessions. Overall, the meeting aims to facilitate effective communication, promote collaboration, and drive organizational success.",
+        "date": "April 05, 2024"
     },
     {
         "_id": 3,
         "title": "Monthly First Meeting on March 2024",
         "imageURL": "https://i.ibb.co/D8BmSLJ/Meeting-01.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi asperiores commodi minima pariatur debitis aut non nulla culpa deleniti est, maiores impedit. Rem nemo id laudantium voluptatum, quaerat repellat.",
-        "date": "May 01, 2024"
+        "description": "The March 2024 monthly meeting will be held on March 3rd, 2024, to discuss the progress and challenges encountered during the previous month. It will involve a thorough review of the project timelines, budget allocations, and resource utilization. Team members will have the opportunity to share their insights, provide updates on their respective tasks, and seek guidance on any issues faced. Additionally, the meeting will focus on brainstorming innovative solutions, identifying areas for improvement, and aligning strategies with organizational goals. Special attention will be given to celebrating achievements, acknowledging outstanding performances, and fostering a positive work culture. The agenda will include presentations, group discussions, and action planning sessions. Overall, the meeting aims to enhance team collaboration, promote transparency, and drive continuous improvement.",
+        "date": "March 03, 2024"
     },
     {
         "_id": 4,
         "title": "Monthly First Meeting on February 2024",
         "imageURL": "https://i.ibb.co/VMZ6DCt/Meeting-02.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi asperiores commodi minima pariatur debitis aut non nulla culpa deleniti est, maiores impedit. Rem nemo id laudantium voluptatum, quaerat repellat.",
-        "date": "May 01, 2024"
+        "description": "The February 2024 monthly meeting is scheduled for February 2nd, 2024. It will serve as a platform for reviewing the progress made in January and setting objectives for the new month. The meeting will include discussions on project milestones, budget updates, and resource allocations. Team members will have the opportunity to provide updates on their respective tasks, discuss challenges faced, and propose solutions. Additionally, the meeting will focus on aligning strategies with organizational goals, fostering collaboration among team members, and promoting a culture of accountability. Special emphasis will be placed on recognizing outstanding performances and celebrating team achievements. The agenda will include presentations, group discussions, and action planning sessions. Overall, the meeting aims to enhance productivity, drive innovation, and ensure the success of organizational initiatives.",
+        "date": "February 02, 2024"
     },
     {
         "_id": 5,
         "title": "Monthly First Meeting on January 2024",
         "imageURL": "https://i.ibb.co/D8BmSLJ/Meeting-01.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi asperiores commodi minima pariatur debitis aut non nulla culpa deleniti est, maiores impedit. Rem nemo id laudantium voluptatum, quaerat repellat.",
-        "date": "May 01, 2024"
+        "description": "The January 2024 monthly meeting is scheduled to take place on January 5th, 2024. It will focus on reviewing the achievements of the previous month and setting goals for the new year. The meeting will include discussions on project progress, budget updates, and resource allocations. Team members will have the opportunity to share their insights, provide updates on their respective tasks, and discuss any challenges faced. Additionally, the meeting will aim to align strategies with organizational objectives, foster collaboration among team members, and promote a culture of continuous improvement. Special attention will be given to recognizing outstanding performances and celebrating team achievements. The agenda will include presentations, group discussions, and action planning sessions. Overall, the meeting aims to enhance team productivity, drive innovation, and ensure the success of organizational initiatives.",
+        "date": "January 05, 2024"
     },
     {
         "_id": 6,
         "title": "Monthly First Meeting on December 2023",
         "imageURL": "https://i.ibb.co/VMZ6DCt/Meeting-02.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi asperiores commodi minima pariatur debitis aut non nulla culpa deleniti est, maiores impedit. Rem nemo id laudantium voluptatum, quaerat repellat.",
-        "date": "May 01, 2024"
+        "description": "The December 2023 monthly meeting is scheduled for December 7th, 2023. It will focus on reviewing the progress made throughout the year and planning for the upcoming year. The meeting will include discussions on achievements, challenges, and lessons learned. Team members will have the opportunity to provide updates on their projects, share insights, and discuss strategies for the future. Additionally, the meeting will aim to foster collaboration, alignment, and engagement among team members. Special attention will be given to recognizing outstanding contributions and celebrating successes. The agenda will include presentations, discussions, and interactive sessions. Overall, the meeting aims to ensure that the team is well-prepared and motivated to tackle the challenges and opportunities ahead.",
+        "date": "December 07, 2023"
     },
     {
         "_id": 7,
         "title": "Monthly First Meeting on November 2023",
         "imageURL": "https://i.ibb.co/D8BmSLJ/Meeting-01.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi asperiores commodi minima pariatur debitis aut non nulla culpa deleniti est, maiores impedit. Rem nemo id laudantium voluptatum, quaerat repellat.",
-        "date": "May 01, 2024"
-    },
-    {
-        "_id": 8,
-        "title": "Monthly First Meeting on May 2022",
-        "imageURL": "https://i.ibb.co/VMZ6DCt/Meeting-02.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi asperiores commodi minima pariatur debitis aut non nulla culpa deleniti est, maiores impedit. Rem nemo id laudantium voluptatum, quaerat repellat.",
-        "date": "May 01, 2024"
-    },
-    {
-        "_id": 9,
-        "title": "Monthly First Meeting on October 2023",
-        "imageURL": "https://i.ibb.co/D8BmSLJ/Meeting-01.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi asperiores commodi minima pariatur debitis aut non nulla culpa deleniti est, maiores impedit. Rem nemo id laudantium voluptatum, quaerat repellat.",
-        "date": "May 01, 2024"
-    },
-    {
-        "_id": 10,
-        "title": "Monthly First Meeting on September 2023",
-        "imageURL": "https://i.ibb.co/VMZ6DCt/Meeting-02.jpg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sequi asperiores commodi minima pariatur debitis aut non nulla culpa deleniti est, maiores impedit. Rem nemo id laudantium voluptatum, quaerat repellat.",
-        "date": "May 01, 2024"
+        "description": "The November 2023 monthly meeting is scheduled for November 3rd, 2023. It will focus on reviewing the progress made in October and planning for the final months of the year. The meeting will include discussions on project updates, budget allocations, and resource utilization. Team members will have the opportunity to share their insights, provide updates on their tasks, and discuss any challenges faced. Additionally, the meeting will aim to align strategies with organizational goals, foster collaboration among team members, and promote a culture of accountability. Special emphasis will be placed on recognizing outstanding performances and celebrating team achievements. The agenda will include presentations, group discussions, and action planning sessions. Overall, the meeting aims to ensure that the team remains focused, motivated, and productive as the year comes to a close.",
+        "date": "November 03, 2023"
     }
 ]
