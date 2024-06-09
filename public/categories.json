@@ -1,0 +1,56 @@
+[
+    {
+        "_id": 1,
+        "name": "Acne",
+        "category": "acne",
+        "imageURL": "https://slclinic.com.sg/wp-content/uploads/2022/09/cystic-acne-treatment-in-Singapore-640x640.jpg"
+    },
+    {
+        "_id": 2,
+        "name": "Hair Treatement",
+        "category": "hair-treatment",
+        "imageURL": "https://i.mscwlns.co/mosaic-wellness/image/upload/f_auto,w_1000,c_limit/v1664790757/BW%20BLOG/Untitled-design--64-.jpg"
+    },
+    {
+        "_id": 3,
+        "name": "Anti Ageing",
+        "category": "anti-ageing",
+        "imageURL": "https://www.dermatologistmumbai.com/wp-content/uploads/2021/12/Anti-ageing-min-1.png"
+    },
+    {
+        "_id": 4,
+        "name": "Hyper Pigmentation",
+        "category": "pigmentation",
+        "imageURL": "https://gloskinbody.com.au/cdn/shop/articles/unnamed_cf4574a2-3a75-4f49-b451-c1432b5feb8f_1500x.jpg?v=1657407460"
+    },
+    {
+        "_id": 5,
+        "name": "Baby Care",
+        "category": "baby-care",
+        "imageURL": "https://i0.wp.com/www.agencyreporter.com/wp-content/uploads/2019/09/baby-care-industry.jpg?fit=592%2C509&ssl=1"
+    },
+    {
+        "_id": 6,
+        "name": "Psoriasis",
+        "category": "psoriasis",
+        "imageURL": "https://media.allure.com/photos/6554ef4cb31a758b58558328/3:2/w_3000,h_2000,c_limit/psoriasis-skin-5%20(1).jpg"
+    },
+    {
+        "_id": 7,
+        "name": "Moisturizer",
+        "category": "moisturizer",
+        "imageURL": "https://www.beautyrx.com/cdn/shop/articles/When_20is_20the_20Best_20Time_20to_20Moisturize.jpeg?v=1461273466"
+    },
+    {
+        "_id": 8,
+        "name": "Gyne Care",
+        "category": "gyne-care",
+        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUBdVfnTTcZYRluFul1TrrJXxLW6F-mgTKkr9K1nvhA&s"
+    },
+    {
+        "_id": 9,
+        "name": "Serum",
+        "category": "serum",
+        "imageURL": "https://www.shape.com/thmb/OTW5G5vqEcOYG0EoJJAcwJedUjs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/serum-AdobeStock_285455224-b172770aa61f43de866092511fc2621f.jpg"
+    }
+]
