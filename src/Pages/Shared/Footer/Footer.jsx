@@ -1,8 +1,8 @@
+import { Link } from 'react-router-dom';
 import { MdEmail } from 'react-icons/md';
 import { AiFillInstagram, AiFillYoutube } from 'react-icons/ai';
 import { FaFacebookSquare, FaTwitterSquare, FaWhatsappSquare } from 'react-icons/fa';
 import './Footer.css';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const today = new Date();
@@ -18,9 +18,9 @@ const Footer = () => {
                             <hr className='border'></hr>
                         </div>
                         <div className='flex flex-col items-start'>
-                            <Link to='' className='link link-hover'>Company Profile</Link>
-                            <Link to='' className='link link-hover'>Leadership</Link>
-                            <Link to='' className='link link-hover'>Our values</Link>
+                            <Link to='/about-us/company-profile' className='link link-hover'>Company Profile</Link>
+                            <Link to='/about-us/leadership' className='link link-hover'>Leadership</Link>
+                            <Link to='/about-us/our-values' className='link link-hover'>Our values</Link>
                         </div>
                     </div>
                     <div className='lg:block hidden'>
@@ -29,8 +29,8 @@ const Footer = () => {
                             <hr className='border'></hr>
                         </div>
                         <div className='flex flex-col items-start'>
-                            <Link to='' className='link link-hover'>Imported</Link>
-                            <Link to='' className='link link-hover'>Categories</Link>
+                            <Link to='/products/imported-products' className='link link-hover'>Imported</Link>
+                            <Link to='/products/categories' className='link link-hover'>Categories</Link>
                         </div>
                     </div>
                     <div className='lg:block hidden'>
@@ -39,7 +39,7 @@ const Footer = () => {
                             <hr className='border'></hr>
                         </div>
                         <div className='flex flex-col items-start'>
-                            <Link to='' className='link link-hover w-48'>Finished Goods (Imported Brands)</Link>
+                            <Link to='/imported-brands' className='link link-hover w-48'>Finished Goods (Imported Brands)</Link>
                         </div>
                     </div>
                     <div className='lg:block hidden'>
@@ -48,8 +48,8 @@ const Footer = () => {
                             <hr className='border'></hr>
                         </div>
                         <div className='flex flex-col items-start'>
-                            <Link to='' className='link link-hover'>News & Events</Link>
-                            <Link to='' className='link link-hover'>Advertisements</Link>
+                            <Link to='/media/news-events' className='link link-hover'>News & Events</Link>
+                            <Link to='/media/advertisements' className='link link-hover'>Advertisements</Link>
                         </div>
                     </div>
 
@@ -58,7 +58,10 @@ const Footer = () => {
                             <h6 className='font-bold font-mono'>CAREERS</h6>
                             <hr className='border'></hr>
                         </div>
-                        <Link to='' className='link link-hover'>Recent Jobs</Link>
+                        <div className='flex flex-col items-start'>
+                            <Link to='/careers/company-career' className='link link-hover'>Company career</Link>
+                            <Link to='/careers/career-opportunities' className='link link-hover'>career Opportunities</Link>
+                        </div>
                     </div>
                     <div className='lg:block hidden'>
                         <div className='mb-5'>
@@ -66,7 +69,7 @@ const Footer = () => {
                             <hr className='border'></hr>
                         </div>
                         <div className='flex flex-col items-start'>
-                            <Link to='' className='link link-hover'>Contact Us</Link>
+                            <Link to='/contact-us' className='link link-hover'>Contact Us</Link>
                         </div>
                     </div>
                     <div className='get-touch'>
