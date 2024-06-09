@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 import { FaChevronRight } from 'react-icons/fa';
 import CoverBanner from '../../Components/CoverBanner/CoverBanner';
 
 const Products = () => {
     const location = useLocation();
     const [selected, setSelected] = useState('');
+    const { category } = useParams();
 
     useEffect(() => {
         if (location.pathname.includes('/products/imported-products')) {
@@ -28,7 +29,14 @@ const Products = () => {
                         ?
                         "Imported Products"
                         :
-                        "Categories"
+                        (
+                            location.pathname.includes('/products/categories')
+                                ?
+                                "Categories"
+                                :
+                                `${category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}`
+                        )
+
                 }
                 from={"Home"}
                 to={"Products"}
