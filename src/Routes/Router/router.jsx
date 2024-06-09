@@ -16,6 +16,7 @@ import Advertisements from "../../Pages/Media/Advertisements/Advertisements";
 import NewsAndEvets from "../../Pages/Media/NewsAndEvets/NewsAndEvets";
 import SingleEvent from "../../Pages/Media/SingleEvent/SingleEvent";
 import Products from "../../Layout/Products/Products";
+import ImportedProducts from "../../Pages/Products/ImportedProducts/ImportedProducts";
 
 export const router = createBrowserRouter([
     {
@@ -47,6 +48,12 @@ export const router = createBrowserRouter([
             {
                 path: '/products',
                 element: <Products />,
+                children: [
+                    {
+                        path: 'imported-products',
+                        element: <ImportedProducts />
+                    }
+                ]
             },
             {
                 path: '/imported-brands',
