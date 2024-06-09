@@ -52,7 +52,7 @@ const MyJob = () => {
     return (
         <>
             <CoverBanner
-                img={""}
+                img={"https://i.ibb.co/jgGWgz9/Home-Banner-Medicine.jpg"}
                 title={"My Jobs"}
                 from={"Home"}
                 to={"My Job"}

@@ -18,6 +18,7 @@ import SingleEvent from "../../Pages/Media/SingleEvent/SingleEvent";
 import Products from "../../Layout/Products/Products";
 import ImportedProducts from "../../Pages/Products/ImportedProducts/ImportedProducts";
 import Categories from "../../Pages/Products/Categories/Categories";
+import CategorizeProducts from "../../Pages/Products/CategorizeProducts/CategorizeProducts";
 
 export const router = createBrowserRouter([
     {
@@ -58,6 +59,10 @@ export const router = createBrowserRouter([
                         path: 'categories',
                         element: <Categories />
                     },
+                    {
+                        path: 'category/:category',
+                        element: <CategorizeProducts />
+                    }
                 ]
             },
             {

@@ -12,7 +12,7 @@ const Products = () => {
         if (location.pathname.includes('/products/imported-products')) {
             setSelected('imported-products');
         } else if (location.pathname.includes('/products/categories')) {
-            setSelected('advertisements');
+            setSelected('categories');
         }
     }, [location.pathname]);
 

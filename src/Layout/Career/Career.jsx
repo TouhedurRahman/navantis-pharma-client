@@ -22,7 +22,7 @@ const Career = () => {
     return (
         <div>
             <CoverBanner
-                img={"https://i.ibb.co/80ft98k/Contact-us-banner.jpg"}
+                img={"https://i.ibb.co/jgGWgz9/Home-Banner-Medicine.jpg"}
                 title={
                     location.pathname.includes('/careers/company-career')
                         ?
