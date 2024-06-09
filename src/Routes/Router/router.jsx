@@ -19,6 +19,7 @@ import Products from "../../Layout/Products/Products";
 import ImportedProducts from "../../Pages/Products/ImportedProducts/ImportedProducts";
 import Categories from "../../Pages/Products/Categories/Categories";
 import CategorizeProducts from "../../Pages/Products/CategorizeProducts/CategorizeProducts";
+import SingleProduct from "../../Pages/Products/SingleProduct/SingleProduct";
 
 export const router = createBrowserRouter([
     {
@@ -64,6 +65,10 @@ export const router = createBrowserRouter([
                         element: <CategorizeProducts />
                     }
                 ]
+            },
+            {
+                path: '/products/:categoty/:id',
+                element: <SingleProduct />
             },
             {
                 path: '/imported-brands',
