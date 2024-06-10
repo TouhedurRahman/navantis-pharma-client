@@ -45,7 +45,7 @@ const MyJob = () => {
             }
         }).then((result) => {
             /* Data Saved to DB*/
-            axios.post('http://localhost:5000/applications', newApplication)
+            axios.post('https://navantis-pharma-server.vercel.app/applications', newApplication)
                 .then(data => {
                     if (data.data.insertedId) {
                         reset();
