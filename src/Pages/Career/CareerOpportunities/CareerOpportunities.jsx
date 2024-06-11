@@ -2,9 +2,10 @@ import { useState } from 'react';
 import { ImSearch } from 'react-icons/im';
 import CareerCardList from '../CareerCardList/CareerCardList';
 import useCareers from '../../../Hooks/useCareers';
+import Loader from '../../../Components/Loader/Loader';
 
 const CareerOpportunities = () => {
-    const [careers] = useCareers();
+    const [careers, loading] = useCareers();
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedDepartment, setSelectedDepartment] = useState('');
     const [selectedLocation, setSelectedLocation] = useState('');
@@ -74,12 +75,20 @@ const CareerOpportunities = () => {
                     </div>
                 </div>
                 <div className='shadow-lg'>
-                    {filteredCareers.map(career =>
-                        <CareerCardList
-                            key={career._id}
-                            career={career}
-                        ></CareerCardList>
-                    )}
+                    {
+                        loading
+                            ?
+                            <Loader />
+                            :
+                            <>
+                                {filteredCareers.map(career =>
+                                    <CareerCardList
+                                        key={career._id}
+                                        career={career}
+                                    ></CareerCardList>
+                                )}
+                            </>
+                    }
                 </div>
             </div>
         </div>

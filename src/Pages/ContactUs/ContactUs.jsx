@@ -107,11 +107,11 @@ const ContactUs = () => {
                         </address>
                     </div>
                     <div className="w-1/2 flex flex-col justify-center items-center">
-                        <p className="flex justify-center items-center text-xl lg:text-2xl text-gray-600 font-bold font serif"><FaLocationDot className="mr-1" />Distribution Office</p>
+                        <p className="flex justify-center items-center text-xl lg:text-2xl text-gray-600 font-bold font serif"><FaLocationDot className="mr-1" />Warehouse Address</p>
                         <address className="my-3 text-center">
-                            59,60 North Rajashon,<br />
-                            Birulia Road, Savar,<br />
-                            Dhaka-1340, Bangladesh <br />
+                            10/A, 4/2<br />
+                            Mirpur-1<br />
+                            Dhaka-1216, Bangladesh<br />
                         </address>
                     </div>
                 </div>

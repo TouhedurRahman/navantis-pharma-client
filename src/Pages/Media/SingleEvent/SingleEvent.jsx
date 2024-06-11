@@ -5,9 +5,10 @@ import { Link, useParams } from 'react-router-dom';
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
 import ShareSocialMedia from '../../../Components/ShareSocialMedia/ShareSocialMedia';
 import CoverBanner from '../../../Components/CoverBanner/CoverBanner';
+import Loader from '../../../Components/Loader/Loader';
 
 const SingleEvent = () => {
-    const [events] = useEvents();
+    const [events, loading] = useEvents();
 
     const [currentPage, setCurrentPage] = useState(1);
 
@@ -31,7 +32,6 @@ const SingleEvent = () => {
         setCurrentPage(page);
     }
 
-
     return (
         <div>
             <CoverBanner
@@ -43,57 +43,73 @@ const SingleEvent = () => {
 
             <div className='mx-3 lg:w-[75%] lg:mx-auto mt-20 mb-10'>
                 <div className='flex flex-col lg:flex-row justify-between items-start'>
-                    <div className='w-full lg:w-[65%] p-5 pt-0'>
-                        <div className='flex justify-center items-center'>
-                            <img
-                                className='w-full h-96'
-                                src={event?.imageURL} alt="Loading" />
-                        </div>
-                        <p className='text-2xl text-[#0B5F82] font-bold font-mono mt-3'>{event?.title}</p>
-                        <p className='text-gray-800 mt-3 text-justify'>
-                            {event?.description}
-                        </p>
-                        <hr className='mt-20 w-36 border-2 border-[#0B5F82] rounded' />
-                        <div className='flex justify-between items-center'>
-                            <div>
-                                <p className='text-2xl font-mono font-extrabold mt-3 flex justify-start items-center'>
-                                    <span className='flex justify-start items-center text-[#0B5F82] mr-3'>Last Updated: </span><span className='text-[#FB923C]'>{event?.date}</span>
+                    {
+                        loading
+                            ?
+                            <div className='w-full flex justify-center items-center'>
+                                <Loader />
+                            </div>
+                            :
+                            <div className='w-full lg:w-[65%] p-5 pt-0'>
+                                <div className='flex justify-center items-center'>
+                                    <img
+                                        className='w-full h-96'
+                                        src={event?.imageURL} alt="Loading" />
+                                </div>
+                                <p className='text-2xl text-[#0B5F82] font-bold font-mono mt-3'>{event?.title}</p>
+                                <p className='text-gray-800 mt-3 text-justify'>
+                                    {event?.description}
                                 </p>
+                                <hr className='mt-20 w-36 border-2 border-[#0B5F82] rounded' />
+                                <div className='flex flex-col lg:flex-row justify-between items-center'>
+                                    <div>
+                                        <p className='text-2xl font-mono font-extrabold mt-3 flex justify-start items-center'>
+                                            <span className='flex justify-start items-center text-[#0B5F82] mr-3'>Last Updated: </span><span className='text-[#FB923C]'>{event?.date}</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <ShareSocialMedia
+                                            url={url}
+                                        />
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <ShareSocialMedia
-                                    url={url}
-                                />
-                            </div>
-                        </div>
-                    </div>
+                    }
+
                     <div className='w-full lg:w-[35%]'>
                         <p className='bg-[#0B5F82] text-xl text-white font-extrabold py-3 pl-3'>
                             Latest Events
                         </p>
-                        <div className='mt-2'>
-                            {
-                                currentEvents.map(otherEvent => (
-                                    <Link
-                                        to={`/news-events/event/${otherEvent._id}`}
-                                        key={otherEvent._id}
-                                        className='flex justify-start items-center  border-b-2 border-gray-300 hover:bg-gray-200 hover:border-b-0 hover:border-l-4 hover:border-[#0B5F82] hover:pl-2'
-                                    >
-                                        <div className='flex justify-center items-center'>
-                                            <img
-                                                src={otherEvent.imageURL}
-                                                className='w-24 h-24'
-                                                alt="Laoding..."
-                                            />
-                                        </div>
-                                        <div className='ml-2'>
-                                            <p className='text-[#0B5F82] font-semibold'>{otherEvent.title}</p>
-                                            <p className='flex justify-start items-center font bold mt-2 font-mono font-thin'>More <FaArrowRight className='ml-2 text-[#FB923C]' /></p>
-                                        </div>
-                                    </Link>
-                                ))
-                            }
-                        </div>
+                        {
+                            loading
+                                ?
+                                <Loader />
+                                :
+                                <div className='mt-2'>
+                                    {
+                                        currentEvents.map(otherEvent => (
+                                            <Link
+                                                to={`/news-events/event/${otherEvent._id}`}
+                                                key={otherEvent._id}
+                                                className='flex justify-start items-center  border-b-2 border-gray-300 hover:bg-gray-200 hover:border-b-0 hover:border-l-4 hover:border-[#0B5F82] hover:pl-2'
+                                            >
+                                                <div className='flex justify-center items-center'>
+                                                    <img
+                                                        src={otherEvent.imageURL}
+                                                        className='w-24 h-24'
+                                                        alt="Laoding..."
+                                                    />
+                                                </div>
+                                                <div className='ml-2'>
+                                                    <p className='text-[#0B5F82] font-semibold'>{otherEvent.title}</p>
+                                                    <p className='flex justify-start items-center font bold mt-2 font-mono font-thin'>More <FaArrowRight className='ml-2 text-[#FB923C]' /></p>
+                                                </div>
+                                            </Link>
+                                        ))
+                                    }
+                                </div>
+                        }
+
                         {/* Pagination */}
                         <div className="flex justify-end items-center">
                             <div

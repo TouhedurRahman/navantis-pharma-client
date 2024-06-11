@@ -6,9 +6,10 @@ import CategorizedProductcard from '../CategorizedProductcard/CategorizedProduct
 import CategorizedProductList from '../CategorizedProductList/CategorizedProductList';
 import { ImSearch } from 'react-icons/im';
 import { MdGridView, MdViewList } from 'react-icons/md';
+import Loader from '../../../Components/Loader/Loader';
 
 const CategorizeProducts = () => {
-    const [products] = useProducts();
+    const [products, loading] = useProducts();
 
     const { category } = useParams();
 
@@ -84,29 +85,41 @@ const CategorizeProducts = () => {
                         gridView
                             ?
                             <>
-                                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
-                                    {
-                                        currentProducts.map(product =>
-                                            <CategorizedProductcard
-                                                key={product._id}
-                                                product={product}
-                                            />
-                                        )
-                                    }
-                                </div>
+                                {
+                                    loading
+                                        ?
+                                        <Loader />
+                                        :
+                                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
+                                            {
+                                                currentProducts.map(product =>
+                                                    <CategorizedProductcard
+                                                        key={product._id}
+                                                        product={product}
+                                                    />
+                                                )
+                                            }
+                                        </div>
+                                }
                             </>
                             :
                             <>
-                                <div className='grid grid-cols gap-2'>
-                                    {
-                                        currentProducts.map(product =>
-                                            <CategorizedProductList
-                                                key={product._id}
-                                                product={product}
-                                            />
-                                        )
-                                    }
-                                </div>
+                                {
+                                    loading
+                                        ?
+                                        <Loader />
+                                        :
+                                        <div className='grid grid-cols gap-2'>
+                                            {
+                                                currentProducts.map(product =>
+                                                    <CategorizedProductList
+                                                        key={product._id}
+                                                        product={product}
+                                                    />
+                                                )
+                                            }
+                                        </div>
+                                }
                             </>
                     }
 

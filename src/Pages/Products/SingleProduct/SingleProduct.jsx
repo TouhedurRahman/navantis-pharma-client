@@ -11,9 +11,10 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { FaCircleLeft, FaCircleRight } from 'react-icons/fa6';
 import CoverBanner from '../../../Components/CoverBanner/CoverBanner';
+import Loader from '../../../Components/Loader/Loader';
 
 const SingleProduct = () => {
-    const [products] = useProducts();
+    const [products, loading] = useProducts();
     const { id } = useParams();
     const product = products.find(product => product._id == id);
     const url = location.pathname;
@@ -40,45 +41,53 @@ const SingleProduct = () => {
                 to={"Products"}
             />
             <div className='mx-3 lg:w-[75%] lg:mx-auto my-20'>
-                <div className='flex flex-col lg:flex-row justify-between items-start'>
-                    <div className='w-full lg:w-1/2 flex justify-center items-center'>
-                        <div className="avatar">
-                            <div className="w-full h-96 rounded">
-                                <img src={product?.imageURL} alt={product?.name} />
+                {
+                    loading
+                        ?
+                        <Loader />
+                        :
+                        <>
+                            <div className='flex flex-col lg:flex-row justify-between items-start'>
+                                <div className='w-full lg:w-1/2 flex justify-center items-center'>
+                                    <div className="avatar">
+                                        <div className="w-full h-96 rounded">
+                                            <img src={product?.imageURL} alt={product?.name} />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='w-full lg:w-1/2'>
+                                    <p className='text-2xl font-mono font-extrabold'>
+                                        {product?.name}
+                                    </p>
+                                    <p className='text-xl font-mono mt-2'>
+                                        {product?.subtitle && <p>{product?.subtitle}</p>}
+                                    </p>
+                                    <p className='my-2 border-y-2 border-y-[#0B5F82] py-3'>
+                                        {product?.usage}
+                                    </p>
+                                    <p className='text-xl font-bold'>
+                                        Description
+                                    </p>
+                                    <p className='text-justify'>
+                                        {product?.description.split('. ').map((line, index) => (
+                                            <p key={index} className="list-disc pl-4 text-justify">
+                                                • {line}{index === product.description.split('. ').length - 1 ? '' : '.'}
+                                            </p>
+                                        ))}
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className='w-full lg:w-1/2'>
-                        <p className='text-2xl font-mono font-extrabold'>
-                            {product?.name}
-                        </p>
-                        <p className='text-xl font-mono mt-2'>
-                            {product?.subtitle && <p>{product?.subtitle}</p>}
-                        </p>
-                        <p className='my-2 border-y-2 border-y-[#0B5F82] py-3'>
-                            {product?.usage}
-                        </p>
-                        <p className='text-xl font-bold'>
-                            Description
-                        </p>
-                        <p className='text-justify'>
-                            {product?.description.split('. ').map((line, index) => (
-                                <p key={index} className="list-disc pl-4 text-justify">
-                                    • {line}{index === product.description.split('. ').length - 1 ? '' : '.'}
+                            <div className='mt-10'>
+                                <p className='text-2xl font-mono font-bold'>
+                                    Apply
                                 </p>
-                            ))}
-                        </p>
-                    </div>
-                </div>
-                <div className='mt-10'>
-                    <p className='text-2xl font-mono font-bold'>
-                        Apply
-                    </p>
-                    <p className='pl-4 pt-2'>
-                        • {product?.apply}
-                    </p>
-                </div>
-                <ShareSocialMedia url={url} />
+                                <p className='pl-4 pt-2'>
+                                    • {product?.apply}
+                                </p>
+                            </div>
+                            <ShareSocialMedia url={url} />
+                        </>
+                }
                 <div className='mt-10'>
                     {similerProducts.length > 0 && (
                         <>

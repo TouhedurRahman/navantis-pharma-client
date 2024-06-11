@@ -2,9 +2,10 @@ import { useState } from 'react';
 import useEvents from '../../../Hooks/useEvents';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Loader from '../../../Components/Loader/Loader';
 
 const Events = () => {
-    const [events] = useEvents();
+    const [events, loading] = useEvents();
 
     const [currentPage, setCurrentPage] = useState(1);
 
@@ -23,22 +24,29 @@ const Events = () => {
 
     return (
         <div>
-            <div className="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-                {
-                    currentEvents.map(event => (
-                        <Link to={`/news-events/event/${event._id}`} className="bg-base-100 shadow-lg rounded-lg hover:border-2 hover:border-[#0B5F82] hover:shadow-[#FB923C]" key={event.id}>
-                            <figure><img
-                                className='w-full h-64'
-                                src={event.imageURL} alt="Loading" /></figure>
-                            <div className="card-body">
-                                <h2 className="text-xl font-bold">{event.title}</h2>
-                                <p className='text-justify'>{event.description.slice(0, 75)}...<span className='hover:link text-blue-800 font-bold'>more</span></p>
-                                <p className='text-xl font-bold text-[#FB923C] mt-5'>{event.date}</p>
-                            </div>
-                        </Link>
-                    ))
-                }
-            </div>
+            {
+                loading
+                    ?
+                    <Loader />
+                    :
+                    <div className="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                        {
+                            currentEvents.map(event => (
+                                <Link to={`/news-events/event/${event._id}`} className="bg-base-100 shadow-lg rounded-lg hover:border-2 hover:border-[#0B5F82] hover:shadow-[#FB923C]" key={event.id}>
+                                    <figure><img
+                                        className='w-full h-64'
+                                        src={event.imageURL} alt="Loading" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="text-xl font-bold">{event.title}</h2>
+                                        <p className='text-justify'>{event.description.slice(0, 75)}...<span className='hover:link text-blue-800 font-bold'>more</span></p>
+                                        <p className='text-xl font-bold text-[#FB923C] mt-5'>{event.date}</p>
+                                    </div>
+                                </Link>
+                            ))
+                        }
+                    </div>
+            }
+
             {/* Pagination */}
             <div className="flex justify-center my-10">
                 <button
