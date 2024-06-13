@@ -4,7 +4,7 @@ const useEvents = () => {
     const { data: events = [], isLoading: loading, refetch } = useQuery({
         queryKey: ['events'],
         queryFn: async () => {
-            const url = 'https://navantis-pharma-server.vercel.app/events';
+            const url = 'http://localhost:5000/events';
             const result = await fetch(url);
             return result.json();
         }

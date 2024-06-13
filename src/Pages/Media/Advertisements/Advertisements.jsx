@@ -29,7 +29,7 @@ const Advertisements = () => {
                         <div className='flex flex-col-reverse md:flex-row justify-between items-center pt-10 md:pt-0'>
                             <div className='p-5'>
                                 <p className='text-center text-xl font-bold'>
-                                    Aknet Cleansing Gel
+                                    Aknet Purifying Gel
                                 </p>
                                 <p className='text-justify'>
                                     Scrub-effect cleanser for the deep cleansing of acne-prone, seborrheic skin. Helps to reduce hyperseborrhoea and counters the formation of comedones, leaving skin smooth, fresh and clean. The product contains biodegradable microgranules.

@@ -166,7 +166,7 @@ const Navbar = () => {
                             <li>
                                 <li><Link>MEDIA</Link></li>
                                 <li><Link to='/media/news-events' reloadDocument>NEWS & EVENTS</Link></li>
-                                <li><Link to='/media/advertisement' reloadDocument>ADVERTISEMENTS</Link></li>
+                                <li><Link to='/media/advertisements' reloadDocument>ADVERTISEMENTS</Link></li>
                             </li>
 
                             <li>
