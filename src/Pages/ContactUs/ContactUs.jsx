@@ -28,7 +28,7 @@ const ContactUs = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 // get the data
-                axios.post('http://localhost:5000/queries', newQuery)
+                axios.post('https://api.navantispharma.com/queries', newQuery)
                     .then(data => {
                         if (data.data.insertedId) {
                             reset();
