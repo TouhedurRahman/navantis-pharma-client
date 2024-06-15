@@ -11,7 +11,7 @@ const CoverBanner = ({ img, title, from, to }) => {
                     </h1>
                     <div className="flex items-center mb-6">
                         <div className="w-16 h-1 bg-[#FB923C] mr-2"></div>
-                        <div className="w-96 h-1 bg-[#FB923C]"></div>
+                        <div className="w-36 md:w-64 lg:w-96 h-1 bg-[#FB923C]"></div>
                     </div>
                     <div className="text-white text-lg font-medium">
                         <p className="flex items-center">

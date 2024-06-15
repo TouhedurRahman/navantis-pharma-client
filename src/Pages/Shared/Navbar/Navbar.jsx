@@ -134,22 +134,22 @@ const Navbar = () => {
             >
                 <div className="navbar-start w-full">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden bg-gradient-to-b from-green-100 to-orange-100">
+                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden bg-white shadow-lg">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
 
                         {/***** for small screen *****/}
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white text-[#0B5F82] rounded-b-lg w-[320px] -left-5">
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 px-3 shadow bg-white text-[#0B5F82] rounded-b-lg w-[320px] -left-5">
                             <li>
-                                <li><Link reloadDocument>ABOUT US</Link></li>
+                                <li>ABOUT US</li>
                                 <ul className="p-2">
                                     <li><Link to='/about-us/company-profile' reloadDocument>COMPANY PROFILE</Link></li>
                                     <li><Link to='/about-us/leadership' reloadDocument>LEADERSHIP</Link></li>
-                                    <li><Link to='/explore' reloadDocument>OUR VALUES</Link></li>
+                                    <li><Link to='/about-us/our-values' reloadDocument>OUR VALUES</Link></li>
                                 </ul>
                             </li>
                             <li>
-                                <li><Link reloadDocument>PRODUCTS</Link></li>
+                                <li>PRODUCTS</li>
                                 <ul className="p-2">
                                     <li><Link to='/products/imported-products' reloadDocument>IMPORTED</Link></li>
                                     <li><Link to='/products/categories' reloadDocument>CATEGORIES</Link></li>
@@ -157,24 +157,27 @@ const Navbar = () => {
                             </li>
 
                             <li>
-                                <li><Link>PRODUCTS</Link></li>
+                                <li>PARTNER</li>
                                 <ul className="p-2">
                                     <li><Link to='/imported-brands' reloadDocument>FINISHED GOODS (IMPORTED BRANDS)</Link></li>
                                 </ul>
                             </li>
 
                             <li>
-                                <li><Link>MEDIA</Link></li>
-                                <li><Link to='/media/news-events' reloadDocument>NEWS & EVENTS</Link></li>
-                                <li><Link to='/media/advertisements' reloadDocument>ADVERTISEMENTS</Link></li>
+                                <li>MEDIA</li>
+                                <ul>
+                                    <li><Link to='/media/news-events' reloadDocument>NEWS & EVENTS</Link></li>
+                                    <li><Link to='/media/advertisements' reloadDocument>ADVERTISEMENTS</Link></li>
+                                </ul>
                             </li>
 
                             <li>
-                                <li><Link>CAREER</Link></li>
-                                <li><Link to='/careers/company-career' reloadDocument>COMPANY CAREER</Link></li>
-                                <li><Link to='/careers/career-opportunities' reloadDocument>CAREER OPPORTUNITIES</Link></li>
+                                <li>CAREER</li>
+                                <ul>
+                                    <li><Link to='/careers/company-career' reloadDocument>COMPANY CAREER</Link></li>
+                                    <li><Link to='/careers/career-opportunities' reloadDocument>CAREER OPPORTUNITIES</Link></li>
+                                </ul>
                             </li>
-
                             <li><Link to='/contact-us' reloadDocument>CONTACT US</Link></li>
                         </ul>
                     </div>

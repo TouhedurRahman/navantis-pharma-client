@@ -25,7 +25,7 @@ const OurObjective = () => {
     return (
         <div className="px-3 lg:px-10 my-5 mt-24 mb-10">
             <div className="w-full flex flex-col lg:flex-row justify-center lg:justify-between items-center">
-                <div className="lg:w-full lg:text-center ">
+                <div className="lg:w-full text-center ">
                     <h1 className="text-3xl font-bold text-[#0B5F82]"
                         data-aos="fade-right"
                         data-aos-duration="2000"

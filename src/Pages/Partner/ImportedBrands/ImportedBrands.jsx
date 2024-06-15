@@ -45,6 +45,21 @@ const ImportedBrands = () => {
                             </tbody>
                         </table>
                     </div>
+                    <div className="text-center md:hidden">
+                        <div className="flex justify-center items-center gap-3">
+                            <div className="avatar">
+                                <div className="w-36 h-12 mb-3">
+                                    <img src="https://i.ibb.co/Jyk902N/bionike-logo.png" alt="Loading..." />
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            ICIM International S.r.l
+                            <br />
+                            <span >An Italian pharmaceutical company founded in Milan in the 1930s</span>
+                        </p>
+                        <p>Italy</p>
+                    </div>
                     <div className="my-10">
                         <div className="text-center">
                             <p className='text-xl font-sans font-extralight'>

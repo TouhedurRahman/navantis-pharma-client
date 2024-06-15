@@ -6,9 +6,9 @@ import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 import { SiNamecheap } from "react-icons/si";
 import { FaLocationDot } from "react-icons/fa6";
 import Swal from "sweetalert2";
-import './ContactUs.css';
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import './ContactUs.css';
 
 const ContactUs = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -42,7 +42,6 @@ const ContactUs = () => {
                     });
             }
         });
-
     };
 
     return (
@@ -104,6 +103,14 @@ const ContactUs = () => {
                             59,60 North Rajashon,<br />
                             Birulia Road, Savar,<br />
                             Dhaka-1340, Bangladesh <br />
+                        </address>
+                    </div>
+                    <div className="w-1/2 flex flex-col justify-center items-center">
+                        <p className="flex justify-center items-center text-xl lg:text-2xl text-gray-600 font-bold font serif"><FaLocationDot className="mr-1" />Depot Office</p>
+                        <address className="my-3 text-center">
+                            House No - 43, Road No - 06<br />
+                            South Bishil, Mirpur-1<br />
+                            Dhaka-1216, Bangladesh<br />
                         </address>
                     </div>
                     <div className="w-1/2 flex flex-col justify-center items-center">
@@ -185,7 +192,7 @@ const ContactUs = () => {
                                     id="message"
                                     rows="4"
                                     {...register("message", { required: true })}
-                                    className={`mt-1 p-2 w-full ${errors.message ? 'border-red-500' : 'border-gray-300'} rounded-md focus:ring-indigo-500 border-2 border-[#1e1d5d] focus:outline-none focus:border-[#FB923C]`}
+                                    className={`mt-1 p-2 w-full border-[#1e1d5d] ${errors.message ? 'border-red-500' : 'border-gray-300'} rounded-md focus:ring-indigo-500 border-2  focus:outline-none focus:border-[#FB923C]`}
                                     placeholder="Your Message"
 
                                 ></textarea>

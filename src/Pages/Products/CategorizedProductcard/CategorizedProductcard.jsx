@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const CategorizedProductcard = ({ product }) => {
     return (
         <Link to={`/products/${product.category}/${product._id}`}>
-            <div className="w-full bg-base-100 hover:bg-gradient-to-r from-green-200 to-orange-100 hover:text-[#0B5F82] border-2 hover:border-[#0B5F82] shadow-xl shadow-orange-50 hover:shadow-green-50 rounded-lg">
+            <div className="w-full bg-base-100 hover:text-[#0B5F82] border-2 shadow-xl hover:shadow-[#0B5F82]">
                 <figure className="bg-white">
                     <img
                         src={product.imageURL}
