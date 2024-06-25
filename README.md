@@ -71,7 +71,7 @@ This project was developed by:
 IT Officer  
 Navantis Pharma Limited
 
-For any inquiries or support, please contact [Touhedur Rahman Khan](mailto:touhedur.cse@gmail.com).
+For any inquiries or support, please contact [Touhedur Rahman Khan](https://www.facebook.com/touhedur.cse).
 
 ---
 
