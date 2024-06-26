@@ -88,9 +88,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-between items-center text-center bg-black text-white px-20 py-5 mx-0'>
-                <p className='text-xl font-mono font-extrabold'><small>Copyright © {year} All Rights Reserved.</small></p>
-                <p className='text-xl font-mono font-extrabold hidden lg:block'><small>By Navantis Pharma Limited.</small></p>
+            <div className='flex items-center justify-center text-center bg-black text-white px-20 py-5 mx-0'>
+                <p className='text-xl font-mono font-extrabold'><small>Copyright © {year} by Navantis Pharma Ltd.</small></p>
             </div>
         </>
 

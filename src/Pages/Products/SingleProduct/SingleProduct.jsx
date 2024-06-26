@@ -91,7 +91,7 @@ const SingleProduct = () => {
                 <div className='mt-10'>
                     {similerProducts.length > 0 && (
                         <>
-                            <h2 className="w-64 px-3 pt-2 text-2xl font-semibold font-serif bg-orange-50 border-2 border-[#0B5F82] border-b-0 rounded-tr-full relative">
+                            <h2 className="w-64 px-3 pt-2 text-2xl text-white font-semibold font-serif bg-[#0B5F82] rounded-tr-full relative">
                                 Related Products
                             </h2>
                             <div className='w-full'>
