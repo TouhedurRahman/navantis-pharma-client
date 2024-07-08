@@ -4,7 +4,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import { useForm } from 'react-hook-form';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 import { SiNamecheap } from "react-icons/si";
-import { FaLocationDot } from "react-icons/fa6";
+// import { FaLocationDot } from "react-icons/fa6";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -54,7 +54,7 @@ const ContactUs = () => {
             />
 
             <div className='mx-3 lg:w-[75%] lg:mx-auto mt-20 mb-10'>
-                <div className='flex flex-col md:flex-row justify-center md:justify-start items-center'>
+                <div className='flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start'>
                     <div className="lg:w-1/2 avatar" data-aos-duration="2000">
                         <div className="w-96 h-96 rounded">
                             <img src="https://unblast.com/wp-content/uploads/2020/09/Contact-Us-Vector-Illustration-Part-02-1.jpg" />
@@ -62,10 +62,12 @@ const ContactUs = () => {
                     </div>
                     <div className='lg:w-1/2' data-aos-duration="2000">
                         <p className='mt-3 text-2xl text-gray-600 font-bold font serif'>
-                            Corporate Office
+                            {/* Corporate Office */}
+                            Registered Office
                         </p>
                         <address className='mt-3'>
-                            Haque Villa, House No-4, Block-C, Road No-3, Section-1, Kolwalapara, Mirpur-01, Dhaka-1216, Dhaka, Bangladesh.
+                            {/* Haque Villa, House No-4, Block-C, Road No-3, Section-1, Kolwalapara, Mirpur-01, Dhaka-1216, Dhaka, Bangladesh. */}
+                            59,60 North Rajashon, Birulia Road, Savar, Dhaka-1340, Bangladesh.
                         </address>
                         <hr className='mt-3 border border-[#0B5F82]' />
 
@@ -96,7 +98,7 @@ const ContactUs = () => {
                         <hr className='mt-3 border border-[#0B5F82]' />
                     </div>
                 </div>
-                <div className="my-5 flex flex-col lg:flex-row justify-between items-center">
+                {/* <div className="my-5 flex flex-col lg:flex-row justify-between items-center">
                     <div className="w-1/2 flex flex-col justify-center items-center">
                         <p className="flex justify-center items-center text-xl lg:text-2xl text-gray-600 font-bold font serif"><FaLocationDot className="mr-1" />Registered Office</p>
                         <address className="my-3 text-center">
@@ -121,7 +123,7 @@ const ContactUs = () => {
                             Dhaka-1216, Bangladesh<br />
                         </address>
                     </div>
-                </div>
+                </div> */}
                 <div className='my-3 flex flex-col lg:flex-row-reverse justify-center lg:justify-between items-center mt-10'>
                     <div>
                         <div className=" avatar">
