@@ -4,7 +4,7 @@ const CompanyProfile = () => {
     return (
         <div>
             <div className='mx-3 lg:w-[75%] lg:mx-auto mt-20 mb-36'>
-                <div className="mb-36 flex flex-col-reverse md:flex-row-reverse lg:justify-between items-center rounded-lg">
+                <div className="lg:mb-20 flex flex-col-reverse md:flex-row-reverse lg:justify-between items-center rounded-lg">
                     <div className="w-full md:w-1/2 p-5 flex justify-center items-center">
                         <p className="font-bold text-5xl">
                             Company Profile
