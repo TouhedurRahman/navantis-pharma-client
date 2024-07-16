@@ -21,19 +21,19 @@ const Footer = () => {
                     <FaTwitterSquare style={{ cursor: "pointer" }}></FaTwitterSquare>
                 </div>
             </div>
-            <div className="flex justify-center md:justify-between items-center pb-2 px-2 text-xs">
+            <div className="flex justify-center md:justify-between items-center pb-2 px-2 text-[12px] font-bold">
                 <div>
                     <p className='text-sm'><small>Copyright © {year} by Navantis Pharma Ltd.</small></p>
                 </div>
                 <div className="hidden md:flex space-x-4">
-                    <Link to='/about-us/company-profile'>
-                        Company Profile
+                    <Link to='/about-us/company-profile' className="hover:link">
+                        COMPANY PROFILE
                     </Link>
-                    <Link to='/products/imported-products'>
-                        Imported Products
+                    <Link to='/products/imported-products' className="hover:link">
+                        IMPORTED PRODUCTS
                     </Link>
-                    <Link to='/careers/career-opportunities'>
-                        Careers
+                    <Link to='/careers/career-opportunities' className="hover:link">
+                        CAREERS
                     </Link>
                 </div>
             </div>

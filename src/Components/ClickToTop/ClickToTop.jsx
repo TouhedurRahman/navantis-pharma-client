@@ -31,7 +31,7 @@ const ClickToTop = () => {
         <div
             data-aos="fade-down"
             data-aos-duration="1000"
-            className={`fixed bottom-4 right-4 transition-opacity duration-300 rounded-full ${isVisible ? 'opacity-100 shadow-lg shadow-[#FB923C]' : 'opacity-0'
+            className={`fixed bottom-4 right-4 transition-opacity duration-300 rounded-full ${isVisible ? 'opacity-100 shadow-lg shadow-blue-200' : 'opacity-0'
                 }`}
         >
             <button

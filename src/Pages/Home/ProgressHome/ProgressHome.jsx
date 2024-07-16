@@ -13,7 +13,7 @@ const ProgressHome = () => {
             </div>
             <div className="w-full md:w-1/2 p-5 flex flex-col justify-center items-start">
                 <p className="mb-3 font-bold text-2xl">
-                    Pursue Progress - Discover Extraordinary.
+                    Pursue Progress - Discover Extraordinary
                 </p>
                 <p className="mb-3 text-justify text-sm">
                     We are dedicated to continuous innovation and excellence. Our partnership with Bionike allows us to bring you cutting-edge skincare products that adhere to the highest standards of dermatological science. Experience the extraordinary with our premium solutions, crafted to enhance your well-being and confidence. Discover a new level of care with Navantis Pharma, where progress meets perfection.
