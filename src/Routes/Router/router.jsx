@@ -21,6 +21,7 @@ import Categories from "../../Pages/Products/Categories/Categories";
 import CategorizeProducts from "../../Pages/Products/CategorizeProducts/CategorizeProducts";
 import SingleProduct from "../../Pages/Products/SingleProduct/SingleProduct";
 import WhoWeAre from "../../Pages/Explore/WhoWeAre/WhoWeAre";
+import OurQuality from "../../Pages/Explore/OurQuality/OurQuality";
 
 export const router = createBrowserRouter([
     {
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
             {
                 path: "/who-we-are",
                 element: <WhoWeAre />
+            },
+            {
+                path: "/our-quality",
+                element: <OurQuality />
             },
             {
                 path: "/about-us",
