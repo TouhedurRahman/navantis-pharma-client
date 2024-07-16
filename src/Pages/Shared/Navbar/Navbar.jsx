@@ -141,14 +141,6 @@ const Navbar = () => {
                         {/***** for small screen *****/}
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 px-3 shadow bg-white text-[#0B5F82] rounded-b-lg w-[320px] -left-5">
                             <li>
-                                <li>ABOUT US</li>
-                                <ul className="p-2">
-                                    <li><Link to='/about-us/company-profile' reloadDocument>COMPANY PROFILE</Link></li>
-                                    <li><Link to='/about-us/leadership' reloadDocument>LEADERSHIP</Link></li>
-                                    <li><Link to='/about-us/our-values' reloadDocument>OUR VALUES</Link></li>
-                                </ul>
-                            </li>
-                            <li>
                                 <li>PRODUCTS</li>
                                 <ul className="p-2">
                                     <li><Link to='/products/imported-products' reloadDocument>IMPORTED</Link></li>
@@ -220,21 +212,6 @@ const Navbar = () => {
                     <div className="flex justify-end items-center">
                         <div>
                             <ul className="menu menu-horizontal z-10">
-                                <li className="relative">
-                                    <div className="group">
-                                        <span className="cursor-pointer flex justify-center items-center">
-                                            ABOUT US
-                                            <span className="text-[#0B5F82] text-xl">
-                                                <TiArrowSortedDown />
-                                            </span>
-                                        </span>
-                                        <ul className="p-2 w-[190px] absolute left-0 bg-white border border-gray-300 hidden">
-                                            <li><Link to='/about-us/company-profile' className="dropdown-link" reloadDocument>COMPANY PROFILE</Link></li>
-                                            <li><Link to='/about-us/leadership' className="dropdown-link" reloadDocument>LEADERSHIP</Link></li>
-                                            <li><Link to='/about-us/our-values' className="dropdown-link" reloadDocument>OUR VALUES</Link></li>
-                                        </ul>
-                                    </div>
-                                </li>
                                 <li className="relative">
                                     <div className="group">
                                         <span className="cursor-pointer flex justify-center items-center">
