@@ -40,7 +40,6 @@ const WhoWeAre = () => {
                     img={"https://i.ibb.co/0YCg0K4/who-we-are.jpg"}
                     title={"Who We Are"}
                 ></BannerPicText>
-
                 <div>
                     {
                         contents.map(content => (

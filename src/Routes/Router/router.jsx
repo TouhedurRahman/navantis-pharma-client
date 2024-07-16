@@ -22,6 +22,7 @@ import CategorizeProducts from "../../Pages/Products/CategorizeProducts/Categori
 import SingleProduct from "../../Pages/Products/SingleProduct/SingleProduct";
 import WhoWeAre from "../../Pages/Explore/WhoWeAre/WhoWeAre";
 import OurQuality from "../../Pages/Explore/OurQuality/OurQuality";
+import YourHealth from "../../Pages/Explore/YourHealth/YourHealth";
 
 export const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ export const router = createBrowserRouter([
             {
                 path: "/our-quality",
                 element: <OurQuality />
+            },
+            {
+                path: "/your-health",
+                element: <YourHealth />
             },
             {
                 path: "/about-us",
