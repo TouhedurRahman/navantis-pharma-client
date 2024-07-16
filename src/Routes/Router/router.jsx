@@ -22,6 +22,7 @@ import OurQuality from "../../Pages/Explore/OurQuality/OurQuality";
 import YourHealth from "../../Pages/Explore/YourHealth/YourHealth";
 import OurCommitment from "../../Pages/Explore/OurCommitment/OurCommitment";
 import Leadership from "../../Pages/AboutUs/Leadership/Leadership";
+import OurValues from "../../Pages/AboutUs/OurValues/OurValues";
 
 export const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ export const router = createBrowserRouter([
             {
                 path: "/leadership",
                 element: <Leadership />
+            },
+            {
+                path: "/our-values",
+                element: <OurValues />
             },
             {
                 path: "/who-we-are",

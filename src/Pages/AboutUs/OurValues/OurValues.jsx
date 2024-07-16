@@ -1,53 +1,48 @@
-const OurValues = () => {
-    const values = [
-        {
-            _id: 1,
-            title: "Quality",
-            description: "Quality is the cornerstone of our operations. We are committed to delivering superior skincare products that meet the highest standards of safety and efficacy. Our rigorous quality control processes encompass every stage, from sourcing premium ingredients to manufacturing and distribution. By adhering to international regulatory standards and continuously improving our practices, we ensure that our customers receive only the best. Quality at Navantis Pharma means excellence you can trust."
-        },
-        {
-            _id: 2,
-            title: "Knowledge",
-            description: "Knowledge drives our success in the skincare industry. Our team of experts stays at the forefront of dermatological science, continually expanding their understanding of skin health and innovative treatments. Through ongoing research, training, and collaboration with leading global partners like Bionike, we ensure our products are based on the latest scientific advancements. This commitment to knowledge empowers us to provide cutting-edge skincare solutions that truly benefit our customers."
-        },
-        {
-            _id: 3,
-            title: "Responsibility",
-            description: "Responsibility is at the heart of everything we do. We are dedicated to ethical business practices, environmental sustainability, and social accountability. Our commitment extends from ensuring the safety and efficacy of our skincare products to supporting the well-being of our employees and communities. By adhering to stringent regulatory standards and fostering a culture of integrity, we strive to make a positive impact and build trust with our customers and partners."
-        }
-    ]
+import LocationFooter from "../../../Components/LocationFooter/LocationFooter";
 
+const OurValues = () => {
     return (
         <div>
-            <div className='px-1 lg:px-5 lg:border-l-2 lg:border-[#0B5F82]'>
-                <div data-aos="fade-down" data-aos-duration="2000">
-                    <div className='mt-10 md:mt-0 text-center md:text-left'>
-                        <p className='text-xl  font-sans font-extralight'>
-                            OUR
-                        </p>
-                        <p className='text-2xl text-[#0B5F82] font-serif font-extrabold'>
-                            VALUES
-                        </p>
-                        <hr className='mt-3 w-36 mx-auto md:mx-0 border-2 border-[#FB923C] rounded' />
-                    </div>
-
-                    <div className='mt-5' data-aos="fade-left" data-aos-duration="2000">
-                        <div>
-                            {
-                                values.map(value => (
-                                    <div
-                                        key={value._id}
-                                        className='mb-10'
-                                    >
-                                        <p className='text-3xl text-[#0B5F82] font-serif font-extrabold'>{value.title}</p>
-                                        <p className='text-gray-700 text-justify'>{value.description}</p>
-                                    </div>
-                                ))
-                            }
+            <div className='mx-3 lg:w-[75%] lg:mx-auto mt-20 mb-36'>
+                <div className="mb-36 flex flex-col-reverse md:flex-row-reverse lg:justify-start items-start rounded-lg">
+                    <div className="w-full mx-20">
+                        <div className="mb-10">
+                            <p className='text-xl font-sans font-extralight'>
+                                OUR
+                            </p>
+                            <p className='text-2xl text-[#0B5F82] font-serif font-extrabold'>
+                                VALUES
+                            </p>
+                            <div className="flex justify-center items-center">
+                                <hr className='mt-3 w-full border border-gray-200 rounded' />
+                            </div>
                         </div>
+                        <div className="w-full">
+                            <p className="text-justify mb-10">
+                                Our values are the cornerstone of everything we do. We believe in: <br /><br />
+
+                                <span className="font-bold">Quality: </span>We uphold the highest standards of safety and efficacy, ensuring that every product we offer meets rigorous dermatological criteria.<br />
+                                <span className="font-bold">Innovation: </span>We are committed to continuous improvement and leverage cutting-edge technology to deliver exceptional skincare solutions.<br />
+                                <span className="font-bold">Integrity: </span>We operate with transparency and honesty, building trust with our customers and partners.<br />
+                                <span className="font-bold">Customer Focus: </span>Your health and satisfaction are our top priorities. We strive to understand and meet your needs with personalized care and attention.<br />
+                                <span className="font-bold">Sustainability: </span>We are dedicated to environmentally responsible practices, ensuring our operations and products are sustainable for future generations.<br /><br />
+                                These values guide us in our mission to enhance well-being and confidence through superior skincare products, making Navantis Pharma a trusted name in the industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="w-full md:w-1/2 lg:rounded-r-lg">
+                        <img
+                            src="https://i.ibb.co/jLP3Y0t/value.jpg"
+                            className="w-full h-full rounded-lg"
+                            alt="Loading"
+                        />
                     </div>
                 </div>
             </div>
+            <LocationFooter
+                from={"Home"}
+                to={"Our Values"}
+            ></LocationFooter>
         </div>
     );
 };
