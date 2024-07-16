@@ -20,6 +20,7 @@ import ImportedProducts from "../../Pages/Products/ImportedProducts/ImportedProd
 import Categories from "../../Pages/Products/Categories/Categories";
 import CategorizeProducts from "../../Pages/Products/CategorizeProducts/CategorizeProducts";
 import SingleProduct from "../../Pages/Products/SingleProduct/SingleProduct";
+import WhoWeAre from "../../Pages/Explore/WhoWeAre/WhoWeAre";
 
 export const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />
+            },
+            {
+                path: "/who-we-are",
+                element: <WhoWeAre />
             },
             {
                 path: "/about-us",
