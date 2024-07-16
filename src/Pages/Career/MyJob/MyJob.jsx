@@ -2,9 +2,10 @@ import useCareer from '../../../Hooks/useCareers';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
-import CoverBanner from '../../../Components/CoverBanner/CoverBanner';
 import axios from 'axios';
 import Loader from '../../../Components/Loader/Loader';
+import BannerOnlyText from '../../../Components/BannerOnlyText/BannerOnlyText';
+import LocationFooter from '../../../Components/LocationFooter/LocationFooter';
 
 const MyJob = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -69,23 +70,15 @@ const MyJob = () => {
 
     return (
         <>
-            <CoverBanner
-                img={"https://i.ibb.co/jgGWgz9/Home-Banner-Medicine.jpg"}
-                title={"My Jobs"}
-                from={"Home"}
-                to={"My Job"}
-            />
             {
                 loading
                     ?
                     <Loader />
                     :
-                    <div className='mx-3 lg:w-[75%] lg:mx-auto mt-20 mb-10 font-rubik'>
-                        <div className='text-center mt-5 mb-20 text-3xl font-sans font-bold'>
-                            <p>
-                                {job.designation}
-                            </p>
-                        </div>
+                    <div className='mx-3 lg:w-[75%] lg:mx-auto mb-36'>
+                        <BannerOnlyText
+                            title={job.designation}
+                        ></BannerOnlyText>
                         <div className='flex flex-col lg:flex-row justify-center items-start'>
                             <div className='w-full lg:w-1/2 p-2'>
                                 <div className='mb-10'>
@@ -151,7 +144,7 @@ const MyJob = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='w-full lg:w-1/2 p-2 border-2 shadow-lg mx-3'>
+                            <div className='w-full lg:w-1/2 p-2 lg:ml-10 border-2 shadow-lg mx-3 rounded-lg'>
                                 <div className='pb-5 text-2xl font-bold mx-3'>
                                     <p>
                                         Apply for this position
@@ -166,7 +159,7 @@ const MyJob = () => {
                                             <input
                                                 placeholder='Full name (As per NID)'
                                                 {...register('name', { required: 'Name is required' })}
-                                                className='w-full h-12 border-2 rounded-full px-3'
+                                                className='w-full h-12 border-2 rounded-lg px-3'
                                             />
                                             {errors.name && <p className='text-red-600 font-mono font-thin'>{errors.name.message}</p>}
                                         </div>
@@ -185,7 +178,7 @@ const MyJob = () => {
                                                         message: 'Invalid email address'
                                                     }
                                                 })}
-                                                className='w-full h-12 border-2 rounded-full px-3'
+                                                className='w-full h-12 border-2 rounded-lg px-3'
                                             />
                                             {errors.email && <p className='text-red-600 font-mono font-thin'>{errors.email.message}</p>}
                                         </div>
@@ -200,7 +193,7 @@ const MyJob = () => {
                                                 {...register('phone', {
                                                     required: 'Phone number is required',
                                                 })}
-                                                className='w-full h-12 border-2 rounded-full px-3'
+                                                className='w-full h-12 border-2 rounded-lg px-3'
                                             />
                                             {errors.phone && <p className='text-red-600 font-mono font-thin'>{errors.phone.message}</p>}
                                         </div>
@@ -238,7 +231,7 @@ const MyJob = () => {
                                                 type='link'
                                                 placeholder='CV/Resume Link only'
                                                 {...register('link', { required: 'Only CV/Resume Link is required' })}
-                                                className='w-full h-12 border-2 rounded-full px-3'
+                                                className='w-full h-12 border-2 rounded-lg px-3'
                                             />
                                             {errors.link && <p className='text-red-600 font-mono font-thin'>{errors.link.message}</p>}
                                         </div>
@@ -257,7 +250,7 @@ const MyJob = () => {
 
                                         <button
                                             type="submit"
-                                            className='w-36 h-16 my-10 bg-[#FB923C] text-2xl text-black font-bold py-2 px-4 rounded-full'
+                                            className='w-36 h-16 my-10 border-2 border-[#0B5F82] text-[#0B5F82] text-2xl hover:bg-[#0B5F82] hover:text-white font-bold py-2 px-4 rounded-lg'
                                         >
                                             Submit
                                         </button>
@@ -267,6 +260,10 @@ const MyJob = () => {
                         </div>
                     </div>
             }
+            <LocationFooter
+                from={"Home"}
+                to={"My Job"}
+            ></LocationFooter>
         </>
     );
 };
