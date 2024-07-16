@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../../Pages/Home/Home/Home";
 import Main from "../../Layout/Main/Main";
 import ContactUs from "../../Pages/ContactUs/ContactUs";
-import ImportedBrands from "../../Pages/Partner/ImportedBrands/ImportedBrands";
 import CompanyProfile from "../../Pages/AboutUs/CompanyProfile/CompanyProfile";
 import Career from "../../Layout/Career/Career";
 import CompanyCareer from "../../Pages/Career/CompanyCareer/CompanyCareer";
@@ -23,6 +22,7 @@ import YourHealth from "../../Pages/Explore/YourHealth/YourHealth";
 import OurCommitment from "../../Pages/Explore/OurCommitment/OurCommitment";
 import Leadership from "../../Pages/AboutUs/Leadership/Leadership";
 import OurValues from "../../Pages/AboutUs/OurValues/OurValues";
+import Partner from "../../Pages/Partner/Partner/Partner";
 
 export const router = createBrowserRouter([
     {
@@ -84,8 +84,8 @@ export const router = createBrowserRouter([
                 element: <SingleProduct />
             },
             {
-                path: '/imported-brands',
-                element: <ImportedBrands />
+                path: '/our-partner',
+                element: <Partner />
             },
             {
                 path: "/media",

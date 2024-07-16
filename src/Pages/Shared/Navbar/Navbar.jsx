@@ -148,12 +148,7 @@ const Navbar = () => {
                                 </ul>
                             </li>
 
-                            <li>
-                                <li>PARTNER</li>
-                                <ul className="p-2">
-                                    <li><Link to='/imported-brands' reloadDocument>FINISHED GOODS (IMPORTED BRANDS)</Link></li>
-                                </ul>
-                            </li>
+                            <li><Link to='/our-partner' reloadDocument>OUR PARTNER</Link></li>
 
                             <li>
                                 <li>MEDIA</li>
@@ -226,19 +221,9 @@ const Navbar = () => {
                                         </ul>
                                     </div>
                                 </li>
-                                <li className="relative">
-                                    <div className="group">
-                                        <span className="cursor-pointer flex justify-center items-center">
-                                            PARTNER
-                                            <span className="text-[#0B5F82] text-xl">
-                                                <TiArrowSortedDown />
-                                            </span>
-                                        </span>
-                                        <ul className="p-2 w-[300px] absolute left-0 bg-white border border-gray-300 hidden">
-                                            <li><Link to='/imported-brands' className="dropdown-link font-normal" reloadDocument>FINISHED GOODS (IMPORTED BRANDS)</Link></li>
-                                        </ul>
-                                    </div>
-                                </li>
+
+                                <li className="ml-3 flex justify-center items-center"><Link to='/our-partner'>OUR PARTNER</Link></li>
+
                                 <li className="relative">
                                     <div className="group">
                                         <span className="cursor-pointer  flex justify-center items-center">
