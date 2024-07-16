@@ -14,7 +14,7 @@ const Main = () => {
     }, []);
 
     return (
-        <div className="font-quicksand">
+        <div className="font-nunito">
             <Navbar />
             <Outlet />
             <Footer />

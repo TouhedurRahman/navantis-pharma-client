@@ -1,98 +1,53 @@
-import { Link } from 'react-router-dom';
-import { MdEmail } from 'react-icons/md';
-import { AiFillInstagram, AiFillYoutube } from 'react-icons/ai';
-import { FaFacebookSquare, FaTwitterSquare, FaWhatsappSquare } from 'react-icons/fa';
-import './Footer.css';
+import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebookSquare, FaTwitterSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     const today = new Date();
     const year = today.getFullYear();
 
     return (
-        <>
-            <div className='footer-container'>
-                <div className="footer-details text-white  py-5">
-                    <div className='text-center md:text-left mb-5 lg:mb-0'>
-                        <div className='mb-5'>
-                            <h6 className='font-bold font-mono'>ABOUT US</h6>
-                            <hr className='border w-24 lg:w-full mx-auto lg:mx-0'></hr>
-                        </div>
-                        <div className='flex flex-col items-center md:items-start'>
-                            <Link to='/about-us/company-profile' className='link link-hover'>Company Profile</Link>
-                            <Link to='/about-us/leadership' className='link link-hover'>Leadership</Link>
-                            <Link to='/about-us/our-values' className='link link-hover'>Our values</Link>
-                        </div>
-                    </div>
-                    <div className='text-center md:text-left mb-5 lg:mb-0'>
-                        <div className='mb-5'>
-                            <h6 className='font-bold font-mono'>PRODUCTS</h6>
-                            <hr className='border w-24 lg:w-full mx-auto lg:mx-0'></hr>
-                        </div>
-                        <div className='flex flex-col items-center md:items-start'>
-                            <Link to='/products/imported-products' className='link link-hover'>Imported</Link>
-                            <Link to='/products/categories' className='link link-hover'>Categories</Link>
-                        </div>
-                    </div>
-                    <div className='text-center md:text-left mb-5 lg:mb-0'>
-                        <div className='mb-5'>
-                            <h6 className='font-bold font-mono'>PARTNER</h6>
-                            <hr className='border w-24 lg:w-full mx-auto lg:mx-0'></hr>
-                        </div>
-                        <div className='flex flex-col items-center md:items-start'>
-                            <Link to='/imported-brands' className='link link-hover w-48'>Finished Goods (Imported Brands)</Link>
-                        </div>
-                    </div>
-                    <div className='text-center md:text-left mb-5 lg:mb-0'>
-                        <div className='mb-5'>
-                            <h6 className='font-bold font-mono'>MEDIA</h6>
-                            <hr className='border w-24 lg:w-full mx-auto lg:mx-0'></hr>
-                        </div>
-                        <div className='flex flex-col items-center md:items-start'>
-                            <Link to='/media/news-events' className='link link-hover'>News & Events</Link>
-                            <Link to='/media/advertisements' className='link link-hover'>Advertisements</Link>
-                        </div>
-                    </div>
-
-                    <div className='text-center md:text-left mb-5 lg:mb-0'>
-                        <div className='mb-5'>
-                            <h6 className='font-bold font-mono'>CAREERS</h6>
-                            <hr className='border w-24 lg:w-full mx-auto lg:mx-0'></hr>
-                        </div>
-                        <div className='flex flex-col items-center md:items-start'>
-                            <Link to='/careers/company-career' className='link link-hover'>Company career</Link>
-                            <Link to='/careers/career-opportunities' className='link link-hover'>career Opportunities</Link>
-                        </div>
-                    </div>
-                    <div className='text-center md:text-left mb-5 lg:mb-0'>
-                        <div className='mb-5'>
-                            <h6 className='font-bold font-mono'>CONTACT</h6>
-                            <hr className='border w-24 lg:w-full mx-auto lg:mx-0'></hr>
-                        </div>
-                        <div className='flex flex-col items-center md:items-start'>
-                            <Link to='/contact-us' className='link link-hover'>Contact Us</Link>
-                        </div>
-                    </div>
-                    <div className='get-touch'>
-                        <div className='mb-5'>
-                            <h6 className='font-bold font-mono'>FOLLOW US ON</h6>
-                            <hr className='border w-24 lg:w-full mx-auto lg:mx-0'></hr>
-                        </div>
-                        <div className='get-touch-icons mt-5 mb-5' style={{ fontSize: "30px" }}>
-                            <MdEmail style={{ cursor: "pointer" }}></MdEmail>
-                            <AiFillYoutube style={{ cursor: "pointer" }}></AiFillYoutube>
-                            <AiFillInstagram style={{ cursor: "pointer" }}></AiFillInstagram>
-                            <FaFacebookSquare style={{ cursor: "pointer" }}></FaFacebookSquare>
-                            <FaTwitterSquare style={{ cursor: "pointer" }}></FaTwitterSquare>
-                            <FaWhatsappSquare style={{ cursor: "pointer" }}></FaWhatsappSquare>
-                        </div>
+        <div className="bg-[#F8F8F8]">
+            <div className="py-10 flex flex-col justify-center items-center">
+                <p className="mb-2 text-2xl">
+                    STAY CONNECTED
+                </p>
+                <p className="text-sm">
+                    Follow us on Social Media for current news and patients stories
+                </p>
+                <div className='get-touch-icons mt-5 flex justify-center items-center space-x-4' style={{ fontSize: "30px" }}>
+                    <AiFillInstagram style={{ cursor: "pointer" }}></AiFillInstagram>
+                    <FaFacebookSquare style={{ cursor: "pointer" }}></FaFacebookSquare>
+                    <FaTwitterSquare style={{ cursor: "pointer" }}></FaTwitterSquare>
+                </div>
+            </div>
+            <div className="flex justify-center md:justify-between items-center pb-2 px-2 text-xs">
+                <div>
+                    <p className='text-sm'><small>Copyright © {year} by Navantis Pharma Ltd.</small></p>
+                </div>
+                <div className="hidden md:flex space-x-4">
+                    <Link to='/about-us/company-profile'>
+                        Company Profile
+                    </Link>
+                    <Link to='/products/imported-products'>
+                        Imported Products
+                    </Link>
+                    <Link to='/careers/career-opportunities'>
+                        Careers
+                    </Link>
+                </div>
+            </div>
+            <div>
+                <div className="avatar">
+                    <div className="w-[480px] lg:w-[1500px] h-[140px] rounded mx-auto">
+                        <img
+                            src="https://i.ibb.co/qJCyH3h/bottom-icons-footer.png"
+                            alt="Loading..."
+                        />
                     </div>
                 </div>
             </div>
-            <div className='flex items-center justify-center text-center bg-black text-white px-20 py-5 mx-0'>
-                <p className='text-xl font-mono font-extrabold'><small>Copyright © {year} by Navantis Pharma Ltd.</small></p>
-            </div>
-        </>
-
+        </div>
     );
 };
 
