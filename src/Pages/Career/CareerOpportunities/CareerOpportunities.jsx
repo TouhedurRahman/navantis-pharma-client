@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { ImSearch } from 'react-icons/im';
-import CareerCardList from '../CareerCardList/CareerCardList';
 import useCareers from '../../../Hooks/useCareers';
 import Loader from '../../../Components/Loader/Loader';
+import CareerCardList from '../../Career/CareerCardList/CareerCardList';
 
 const CareerOpportunities = () => {
     const [careers, loading] = useCareers();
@@ -33,7 +33,10 @@ const CareerOpportunities = () => {
 
     return (
         <div>
-            <div className='px-3 lg:px-5 mt-10 lg:mt-0 lg:border-l-2 lg:border-[#0B5F82]'>
+            <div className='px-3 lg:px-5 mt-10 lg:mt-0'>
+                <p className='text-2xl font-bold text-center mb-10'>
+                    Career Opportunities
+                </p>
                 <div>
                     <div className="flex flex-col lg:flex-row lg:justify-start items-center lg:items-start mb-10 space-x-4 space-y-4 md:space-y-0">
                         <div className='flex justify-center items-center'>
@@ -74,22 +77,27 @@ const CareerOpportunities = () => {
                         </select>
                     </div>
                 </div>
-                <div className='shadow-lg'>
+                <div>
                     {
                         loading
                             ?
                             <Loader />
                             :
-                            <>
-                                {filteredCareers.map(career =>
-                                    <CareerCardList
-                                        key={career._id}
-                                        career={career}
-                                    ></CareerCardList>
-                                )}
-                            </>
+                            <div className='shadow-lg'>
+                                <>
+                                    {
+                                        filteredCareers.map(career =>
+                                            <CareerCardList
+                                                key={career._id}
+                                                career={career}
+                                            ></CareerCardList>
+                                        )
+                                    }
+                                </>
+                            </div>
                     }
                 </div>
+
             </div>
         </div>
     );
