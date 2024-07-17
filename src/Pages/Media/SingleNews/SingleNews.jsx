@@ -26,7 +26,7 @@ const SingleNews = () => {
                                 <div className="flex flex-col-reverse md:flex-row-reverse lg:justify-between items-start rounded-lg">
                                     <div className="w-full md:w-1/2 pt-10 lg:pt-0 md:ms-10 flex flex-col justify-start items-start">
                                         <div className="mb-10">
-                                            <p className='text-2xl text-[#0B5F82] font-serif font-extrabold'>
+                                            <p className='text-2xl text-[#0B5F82] font-extrabold'>
                                                 {event.title}
                                             </p>
                                             <p className='text-xl font-sans font-extralight'>

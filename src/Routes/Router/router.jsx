@@ -59,7 +59,13 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/products',
-                element: <Products />
+                element: <Products />,
+                children: [
+                    {
+                        path: 'category/:category',
+                        element: <ImportedProducts />
+                    }
+                ]
             },
             {
                 path: '/products/:categoty/:id',

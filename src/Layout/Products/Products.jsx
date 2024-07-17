@@ -3,6 +3,7 @@ import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 import useOnlyCategories from '../../Hooks/useOnlyCategories';
 import BannerPicText from '../../Components/BannerPicText/BannerPicText';
 import LocationFooter from '../../Components/LocationFooter/LocationFooter';
+import { FaArrowRight } from 'react-icons/fa';
 
 const Products = () => {
     const location = useLocation();
@@ -31,9 +32,22 @@ const Products = () => {
                 ></BannerPicText>
 
                 <div className='mt-20 mb-10'>
-                    <p className='text-xl font-bold pb-10'>
-                        Category
-                    </p>
+                    <div className=' pb-10 flex justify-between items-center'>
+                        <p className='text-xl font-bold'>
+                            Category
+                        </p>
+                        <Link
+                            to='/products'
+                            className="my-5 flex justify-start items-center space-x-4"
+                        >
+                            <span className="font-bold hover:link">
+                                View All Products
+                            </span>
+                            <span className="mx-2 text-[#0B5F82]">
+                                <FaArrowRight />
+                            </span>
+                        </Link>
+                    </div>
                     <div className='flex flex-col md:flex-row justify-start items-start'>
                         <div className='w-full md:w-[30%]'>
                             <div className='flex justify-start items-start'>
