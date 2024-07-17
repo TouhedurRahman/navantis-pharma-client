@@ -4,6 +4,7 @@ import useOnlyCategories from '../../Hooks/useOnlyCategories';
 import BannerPicText from '../../Components/BannerPicText/BannerPicText';
 import LocationFooter from '../../Components/LocationFooter/LocationFooter';
 import { FaArrowRight } from 'react-icons/fa';
+import AllProductsList from '../../Pages/Products/AllProductsList/AllProductsList';
 
 const Products = () => {
     const location = useLocation();
@@ -49,7 +50,7 @@ const Products = () => {
                         </Link>
                     </div>
                     <div className='flex flex-col md:flex-row justify-start items-start'>
-                        <div className='w-full md:w-[30%]'>
+                        <div className={`w-full md:w-[30%] ${!location.pathname.includes(`/products/category/${category}`) && 'lg:mt-16'}`}>
                             <div className='flex justify-start items-start'>
                                 <ul className='grid grid-cols gap-3'>
                                     {
@@ -73,7 +74,17 @@ const Products = () => {
                             </div>
                         </div>
                         <div className='w-full'>
-                            <Outlet />
+                            {
+                                location.pathname.includes(`/products/category/${category}`)
+                                    ?
+                                    <>
+                                        <Outlet />
+                                    </>
+                                    :
+                                    <>
+                                        <AllProductsList />
+                                    </>
+                            }
                         </div>
                     </div>
                 </div>

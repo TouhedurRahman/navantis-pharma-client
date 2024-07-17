@@ -7,7 +7,6 @@ const ProductCard = ({ product }) => {
                 <img
                     src={product.imageURL}
                     alt="Loading..."
-                    className="rounded-l-lg"
                 />
             </div>
             <div className="w-[70%] mx-3 py-3">

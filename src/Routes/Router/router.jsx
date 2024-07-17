@@ -6,8 +6,6 @@ import CompanyProfile from "../../Pages/AboutUs/CompanyProfile/CompanyProfile";
 import MyJob from "../../Pages/Career/MyJob/MyJob";
 import Products from "../../Layout/Products/Products";
 import ImportedProducts from "../../Pages/Products/ImportedProducts/ImportedProducts";
-import Categories from "../../Pages/Products/Categories/Categories";
-import CategorizeProducts from "../../Pages/Products/CategorizeProducts/CategorizeProducts";
 import SingleProduct from "../../Pages/Products/SingleProduct/SingleProduct";
 import WhoWeAre from "../../Pages/Explore/WhoWeAre/WhoWeAre";
 import OurQuality from "../../Pages/Explore/OurQuality/OurQuality";

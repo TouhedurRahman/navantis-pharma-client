@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useProducts from "../../../Hooks/useProducts";
-import { TiArrowSortedDown } from "react-icons/ti";
 import { ImSearch } from "react-icons/im";
 import { RxCross2 } from "react-icons/rx";
 import './Navbar.css';

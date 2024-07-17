@@ -16,7 +16,8 @@ const Main = () => {
         AOS.init();
     }, []);
 
-    const productsPage = location.pathname.includes(`/products/category/${category}`);
+    const productsPage = location.pathname.includes(`/products`);
+    const productsCategoryPage = location.pathname.includes(`/products/category/${category}`);
 
     return (
         <div className="font-nunito">
@@ -25,7 +26,7 @@ const Main = () => {
             <Footer />
             <ClickToTop />
             {
-                productsPage
+                (productsPage || productsCategoryPage)
                 ||
                 <ScrollToTop />
             }
