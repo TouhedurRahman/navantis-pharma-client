@@ -1,7 +1,7 @@
 import './CareerCardList.css';
 import { Link } from 'react-router-dom';
-import { FaArrowRightLong } from 'react-icons/fa6';
 import { MdLocationOn } from 'react-icons/md';
+import { FaArrowRight } from 'react-icons/fa';
 
 const CareerCardList = ({ career }) => {
     return (
@@ -26,9 +26,13 @@ const CareerCardList = ({ career }) => {
                 <div className='w-36 flex justify-center items-center ml-1 hover:link'>
                     <Link
                         to={`/jobs/${career._id}`}
-                        className="flex justify-center items-center">
-                        <span className='flex justify-center items-center text-[#0B5F82] hover:text-[#FB923C]'>
-                            More Details <FaArrowRightLong className='ml-2 hover:link' />
+                        className="my-5 flex justify-start items-center space-x-2"
+                    >
+                        <span className="font-bold hover:link">
+                            More Details
+                        </span>
+                        <span className="text-[#0B5F82]">
+                            <FaArrowRight />
                         </span>
                     </Link>
                 </div>
