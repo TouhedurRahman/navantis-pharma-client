@@ -18,6 +18,7 @@ import OurValues from "../../Pages/AboutUs/OurValues/OurValues";
 import Partner from "../../Pages/Partner/Partner/Partner";
 import Careers from "../../Pages/Career/Careers/Careers";
 import NewsRoom from "../../Pages/Media/NewsRoom/NewsRoom";
+import SingleNews from "../../Pages/Media/SingleNews/SingleNews";
 
 export const router = createBrowserRouter([
     {
@@ -71,6 +72,10 @@ export const router = createBrowserRouter([
             {
                 path: "/news-room",
                 element: <NewsRoom />,
+            },
+            {
+                path: '/event/:id',
+                element: <SingleNews />
             },
             {
                 path: "/careers",
