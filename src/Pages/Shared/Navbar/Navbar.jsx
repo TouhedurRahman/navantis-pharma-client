@@ -140,14 +140,7 @@ const Navbar = () => {
 
                         {/***** for small screen *****/}
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 px-3 shadow bg-white text-[#0B5F82] rounded-b-lg w-[320px] -left-5">
-                            <li>
-                                <li>PRODUCTS</li>
-                                <ul className="p-2">
-                                    <li><Link to='/products/imported-products' reloadDocument>IMPORTED</Link></li>
-                                    <li><Link to='/products/categories' reloadDocument>CATEGORIES</Link></li>
-                                </ul>
-                            </li>
-
+                            <li><Link to='/products' reloadDocument>PRODUCTS</Link></li>
                             <li><Link to='/our-partner' reloadDocument>OUR PARTNER</Link></li>
                             <li><Link to='/news-room' reloadDocument>NEWS ROOM</Link></li>
                             <li><Link to='/careers' reloadDocument>CAREERS</Link></li>
@@ -193,23 +186,8 @@ const Navbar = () => {
                     <div className="flex justify-end items-center">
                         <div>
                             <ul className="menu menu-horizontal z-10">
-                                <li className="relative">
-                                    <div className="group">
-                                        <span className="cursor-pointer flex justify-center items-center">
-                                            PRODUCTS
-                                            <span className="text-[#0B5F82] text-xl">
-                                                <TiArrowSortedDown />
-                                            </span>
-                                        </span>
-                                        <ul className="p-2 w-[120px] absolute left-0 bg-white border border-gray-300 hidden">
-                                            <li><Link to='/products/imported-products' className="dropdown-link" reloadDocument>IMPORTED</Link></li>
-                                            <li><Link to='/products/categories' className="dropdown-link" reloadDocument>CATEGORIES</Link></li>
-                                        </ul>
-                                    </div>
-                                </li>
-
+                                <li className="ml-3 flex justify-center items-center"><Link to='/products'>PRODUCTS</Link></li>
                                 <li className="ml-3 flex justify-center items-center"><Link to='/our-partner'>OUR PARTNER</Link></li>
-
                                 <li className="ml-3 flex justify-center items-center"><Link to='/news-room'>NEWS ROOM</Link></li>
                                 <li className="ml-3 flex justify-center items-center"><Link to='/careers'>CAREERS</Link></li>
                                 <li className="ml-3 flex justify-center items-center"><Link to='/contact-us'>CONTACT US</Link></li>

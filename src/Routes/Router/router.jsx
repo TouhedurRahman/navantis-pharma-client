@@ -58,21 +58,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/products',
-                element: <Products />,
-                children: [
-                    {
-                        path: 'imported-products',
-                        element: <ImportedProducts />
-                    },
-                    {
-                        path: 'categories',
-                        element: <Categories />
-                    },
-                    {
-                        path: 'category/:category',
-                        element: <CategorizeProducts />
-                    }
-                ]
+                element: <Products />
             },
             {
                 path: '/products/:categoty/:id',
