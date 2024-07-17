@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import useProducts from '../../../Hooks/useProducts';
 import { useParams } from 'react-router-dom';
-import CategorizedProductcard from '../CategorizedProductcard/CategorizedProductcard';
 import ShareSocialMedia from '../../../Components/ShareSocialMedia/ShareSocialMedia';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,8 +9,9 @@ import 'swiper/css/pagination';
 
 import { Pagination } from 'swiper/modules';
 import { FaCircleLeft, FaCircleRight } from 'react-icons/fa6';
-import CoverBanner from '../../../Components/CoverBanner/CoverBanner';
 import Loader from '../../../Components/Loader/Loader';
+import ProductSlider from '../ProductSlider/ProductSlider';
+import LocationFooter from '../../../Components/LocationFooter/LocationFooter';
 
 const SingleProduct = () => {
     const [products, loading] = useProducts();
@@ -34,12 +34,6 @@ const SingleProduct = () => {
 
     return (
         <div>
-            <CoverBanner
-                img={"https://i.ibb.co/jgGWgz9/Home-Banner-Medicine.jpg"}
-                title={product?.category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
-                from={"Home"}
-                to={"Products"}
-            />
             <div className='mx-3 lg:w-[75%] lg:mx-auto my-20'>
                 {
                     loading
@@ -115,14 +109,14 @@ const SingleProduct = () => {
                                             slidesPerView: similerProducts.length > 1 ? 2 : 1,
                                         },
                                         1024: {
-                                            slidesPerView: similerProducts.length > 2 ? 3 : similerProducts.length,
+                                            slidesPerView: similerProducts.length > 2 ? 2 : similerProducts.length,
                                         },
                                     }}
                                 >
                                     <div className='mx-2 mb-10'>
                                         {similerProducts.map(product => (
                                             <SwiperSlide key={product._id}>
-                                                <CategorizedProductcard key={product._id} product={product} />
+                                                <ProductSlider key={product._id} product={product} />
                                             </SwiperSlide>
                                         ))}
                                     </div>
@@ -135,6 +129,17 @@ const SingleProduct = () => {
                     )}
                 </div>
             </div>
+            <LocationFooter
+                from={"Home"}
+                to={
+                    `Product / ${loading
+                        ?
+                        ""
+                        :
+                        `${product.forSearch}`
+                    }`
+                }
+            ></LocationFooter>
         </div>
     );
 };
