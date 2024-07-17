@@ -7,7 +7,6 @@ import Footer from '../../Pages/Shared/Footer/Footer';
 import ScrollToTop from '../../Components/ScrollToTop/ScrollToTop';
 import ClickToTop from '../../Components/ClickToTop/ClickToTop';
 
-
 const Main = () => {
     const { category } = useParams();
     const location = useLocation();
@@ -16,19 +15,16 @@ const Main = () => {
         AOS.init();
     }, []);
 
+    const homePage = location.pathname === '/';
     const productsCategoryPage = location.pathname.includes(`/products/category/${category}`);
 
     return (
         <div className="font-nunito">
-            <Navbar />
+            {!homePage && <Navbar />}
             <Outlet />
             <Footer />
             <ClickToTop />
-            {
-                productsCategoryPage
-                ||
-                <ScrollToTop />
-            }
+            {!productsCategoryPage && <ScrollToTop />}
         </div>
     );
 };

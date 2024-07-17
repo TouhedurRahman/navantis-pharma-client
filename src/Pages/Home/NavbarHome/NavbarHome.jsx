@@ -3,9 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import useProducts from "../../../Hooks/useProducts";
 import { ImSearch } from "react-icons/im";
 import { RxCross2 } from "react-icons/rx";
-import './Navbar.css';
 
-const Navbar = () => {
+const NavbarHome = () => {
     const [products] = useProducts();
 
     const [isScrolled, setIsScrolled] = useState(false);
@@ -126,10 +125,9 @@ const Navbar = () => {
     }, [searchResults, selectedIndex, navigate]);
 
     return (
-        <div className="bg-white text-[#0B5F82] font-bold">
+        <div className="text-[#0B5F82] font-bold">
             <div
-                className={`navbar z-10 px-5 lg:px-[40px] ${isScrolled ? 'fixed top-0 scroll-smooth bg-white text-[#0B5F82]' : 'bg-gray-50 text-[#0B5F82] scroll-smooth'
-                    }`}
+                className={`navbar z-10 px-5 lg:px-[40px] ${!isScrolled ? 'bg-transparent text-white scroll-smooth relative' : 'fixed top-0 scroll-smooth bg-white text-[#0B5F82]'}`}
             >
                 <div className="navbar-start w-full">
                     <div className="dropdown">
@@ -141,6 +139,7 @@ const Navbar = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
+
                         {/***** for small screen *****/}
                         <ul
                             tabIndex={0}
@@ -157,7 +156,13 @@ const Navbar = () => {
                         <Link to="/">
                             <div>
                                 <img
-                                    src="https://i.ibb.co/WHdtY9y/Logo-Navantis.png"
+                                    src={
+                                        isScrolled
+                                            ?
+                                            'https://i.ibb.co/WHdtY9y/Logo-Navantis.png'
+                                            :
+                                            'https://i.ibb.co/pfr6VxM/Logo-Navantis-png-white.png'
+                                    }
                                     className="w-[150px] lg:w-[180px] h-[40px]"
                                 />
                             </div>
@@ -166,7 +171,7 @@ const Navbar = () => {
                         {/* search icon */}
                         <div className="flex justify-end items-center">
                             <div
-                                className="flex justify-center items-center btn bg-transparent border-none"
+                                className={`flex justify-center ${!isScrolled && 'text-white'} items-center btn bg-transparent border-none`}
                                 onClick={() => document.getElementById('search_modal').showModal()}
                             >
                                 <ImSearch
@@ -183,7 +188,13 @@ const Navbar = () => {
                         <Link to="/">
                             <div>
                                 <img
-                                    src="https://i.ibb.co/WHdtY9y/Logo-Navantis.png"
+                                    src={
+                                        isScrolled
+                                            ?
+                                            'https://i.ibb.co/WHdtY9y/Logo-Navantis.png'
+                                            :
+                                            'https://i.ibb.co/pfr6VxM/Logo-Navantis-png-white.png'
+                                    }
                                     className="w-[150px] lg:w-[180px] h-[40px]"
                                 />
                             </div>
@@ -203,7 +214,7 @@ const Navbar = () => {
                         {/* search icon */}
                         <div className="flex justify-end items-center">
                             <div
-                                className="flex justify-center items-center btn bg-transparent border-none"
+                                className={`flex justify-center ${!isScrolled && 'text-white'} items-center btn bg-transparent border-none`}
                                 onClick={() => document.getElementById('search_modal').showModal()}
                             >
                                 <ImSearch
@@ -275,8 +286,8 @@ const Navbar = () => {
                     </div>
                 </div>
             </dialog>
-        </div>
+        </div >
     );
 };
 
-export default Navbar;
+export default NavbarHome;
