@@ -50,7 +50,7 @@ const Products = () => {
                         </Link>
                     </div>
                     <div className='flex flex-col md:flex-row justify-start items-start'>
-                        <div className={`w-full md:w-[30%] ${!location.pathname.includes(`/products/category/${category}`) && 'lg:mt-16'}`}>
+                        <div className="w-full md:w-[30%] lg:mt-16">
                             <div className='flex justify-start items-start'>
                                 <ul className='grid grid-cols gap-3'>
                                     {
