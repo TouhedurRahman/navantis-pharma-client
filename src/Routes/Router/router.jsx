@@ -4,10 +4,6 @@ import Main from "../../Layout/Main/Main";
 import ContactUs from "../../Pages/ContactUs/ContactUs";
 import CompanyProfile from "../../Pages/AboutUs/CompanyProfile/CompanyProfile";
 import MyJob from "../../Pages/Career/MyJob/MyJob";
-import Media from "../../Layout/Media/Media";
-import Advertisements from "../../Pages/Media/Advertisements/Advertisements";
-import NewsAndEvets from "../../Pages/Media/NewsAndEvets/NewsAndEvets";
-import SingleEvent from "../../Pages/Media/SingleEvent/SingleEvent";
 import Products from "../../Layout/Products/Products";
 import ImportedProducts from "../../Pages/Products/ImportedProducts/ImportedProducts";
 import Categories from "../../Pages/Products/Categories/Categories";
@@ -21,6 +17,7 @@ import Leadership from "../../Pages/AboutUs/Leadership/Leadership";
 import OurValues from "../../Pages/AboutUs/OurValues/OurValues";
 import Partner from "../../Pages/Partner/Partner/Partner";
 import Careers from "../../Pages/Career/Careers/Careers";
+import NewsRoom from "../../Pages/Media/NewsRoom/NewsRoom";
 
 export const router = createBrowserRouter([
     {
@@ -86,23 +83,8 @@ export const router = createBrowserRouter([
                 element: <Partner />
             },
             {
-                path: "/media",
-                element: <Media />,
-                children: [
-                    {
-                        path: "news-events",
-                        element: <NewsAndEvets />
-                    },
-                    {
-                        path: "advertisements",
-                        element: <Advertisements />
-                    }
-
-                ]
-            },
-            {
-                path: "news-events/event/:id",
-                element: <SingleEvent />
+                path: "/news-room",
+                element: <NewsRoom />,
             },
             {
                 path: "/careers",

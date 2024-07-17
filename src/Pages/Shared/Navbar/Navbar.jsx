@@ -149,15 +149,7 @@ const Navbar = () => {
                             </li>
 
                             <li><Link to='/our-partner' reloadDocument>OUR PARTNER</Link></li>
-
-                            <li>
-                                <li>MEDIA</li>
-                                <ul>
-                                    <li><Link to='/media/news-events' reloadDocument>NEWS & EVENTS</Link></li>
-                                    <li><Link to='/media/advertisements' reloadDocument>ADVERTISEMENTS</Link></li>
-                                </ul>
-                            </li>
-
+                            <li><Link to='/news-room' reloadDocument>NEWS ROOM</Link></li>
                             <li><Link to='/careers' reloadDocument>CAREERS</Link></li>
                             <li><Link to='/contact-us' reloadDocument>CONTACT US</Link></li>
                         </ul>
@@ -218,20 +210,7 @@ const Navbar = () => {
 
                                 <li className="ml-3 flex justify-center items-center"><Link to='/our-partner'>OUR PARTNER</Link></li>
 
-                                <li className="relative">
-                                    <div className="group">
-                                        <span className="cursor-pointer  flex justify-center items-center">
-                                            MEDIA
-                                            <span className="text-[#0B5F82] text-xl">
-                                                <TiArrowSortedDown />
-                                            </span>
-                                        </span>
-                                        <ul className="p-2 w-[175px] absolute left-0 bg-white border border-gray-300 hidden">
-                                            <li><Link to='/media/news-events' className="dropdown-link" reloadDocument>NEWS & EVENTS</Link></li>
-                                            <li><Link to='/media/advertisements' className="dropdown-link" reloadDocument>ADVERTISEMENTS</Link></li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <li className="ml-3 flex justify-center items-center"><Link to='/news-room'>NEWS ROOM</Link></li>
                                 <li className="ml-3 flex justify-center items-center"><Link to='/careers'>CAREERS</Link></li>
                                 <li className="ml-3 flex justify-center items-center"><Link to='/contact-us'>CONTACT US</Link></li>
                             </ul>
