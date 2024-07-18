@@ -3,16 +3,14 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import useProducts from "../../../Hooks/useProducts";
 import { ImSearch } from "react-icons/im";
 import { RxCross2 } from "react-icons/rx";
+import classNames from "classnames"; // Import classnames
 
 const NavbarHome = () => {
     const [products] = useProducts();
-
     const [isScrolled, setIsScrolled] = useState(false);
-
     const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [searchText, setSearchText] = useState("");
-
     const [selectedIndex, setSelectedIndex] = useState(-1);
     const navigate = useNavigate();
     const modalBoxRef = useRef(null);
@@ -23,17 +21,14 @@ const NavbarHome = () => {
             const scrolled = scrollTop > 0;
             setIsScrolled(scrolled);
         };
-        // Add scroll event listener when component mounts
-        window.addEventListener('scroll', handleScroll);
 
-        // Remove scroll event listener when component unmounts
+        window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
     useEffect(() => {
-        // Filter products based on search term
         const filtered = products.filter(product =>
             product.forSearch.toLowerCase().includes(searchTerm.toLowerCase())
         );
@@ -67,7 +62,7 @@ const NavbarHome = () => {
             const links = details.querySelectorAll('.dropdown-link');
             links.forEach(link => {
                 link.addEventListener('click', (event) => {
-                    event.stopPropagation(); // Prevent details from closing
+                    event.stopPropagation();
                 });
             });
 
@@ -78,7 +73,6 @@ const NavbarHome = () => {
             });
         });
 
-        // Cleanup event listeners on component unmount
         return () => {
             detailsElements.forEach(details => {
                 const links = details.querySelectorAll('.dropdown-link');
@@ -91,9 +85,9 @@ const NavbarHome = () => {
     }, [location]);
 
     useEffect(() => {
-        const maxHeight = 80; // Max height in vh
-        const minHeight = 13; // Height to fit only the search bar
-        const itemHeight = 6; // Height per item in vh
+        const maxHeight = 80;
+        const minHeight = 13;
+        const itemHeight = 6;
 
         const calculatedHeight = searchText.length === 0
             ? minHeight
@@ -127,7 +121,13 @@ const NavbarHome = () => {
     return (
         <div className="text-black font-bold">
             <div
-                className={`navbar z-10 px-5 lg:px-[40px] ${!isScrolled ? 'bg-transparent text-white scroll-smooth relative' : 'fixed top-0 scroll-smooth bg-white text-black'}`}
+                className={classNames(
+                    "navbar z-10 px-5 lg:px-[40px] transition-all duration-300 ease-in-out",
+                    {
+                        "bg-transparent text-white scroll-smooth relative": !isScrolled,
+                        "fixed top-0 scroll-smooth bg-white text-black shadow-lg": isScrolled,
+                    }
+                )}
             >
                 <div className="navbar-start w-full">
                     <div className="dropdown">
@@ -140,7 +140,6 @@ const NavbarHome = () => {
                             </svg>
                         </div>
 
-                        {/***** for small screen *****/}
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content mt-3 z-10 p-4 shadow-lg bg-white text-black w-[280px] left-0 right-0 mx-auto rounded-lg space-y-2"
@@ -168,7 +167,6 @@ const NavbarHome = () => {
                             </div>
                         </Link>
 
-                        {/* search icon */}
                         <div className="flex justify-end items-center">
                             <div
                                 className={`flex justify-center ${!isScrolled && 'text-white'} items-center btn bg-transparent border-none`}
@@ -182,7 +180,6 @@ const NavbarHome = () => {
                     </div>
                 </div>
 
-                {/***** for large screen *****/}
                 <div className="navbar-center hidden lg:flex justify-between items-center w-full">
                     <div>
                         <Link to="/">
@@ -211,7 +208,6 @@ const NavbarHome = () => {
                             </ul>
                         </div>
 
-                        {/* search icon */}
                         <div className="flex justify-end items-center">
                             <div
                                 className={`flex justify-center ${!isScrolled && 'text-white'} items-center btn bg-transparent border-none`}
@@ -288,7 +284,7 @@ const NavbarHome = () => {
                     </div>
                 </div>
             </dialog>
-        </div >
+        </div>
     );
 };
 
