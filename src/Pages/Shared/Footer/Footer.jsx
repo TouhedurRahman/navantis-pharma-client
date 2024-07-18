@@ -12,7 +12,7 @@ const Footer = () => {
                 <p className="mb-2 text-2xl">
                     STAY CONNECTED
                 </p>
-                <p className="text-sm">
+                <p className="text-sm text-center mx-3">
                     Follow us on Social Media for current news and patients stories
                 </p>
                 <div className='get-touch-icons mt-5 flex justify-center items-center space-x-4' style={{ fontSize: "30px" }}>
@@ -39,10 +39,11 @@ const Footer = () => {
             </div>
             <div>
                 <div className="avatar">
-                    <div className="w-[480px] lg:w-[1500px] h-[140px] rounded mx-auto">
+                    <div className="w-full lg:w-[1500px] h-[140px] lg:h-[140px] mx-auto overflow-hidden">
                         <img
                             src="https://i.ibb.co/8dPmXT8/fotter-bottom-icon-1500x140.png"
                             alt="Loading..."
+                            className="w-full h-full object-cover"
                         />
                     </div>
                 </div>
