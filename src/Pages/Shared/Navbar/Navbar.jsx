@@ -254,19 +254,21 @@ const Navbar = () => {
                                 <div className="absolute top-full left-0 w-full bg-white shadow-lg rounded mt-2 z-10 text-black font-normal">
                                     <ul className="divide-y divide-[#0B5F82]">
                                         {searchResults.map((product, index) => (
-                                            <li
-                                                key={product.id}
-                                                className={`py-2 px-3 cursor-pointer transition-all duration-300 ${selectedIndex === index ? 'bg-[#0B5F82] text-white font-bold' : 'hover:bg-[#0B5F82] hover:text-white hover:font-bold'
-                                                    }`}
-                                                onClick={() => {
-                                                    handleProductClick();
-                                                    document.getElementById('search_modal').close();
-                                                }}
-                                            >
+                                            <>
                                                 <Link to={`/products/${product.category}/${product._id}`}>
-                                                    {product.forSearch}
+                                                    <li
+                                                        key={product.id}
+                                                        className={`py-2 px-3 cursor-pointer transition-all duration-300 ${selectedIndex === index ? 'bg-[#0B5F82] text-white font-bold' : 'hover:bg-[#0B5F82] hover:text-white hover:font-bold'
+                                                            }`}
+                                                        onClick={() => {
+                                                            handleProductClick();
+                                                            document.getElementById('search_modal').close();
+                                                        }}
+                                                    >
+                                                        {product.forSearch}
+                                                    </li>
                                                 </Link>
-                                            </li>
+                                            </>
                                         ))}
                                     </ul>
                                 </div>
