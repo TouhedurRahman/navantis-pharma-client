@@ -125,9 +125,9 @@ const NavbarHome = () => {
     }, [searchResults, selectedIndex, navigate]);
 
     return (
-        <div className="text-[#0B5F82] font-bold">
+        <div className="text-black font-bold">
             <div
-                className={`navbar z-10 px-5 lg:px-[40px] ${!isScrolled ? 'bg-transparent text-white scroll-smooth relative' : 'fixed top-0 scroll-smooth bg-white text-[#0B5F82]'}`}
+                className={`navbar z-10 px-5 lg:px-[40px] ${!isScrolled ? 'bg-transparent text-white scroll-smooth relative' : 'fixed top-0 scroll-smooth bg-white text-black'}`}
             >
                 <div className="navbar-start w-full">
                     <div className="dropdown">
@@ -143,10 +143,10 @@ const NavbarHome = () => {
                         {/***** for small screen *****/}
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content mt-3 z-10 p-4 shadow-lg bg-white text-[#0B5F82] w-[280px] left-0 right-0 mx-auto rounded-lg space-y-2"
+                            className="menu menu-sm dropdown-content mt-3 z-10 p-4 shadow-lg bg-white text-black w-[280px] left-0 right-0 mx-auto rounded-lg space-y-2"
                         >
                             <li className="py-2 border-b"><Link to='/products' reloadDocument>PRODUCTS</Link></li>
-                            <li className="py-2 border-b"><Link to='/our-partner' reloadDocument>OUR PARTNER</Link></li>
+                            <li className="py-2 border-b"><Link to='/our-partner' reloadDocument>PARTNER</Link></li>
                             <li className="py-2 border-b"><Link to='/news-room' reloadDocument>NEWS ROOM</Link></li>
                             <li className="py-2 border-b"><Link to='/careers' reloadDocument>CAREERS</Link></li>
                             <li className="py-2"><Link to='/contact-us' reloadDocument>CONTACT US</Link></li>
@@ -204,7 +204,7 @@ const NavbarHome = () => {
                         <div>
                             <ul className="menu menu-horizontal z-10">
                                 <li className="ml-3 flex justify-center items-center"><Link to='/products'>PRODUCTS</Link></li>
-                                <li className="ml-3 flex justify-center items-center"><Link to='/our-partner'>OUR PARTNER</Link></li>
+                                <li className="ml-3 flex justify-center items-center"><Link to='/our-partner'>PARTNER</Link></li>
                                 <li className="ml-3 flex justify-center items-center"><Link to='/news-room'>NEWS ROOM</Link></li>
                                 <li className="ml-3 flex justify-center items-center"><Link to='/careers'>CAREERS</Link></li>
                                 <li className="ml-3 flex justify-center items-center"><Link to='/contact-us'>CONTACT US</Link></li>
