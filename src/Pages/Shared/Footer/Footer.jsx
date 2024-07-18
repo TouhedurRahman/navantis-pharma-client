@@ -38,8 +38,8 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <div className="avatar">
-                    <div className="w-full lg:w-[1500px] h-[140px] lg:h-[140px] mx-auto overflow-hidden">
+                <div className="avatar flex justify-center items-center">
+                    <div className="w-[400px] lg:w-[1500px] h-[140px] lg:h-[140px] mx-auto overflow-hidden">
                         <img
                             src="https://i.ibb.co/8dPmXT8/fotter-bottom-icon-1500x140.png"
                             alt="Loading..."

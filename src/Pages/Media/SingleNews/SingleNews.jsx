@@ -122,7 +122,7 @@ const SingleNews = () => {
             </div>
             <LocationFooter
                 from={"Home"}
-                to={loading || `${event.title}`}
+                to={loading ? "" : `${event.title}`}
             ></LocationFooter>
         </div >
     );
