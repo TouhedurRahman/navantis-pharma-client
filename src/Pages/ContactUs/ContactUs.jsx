@@ -89,41 +89,39 @@ const ContactUs = () => {
     };
 
     const onSubmit = data => {
-        if (captchaValue) {
-            const newQuery = {
-                name: data.fname + " " + data.lname,
-                phone: data.phone,
-                email: data.email,
-                location: data.location,
-                message: data.message
-            };
+        const newQuery = {
+            name: data.fname + " " + data.lname,
+            phone: data.phone,
+            email: data.email,
+            location: data.location,
+            message: data.message
+        };
 
-            Swal.fire({
-                title: "Are you sure?",
-                text: "You won't be able to revert this!",
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: "Yes, Submit!"
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    // get the data
-                    axios.post('https://api.navantispharma.com/queries', newQuery)
-                        .then(data => {
-                            if (data.data.insertedId) {
-                                reset();
-                                navigate('/');
-                                Swal.fire({
-                                    title: "Submitted!",
-                                    text: "We reply you as soon as possible.",
-                                    icon: "success"
-                                });
-                            }
-                        });
-                }
-            });
-        }
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, Submit!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // get the data
+                axios.post('https://api.navantispharma.com/queries', newQuery)
+                    .then(data => {
+                        if (data.data.insertedId) {
+                            reset();
+                            navigate('/');
+                            Swal.fire({
+                                title: "Submitted!",
+                                text: "We reply you as soon as possible.",
+                                icon: "success"
+                            });
+                        }
+                    });
+            }
+        });
     };
 
     return (
@@ -236,14 +234,15 @@ const ContactUs = () => {
                             {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
                         </div>
 
-                        <div className='flex justify-end items-center'>
+                        <div className='hidden'>
                             <ReCAPTCHA
                                 sitekey={RECAPTCHA_SITE_KEY}
                                 onChange={onCaptchaChange}
                             />
                         </div>
-
-                        <button type="submit" className="border border-black px-5 py-2 text-black mt-5 p-2 rounded text-xs hover:bg-[#E0E8F8] hover:border-transparent">S E N D</button>
+                        <div className='w-full flex justify-start items-center'>
+                            <button type="submit" className="border border-black px-5 py-2 text-black mt-5 p-2 rounded text-xs hover:bg-[#E0E8F8] hover:border-transparent">S E N D</button>
+                        </div>
                     </form>
                 </div>
                 <div className="mb-10">
