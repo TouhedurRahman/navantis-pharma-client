@@ -41,7 +41,7 @@ const Footer = () => {
                 <div className="avatar">
                     <div className="w-[480px] lg:w-[1500px] h-[140px] rounded mx-auto">
                         <img
-                            src="https://i.ibb.co/qJCyH3h/bottom-icons-footer.png"
+                            src="https://i.ibb.co/8dPmXT8/fotter-bottom-icon-1500x140.png"
                             alt="Loading..."
                         />
                     </div>
