@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import { Pagination } from 'swiper/modules';
+// import { Pagination } from 'swiper/modules';
 import { FaCircleLeft, FaCircleRight } from 'react-icons/fa6';
 import Loader from '../../../Components/Loader/Loader';
 import ProductSlider from '../ProductSlider/ProductSlider';
@@ -45,11 +45,15 @@ const SingleProduct = () => {
                                 <div className='w-full lg:w-1/2 flex justify-center items-center'>
                                     <div className="avatar">
                                         <div className="w-full h-96 rounded">
-                                            <img src={product?.imageURL} alt={product?.name} />
+                                            <img
+                                                src={product?.imageURL}
+                                                alt={product?.name}
+                                                className='rounded-lg'
+                                            />
                                         </div>
                                     </div>
                                 </div>
-                                <div className='w-full lg:w-1/2'>
+                                <div className='w-full pt-10 lg:pt-0 lg:w-1/2'>
                                     <p className='text-2xl font-mono font-extrabold'>
                                         {product?.name}
                                     </p>
@@ -85,11 +89,11 @@ const SingleProduct = () => {
                 <div className='mt-10'>
                     {similerProducts.length > 0 && (
                         <>
-                            <h2 className="w-64 px-3 pt-2 text-2xl text-white font-semibold font-serif bg-[#0B5F82] rounded-tr-full relative">
+                            <h2 className="pt-2 text-2xl font-bold relative">
                                 Related Products
                             </h2>
                             <div className='w-full'>
-                                <hr className="border-[#0B5F82] border-b-2" />
+                                <hr className="border-gray-500 border-b" />
                             </div>
                             <div className='flex justify-between items-center my-5'>
                                 <button onClick={goPrev} className="mr-4 text-[#0B5F82]">
@@ -98,7 +102,7 @@ const SingleProduct = () => {
                                 <Swiper
                                     spaceBetween={30}
                                     pagination={{ clickable: true }}
-                                    modules={[Pagination]}
+                                    // modules={[Pagination]}
                                     className="mySwiper"
                                     onSwiper={setSwiper}
                                     breakpoints={{

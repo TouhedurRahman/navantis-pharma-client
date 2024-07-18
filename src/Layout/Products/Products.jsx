@@ -32,8 +32,8 @@ const Products = () => {
                     title={"Imported Products"}
                 ></BannerPicText>
 
-                <div className='mt-20 mb-10'>
-                    <div className=' pb-10 flex justify-between items-center'>
+                <div className='mb-5'>
+                    <div className=' pb-10 flex flex-col-reverse lg:flex-row justify-between items-center'>
                         <p className='text-xl font-bold'>
                             Category
                         </p>
@@ -52,7 +52,7 @@ const Products = () => {
                     <div className='flex flex-col md:flex-row justify-start items-start'>
                         <div className="w-full md:w-[30%] lg:mt-16">
                             <div className='flex justify-start items-start'>
-                                <ul className='grid grid-cols gap-3'>
+                                <ul className='w-[85%] mx-auto lg:w-full grid grid-cols-3 lg:grid-cols-1 gap-3'>
                                     {
                                         onlyCategories.map(onlyCategory => (
                                             <Link

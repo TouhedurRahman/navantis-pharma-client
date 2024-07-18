@@ -26,13 +26,13 @@ const Footer = () => {
                     <p className='text-sm'><small>Copyright © {year} by Navantis Pharma Ltd.</small></p>
                 </div>
                 <div className="hidden md:flex space-x-4">
-                    <Link to='/about-us/company-profile' className="hover:link">
+                    <Link to='/company-profile' className="hover:link">
                         COMPANY PROFILE
                     </Link>
-                    <Link to='/products/imported-products' className="hover:link">
+                    <Link to='/products' className="hover:link">
                         IMPORTED PRODUCTS
                     </Link>
-                    <Link to='/careers/career-opportunities' className="hover:link">
+                    <Link to='/careers' className="hover:link">
                         CAREERS
                     </Link>
                 </div>

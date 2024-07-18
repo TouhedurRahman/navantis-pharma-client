@@ -128,7 +128,7 @@ const Navbar = () => {
     return (
         <div className="bg-white text-[#0B5F82] font-bold">
             <div
-                className={`navbar z-10 px-5 lg:px-[40px] ${isScrolled ? 'fixed top-0 scroll-smooth bg-white text-[#0B5F82]' : 'bg-gray-50 text-[#0B5F82] scroll-smooth'
+                className={`navbar z-10 px-5 lg:px-[40px] ${isScrolled ? 'fixed top-0 scroll-smooth bg-white text-[#0B5F82]' : 'text-[#0B5F82] scroll-smooth'
                     }`}
             >
                 <div className="navbar-start w-full">

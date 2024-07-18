@@ -252,7 +252,7 @@ const ContactUs = () => {
                         <span className="my-3">
                             59,60 North Rajashon,<br />
                             Birulia Road, Savar,<br />
-                            Dhaka-1340, Bangladesh <br />
+                            Dhaka-1340, Bangladesh.<br />
                         </span>
                     </div>
                     <div className="mt-5">

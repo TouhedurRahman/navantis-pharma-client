@@ -3,6 +3,7 @@ import Loader from "../../../Components/Loader/Loader";
 import { FaArrowRight } from "react-icons/fa";
 import useEvents from "../../../Hooks/useEvents";
 import ShareSocialMedia from "../../../Components/ShareSocialMedia/ShareSocialMedia";
+import LocationFooter from "../../../Components/LocationFooter/LocationFooter";
 
 const SingleNews = () => {
     const [events, loading] = useEvents();
@@ -25,18 +26,18 @@ const SingleNews = () => {
 
                                 <div className="flex flex-col-reverse md:flex-row-reverse lg:justify-between items-start rounded-lg">
                                     <div className="w-full md:w-1/2 pt-10 lg:pt-0 md:ms-10 flex flex-col justify-start items-start">
-                                        <div className="mb-10">
+                                        <div className="mb-2">
                                             <p className='text-2xl text-[#0B5F82] font-extrabold'>
                                                 {event.title}
                                             </p>
                                             <p className='text-xl font-sans font-extralight'>
                                                 {event.date}
                                             </p>
-                                            <div className="flex justify-center items-center">
-                                                <hr className='mt-3 w-full border border-gray-200 rounded' />
-                                            </div>
                                         </div>
                                         <div className="w-full">
+                                            <div className="flex justify-center items-center mb-10">
+                                                <hr className='mt-3 w-full border border-gray-200' />
+                                            </div>
                                             <p className="text-justify mb-10">
                                                 {event.description}
                                             </p>
@@ -119,7 +120,10 @@ const SingleNews = () => {
                     }
                 </div>
             </div>
-
+            <LocationFooter
+                from={"Home"}
+                to={loading || `${event.title}`}
+            ></LocationFooter>
         </div >
     );
 };

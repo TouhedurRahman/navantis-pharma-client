@@ -46,8 +46,8 @@ const ImportedProducts = () => {
         <>
             <div className='mx-3'>
                 <div className='mx-3 mt-20 md:mt-0 lg:w-full lg:mx-auto'>
-                    <div className="mb-5 flex flex-col-reverse md:flex-row justify-center md:justify-between items-center">
-                        <div className="mt-5 md:mt-0">
+                    <div className="mb-5 flex flex-col-reverse md:flex-row justify-center md:justify-end items-center">
+                        <div className="mt-5 md:mt-0 hidden">
                             <label htmlFor="productsPerPage">Show</label>
                             <select
                                 id="productsPerPage"

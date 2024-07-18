@@ -144,7 +144,7 @@ const MyJob = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='w-full lg:w-1/2 p-2 lg:ml-10 border-2 shadow-lg mx-3 rounded-lg'>
+                            <div className='w-full lg:w-1/2 p-2 lg:ml-10 border-2 shadow-lg px-3 rounded-lg'>
                                 <div className='pb-5 text-2xl font-bold mx-3'>
                                     <p>
                                         Apply for this position
@@ -250,7 +250,7 @@ const MyJob = () => {
 
                                         <button
                                             type="submit"
-                                            className='w-36 h-12 my-10 border-2 border-[#0B5F82] text-[#0B5F82] text-xl hover:bg-[#0B5F82] hover:text-white font-bold py-2 px-4 rounded'
+                                            className='w-36 h-12 my-10 border-2 border-[#0B5F82] text-black text-xl hover:bg-[#0B5F82] hover:text-white font-bold py-2 px-4 rounded'
                                         >
                                             Submit
                                         </button>
