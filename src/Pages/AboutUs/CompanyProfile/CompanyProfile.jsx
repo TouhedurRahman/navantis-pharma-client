@@ -1,25 +1,16 @@
+import BannerPicText from "../../../Components/BannerPicText/BannerPicText";
 import LocationFooter from "../../../Components/LocationFooter/LocationFooter";
 
 const CompanyProfile = () => {
     return (
         <div>
             <div className='mx-3 lg:w-[75%] lg:mx-auto mt-20 mb-36'>
-                <div className="lg:mb-20 flex flex-col-reverse md:flex-row-reverse lg:justify-between items-center rounded-lg">
-                    <div className="w-full md:w-1/2 p-5 flex justify-center items-center">
-                        <p className="font-bold text-5xl">
-                            Company Profile
-                        </p>
-                    </div>
-                    <div className="w-full md:w-1/2 lg:rounded-r-lg">
-                        <img
-                            src="https://i.ibb.co/VvqHdnV/company-profile.jpg"
-                            className="w-full h-full rounded-lg"
-                            alt="Loading"
-                        />
-                    </div>
-                </div>
+                <BannerPicText
+                    img={"https://i.ibb.co/VvqHdnV/company-profile.jpg"}
+                    title={"Company Profile"}
+                ></BannerPicText>
                 <div data-aos="fade-down" data-aos-duration="2000">
-                    <div className="my-10">
+                    <div className="mb-10">
                         <div className="text-center">
                             <p className='text-xl font-sans font-extralight'>
                                 ABOUT
