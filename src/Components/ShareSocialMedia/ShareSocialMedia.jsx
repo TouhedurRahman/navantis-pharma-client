@@ -20,21 +20,21 @@ const ShareSocialMedia = ({ url }) => {
         <div className="flex justify-center items-center my-10 lg:mb-7">
             <div className="flex items-center">
                 <IoShareSocial
-                    className='transition duration-300 ease-in-out bg-white text-gray-600 hover:text-yellow-900 border-4 border-[#080567] rounded-full p-2 border-x-0'
+                    className='transition duration-300 ease-in-out bg-white text-gray-600 hover:text-yellow-900 border-4 border-[#FFFFFF] rounded-full p-2 border-x-0'
                     size={48}
                 />
                 <FaFacebook
-                    className="cursor-pointer transition duration-300 ease-in-out bg-white text-gray-600 hover:text-blue-500 border-4 border-[#080567] rounded-full p-2 border-x-0"
+                    className="cursor-pointer transition duration-300 ease-in-out bg-white text-gray-600 hover:text-blue-500 border-4 border-[#FFFFFF] rounded-full p-2 border-x-0"
                     size={48}
                     onClick={shareOnFacebook}
                 />
                 <FaInstagram
-                    className="cursor-pointer transition duration-300 ease-in-out bg-white text-gray-600 hover:text-purple-600 border-4 border-[#080567] rounded-full p-2 border-x-0"
+                    className="cursor-pointer transition duration-300 ease-in-out bg-white text-gray-600 hover:text-purple-600 border-4 border-[#FFFFFF] rounded-full p-2 border-x-0"
                     size={48}
                     onClick={shareOnInstagram}
                 />
                 <FaXTwitter
-                    className="cursor-pointer transition duration-300 ease-in-out bg-white text-gray-600 hover:text-red-900 border-4 border-[#080567] rounded-full p-2 border-x-0"
+                    className="cursor-pointer transition duration-300 ease-in-out bg-white text-gray-600 hover:text-red-900 border-4 border-[#FFFFFF] rounded-full p-2 border-x-0"
                     size={48}
                     onClick={shareOnTwitter}
                 />
