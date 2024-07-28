@@ -4,12 +4,11 @@ import LocationFooter from "../../../Components/LocationFooter/LocationFooter";
 const Partner = () => {
     return (
         <div>
+            <BannerOnlyText
+                title={"Our Partner"}
+            ></BannerOnlyText>
             <div className="w-[93%] lg:w-[90%] mx-auto">
-                <BannerOnlyText
-                    title={"Our Partner"}
-                ></BannerOnlyText>
-
-                <div className='mx-3 lg:w-[90%] lg:mx-auto mb-36'>
+                <div className='lg:mx-auto mb-36'>
                     <div>
                         <div className="overflow-x-auto">
                             <table className="hidden md:table">
