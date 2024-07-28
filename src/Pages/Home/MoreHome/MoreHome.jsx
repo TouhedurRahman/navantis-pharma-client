@@ -60,7 +60,7 @@ const MoreHome = () => {
                                     </p>
                                     <p className="mb-10 text-justify">
                                         {
-                                            content.description.slice(0, 80)
+                                            content.description.slice(0, 90)
                                         }...
                                     </p>
                                     <Link
