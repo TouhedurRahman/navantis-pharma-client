@@ -42,7 +42,7 @@ const YourHealth = () => {
 
     return (
         <div>
-            <div className='mx-3 lg:w-[75%] lg:mx-auto mt-20 mb-10'>
+            <div className='mx-3 lg:w-[90%] lg:mx-auto mt-20 mb-10'>
                 <BannerPicText
                     img={"https://i.ibb.co/YdyXsKx/health.jpg"}
                     title={"Your Health"}

@@ -26,7 +26,7 @@ const Products = () => {
 
     return (
         <div>
-            <div className='mx-3 lg:w-[75%] lg:mx-auto mt-20 mb-36'>
+            <div className='mx-3 lg:w-[90%] lg:mx-auto mt-20 mb-36'>
                 <BannerPicText
                     img={"https://i.ibb.co/py72B1t/imported-product.jpg"}
                     title={"Imported Products"}

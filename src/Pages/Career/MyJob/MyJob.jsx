@@ -75,7 +75,7 @@ const MyJob = () => {
                     ?
                     <Loader />
                     :
-                    <div className='mx-3 lg:w-[75%] lg:mx-auto mb-36'>
+                    <div className='mx-3 lg:w-[90%] lg:mx-auto mb-36'>
                         <BannerOnlyText
                             title={job.designation}
                         ></BannerOnlyText>

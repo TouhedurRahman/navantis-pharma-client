@@ -15,7 +15,7 @@ const SingleNews = () => {
 
     return (
         <div>
-            <div className='mx-3 lg:w-[75%] lg:mx-auto my-20'>
+            <div className='mx-3 lg:w-[90%] lg:mx-auto my-20'>
                 <div>
                     {
                         loading

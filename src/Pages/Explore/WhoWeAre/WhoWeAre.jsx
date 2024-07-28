@@ -35,7 +35,7 @@ const WhoWeAre = () => {
 
     return (
         <div>
-            <div className='mx-3 lg:w-[75%] lg:mx-auto mt-20 mb-10'>
+            <div className='mx-3 lg:w-[90%] lg:mx-auto mt-20 mb-10'>
                 <BannerPicText
                     img={"https://i.ibb.co/0YCg0K4/who-we-are.jpg"}
                     title={"Who We Are"}

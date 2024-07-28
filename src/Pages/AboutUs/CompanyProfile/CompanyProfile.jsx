@@ -4,7 +4,7 @@ import LocationFooter from "../../../Components/LocationFooter/LocationFooter";
 const CompanyProfile = () => {
     return (
         <div>
-            <div className='mx-3 lg:w-[75%] lg:mx-auto mt-20 mb-36'>
+            <div className='mx-3 lg:w-[90%] lg:mx-auto mt-20 mb-36'>
                 <BannerPicText
                     img={"https://i.ibb.co/VvqHdnV/company-profile.jpg"}
                     title={"Company Profile"}

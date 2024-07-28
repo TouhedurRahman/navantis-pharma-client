@@ -3,7 +3,7 @@ import LocationFooter from "../../../Components/LocationFooter/LocationFooter";
 const Leadership = () => {
     return (
         <div>
-            <div className='mx-3 lg:w-[75%] lg:mx-auto mt-20 mb-36'>
+            <div className='mx-3 lg:w-[90%] lg:mx-auto mt-20 mb-36'>
                 <div className="mb-36 flex flex-col-reverse md:flex-row-reverse lg:justify-start items-start rounded-lg">
                     <div className="w-full mt-10 md:mt-0 md:mx-10 lg:mx-20">
                         <div className="mb-10">

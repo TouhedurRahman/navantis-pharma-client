@@ -12,7 +12,7 @@ const Home = () => {
         <div>
             <NavbarHome />
             <VideoBanner />
-            <div className="lg:w-[75%] mx-auto">
+            <div className="lg:w-[90%] mx-auto">
                 <AboutHome />
                 <LeadershipHome />
                 <ValueHome />

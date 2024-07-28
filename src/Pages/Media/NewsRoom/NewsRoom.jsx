@@ -10,7 +10,7 @@ const NewsRoom = () => {
 
     return (
         <div>
-            <div className="w-[93%] lg:w-[75%] mx-auto">
+            <div className="w-[93%] lg:w-[90%] mx-auto">
                 <BannerOnlyText
                     title={"News Room"}
                 ></BannerOnlyText>

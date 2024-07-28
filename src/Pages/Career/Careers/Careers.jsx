@@ -7,7 +7,7 @@ import CompanyCareer from "../CompanyCareer/CompanyCareer";
 const Careers = () => {
     return (
         <div>
-            <div className="w-[93%] lg:w-[75%] mx-auto">
+            <div className="w-[93%] lg:w-[90%] mx-auto">
                 <BannerOnlyText
                     title={"Careers"}
                 ></BannerOnlyText>
