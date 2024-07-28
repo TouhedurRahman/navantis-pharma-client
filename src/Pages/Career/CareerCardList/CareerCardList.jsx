@@ -5,7 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const CareerCardList = ({ career }) => {
     return (
-        <div className='flex flex-col lg:flex-row justify-between items-center p-3  bg-base-100 hover:text-[#0B5F82] border-b-2 shadow-xl shadow-orange-50 hover:shadow-green-50'>
+        <div className='flex flex-col lg:flex-row justify-between items-center p-3  bg-base-100 hover:text-[#080567] border-b-2 shadow-xl shadow-orange-50 hover:shadow-green-50'>
             <div>
                 <p className='ml-2 font-sans font-2xl font-bold'>
                     {career.designation}
@@ -31,7 +31,7 @@ const CareerCardList = ({ career }) => {
                         <span className="font-bold hover:link">
                             More Details
                         </span>
-                        <span className="text-[#0B5F82]">
+                        <span className="text-[#080567]">
                             <FaArrowRight />
                         </span>
                     </Link>

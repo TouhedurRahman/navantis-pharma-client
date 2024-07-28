@@ -63,7 +63,7 @@ const Partner = () => {
                                 <p className='text-xl font-sans font-extralight'>
                                     KNOW MORE ABOUT
                                 </p>
-                                <p className='text-2xl text-[#0B5F82] font-serif font-extrabold'>
+                                <p className='text-2xl text-[#080567] font-serif font-extrabold'>
                                     BIONIKE
                                 </p>
                                 <div className="flex justify-center items-center">

@@ -224,7 +224,7 @@ const Navbar = () => {
                 >
                     <div>
                         <div className="flex justify-center">
-                            <div className='flex justify-center items-center border-2 border-[#0B5F82] p-3 rounded-l-lg bg-[#0B5F82] text-white font-extrabold text-shadow-xl'>
+                            <div className='flex justify-center items-center border-2 border-[#080567] p-3 rounded-l-lg bg-[#080567] text-white font-extrabold text-shadow-xl'>
                                 <ImSearch />
                             </div>
                             <input
@@ -236,9 +236,9 @@ const Navbar = () => {
                                     setSearchText(e.target.value);
                                     setSelectedIndex(-1); // Reset selection when search text changes
                                 }}
-                                className="border-2 border-[#0B5F82] border-r-0 px-3 py-2 focus:outline-none focus:ring-[#0B5F82] transition duration-300"
+                                className="border-2 border-[#080567] border-r-0 px-3 py-2 focus:outline-none focus:ring-[#080567] transition duration-300"
                             />
-                            <div className='flex justify-center items-center bg-white border-2 border-[#0B5F82] border-l-0 p-3 rounded-r-lg text-[#0B5F82] font-extrabold text-shadow-xl '>
+                            <div className='flex justify-center items-center bg-white border-2 border-[#080567] border-l-0 p-3 rounded-r-lg text-[#080567] font-extrabold text-shadow-xl '>
                                 <RxCross2
                                     className="hover:text-white hover:bg-red-600 rounded-lg cursor-pointer"
                                     onClick={() => {
@@ -252,13 +252,13 @@ const Navbar = () => {
                         <div className="relative lg:px-3 z-10">
                             {searchResults.length > 0 && searchText !== "" && (
                                 <div className="absolute top-full left-0 w-full bg-white shadow-lg rounded mt-2 z-10 text-black font-normal">
-                                    <ul className="divide-y divide-[#0B5F82]">
+                                    <ul className="divide-y divide-[#080567]">
                                         {searchResults.map((product, index) => (
                                             <>
                                                 <Link to={`/products/${product.category}/${product._id}`}>
                                                     <li
                                                         key={product.id}
-                                                        className={`py-2 px-3 cursor-pointer transition-all duration-300 ${selectedIndex === index ? 'bg-[#0B5F82] text-white font-bold' : 'hover:bg-[#0B5F82] hover:text-white hover:font-bold'
+                                                        className={`py-2 px-3 cursor-pointer transition-all duration-300 ${selectedIndex === index ? 'bg-[#080567] text-white font-bold' : 'hover:bg-[#080567] hover:text-white hover:font-bold'
                                                             }`}
                                                         onClick={() => {
                                                             handleProductClick();

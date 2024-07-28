@@ -25,7 +25,7 @@ const ProgressHome = () => {
                     <span className="font-bold hover:link">
                         Explore Career Opportunities
                     </span>
-                    <span className="mx-2 text-[#0B5F82]" >
+                    <span className="mx-2 text-[#080567]" >
                         <FaExternalLinkAlt />
                     </span>
                 </Link>

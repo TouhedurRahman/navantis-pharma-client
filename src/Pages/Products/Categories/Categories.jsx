@@ -7,7 +7,7 @@ const Categories = () => {
 
     return (
         <div>
-            <div className='px-3 mt-10 md:mt-0 lg:px-5 lg:border-l-2 lg:border-[#0B5F82]'>
+            <div className='px-3 mt-10 md:mt-0 lg:px-5 lg:border-l-2 lg:border-[#080567]'>
                 {
                     loading
                         ?

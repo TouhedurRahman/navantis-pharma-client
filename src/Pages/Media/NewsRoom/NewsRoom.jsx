@@ -55,7 +55,7 @@ const NewsRoom = () => {
                                                         <span className="font-bold hover:link">
                                                             Read the event
                                                         </span>
-                                                        <span className="mx-2 text-[#0B5F82]" >
+                                                        <span className="mx-2 text-[#080567]" >
                                                             <FaArrowRight />
                                                         </span>
                                                     </Link> */}
@@ -115,7 +115,7 @@ const NewsRoom = () => {
                                                                 <span className="font-bold hover:link">
                                                                     Read the event
                                                                 </span>
-                                                                <span className="mx-2 text-[#0B5F82]" >
+                                                                <span className="mx-2 text-[#080567]" >
                                                                     <FaArrowRight />
                                                                 </span>
                                                             </Link>

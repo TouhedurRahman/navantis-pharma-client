@@ -47,7 +47,7 @@ const CareerOpportunities = () => {
                                 onChange={handleSearch}
                                 className="h-12 w-28 border-2 border-r-0 px-3 py-1 rounded-l-full focus:outline-none p-5"
                             />
-                            <div className='h-12 flex justify-center items-center border-2 border-l-0 p-3 rounded-r-full  text-[#0B5F82] font-extrabold text-shadow-xl'>
+                            <div className='h-12 flex justify-center items-center border-2 border-l-0 p-3 rounded-r-full  text-[#080567] font-extrabold text-shadow-xl'>
                                 <ImSearch />
                             </div>
                         </div>

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 import useOnlyCategories from '../../Hooks/useOnlyCategories';
-import BannerPicText from '../../Components/BannerPicText/BannerPicText';
 import LocationFooter from '../../Components/LocationFooter/LocationFooter';
 import { FaArrowRight } from 'react-icons/fa';
 import AllProductsList from '../../Pages/Products/AllProductsList/AllProductsList';
+import BannerOnlyText from '../../Components/BannerOnlyText/BannerOnlyText';
 
 const Products = () => {
     const location = useLocation();
@@ -26,12 +26,10 @@ const Products = () => {
 
     return (
         <div>
-            <div className='mx-3 lg:w-[90%] lg:mx-auto mt-20 mb-36'>
-                <BannerPicText
-                    img={"https://i.ibb.co/py72B1t/imported-product.jpg"}
-                    title={"Imported Products"}
-                ></BannerPicText>
-
+            <BannerOnlyText
+                title={"Products"}
+            ></BannerOnlyText>
+            <div className='mx-3 lg:w-[90%] lg:mx-auto mb-36'>
                 <div className='mb-5'>
                     <div className=' pb-10 flex flex-col-reverse lg:flex-row justify-between items-center'>
                         <p className='text-xl font-bold'>
@@ -44,13 +42,13 @@ const Products = () => {
                             <span className="font-bold hover:link">
                                 View All Products
                             </span>
-                            <span className="mx-2 text-[#0B5F82]">
+                            <span className="mx-2 text-[#080567]">
                                 <FaArrowRight />
                             </span>
                         </Link>
                     </div>
                     <div className='flex flex-col md:flex-row justify-start items-start'>
-                        <div className="w-full md:w-[30%] lg:mt-16">
+                        <div className="w-full md:w-[20%] lg:mt-16">
                             <div className='flex justify-start items-start'>
                                 <ul className='w-[85%] mx-auto lg:w-full grid grid-cols-3 lg:grid-cols-1 gap-3'>
                                     {
@@ -60,7 +58,7 @@ const Products = () => {
                                                 to={`/products/category/${onlyCategory.category}`}
                                             >
                                                 <li
-                                                    className={`mb-3 cursor-pointer inline-block ${selected === onlyCategory.category && 'text-[#0B5F82] font-bold border-b-2 border-[#0B5F82]'}`}
+                                                    className={`mb-3 cursor-pointer inline-block ${selected === onlyCategory.category && 'text-[#080567] font-bold border-b-2 border-[#080567]'}`}
                                                     onClick={() => handleSelection(onlyCategory.category)}
                                                 >
                                                     <div className='flex justify-start items-center'>

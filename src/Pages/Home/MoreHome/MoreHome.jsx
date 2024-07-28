@@ -70,7 +70,7 @@ const MoreHome = () => {
                                         <span className="font-bold hover:link">
                                             Read more
                                         </span>
-                                        <span className="mx-2 text-[#0B5F82]" >
+                                        <span className="mx-2 text-[#080567]" >
                                             <FaArrowRight />
                                         </span>
                                     </Link>

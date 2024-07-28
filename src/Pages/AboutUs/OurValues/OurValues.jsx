@@ -5,12 +5,12 @@ const OurValues = () => {
         <div>
             <div className='mx-3 lg:w-[90%] lg:mx-auto mt-20 mb-36'>
                 <div className="mb-36 flex flex-col-reverse md:flex-row-reverse lg:justify-start items-start rounded-lg">
-                    <div className="w-full mt-10 md:mt-0 md:mx-10 lg:mx-20">
+                    <div className="w-full mt-10 md:mt-0 md:mx-10 lg:ml-20">
                         <div className="mb-10">
                             <p className='text-xl font-sans font-extralight'>
                                 OUR
                             </p>
-                            <p className='text-2xl text-[#0B5F82] font-serif font-extrabold'>
+                            <p className='text-2xl text-[#080567] font-serif font-extrabold'>
                                 VALUES
                             </p>
                             <div className="flex justify-center items-center">

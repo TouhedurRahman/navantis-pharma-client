@@ -17,7 +17,7 @@ const ProductCard = ({ product }) => {
                 <div className="flex justify-end items-center">
                     <Link
                         to={`/products/${product.category}/${product._id}`}
-                        className="mt-2 px-5 py-2 border-2 border-[#0B5F82] text-[#0B5F82] rounded hover:bg-[#0B5F82] hover:text-white hover:border-white"
+                        className="mt-2 px-5 py-2 border-2 border-[#080567] text-[#080567] rounded hover:bg-[#080567] hover:text-white hover:border-white"
                     >
                         View
                     </Link>

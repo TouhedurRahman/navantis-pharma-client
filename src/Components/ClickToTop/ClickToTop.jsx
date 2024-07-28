@@ -35,7 +35,7 @@ const ClickToTop = () => {
                 }`}
         >
             <button
-                className="bg-[#0B5F82] text-white p-2 rounded-full focus:outline-none"
+                className="bg-[#080567] text-white p-2 rounded-full focus:outline-none"
                 onClick={scrollToTop}
             >
                 <BsFillRocketFill />

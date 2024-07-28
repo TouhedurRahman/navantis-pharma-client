@@ -10,8 +10,8 @@ import 'swiper/css/pagination';
 // import { Pagination } from 'swiper/modules';
 import { FaCircleLeft, FaCircleRight } from 'react-icons/fa6';
 import Loader from '../../../Components/Loader/Loader';
-import ProductSlider from '../ProductSlider/ProductSlider';
 import LocationFooter from '../../../Components/LocationFooter/LocationFooter';
+import ProductCard from '../ProductCard/ProductCard';
 
 const SingleProduct = () => {
     const [products, loading] = useProducts();
@@ -60,7 +60,7 @@ const SingleProduct = () => {
                                     <p className='text-xl font-mono mt-2'>
                                         {product?.subtitle && <p>{product?.subtitle}</p>}
                                     </p>
-                                    <p className='my-2 border-y-2 border-y-[#0B5F82] py-3'>
+                                    <p className='my-2 border-y-2 border-y-[#080567] py-3'>
                                         {product?.usage}
                                     </p>
                                     <p className='text-xl font-bold'>
@@ -96,7 +96,7 @@ const SingleProduct = () => {
                                 <hr className="border-gray-500 border-b" />
                             </div>
                             <div className='flex justify-between items-center my-5'>
-                                <button onClick={goPrev} className="mr-4 text-[#0B5F82]">
+                                <button onClick={goPrev} className="mr-4 text-[#080567]">
                                     <FaCircleLeft size={32} />
                                 </button>
                                 <Swiper
@@ -120,12 +120,12 @@ const SingleProduct = () => {
                                     <div className='mx-2 mb-10'>
                                         {similerProducts.map(product => (
                                             <SwiperSlide key={product._id}>
-                                                <ProductSlider key={product._id} product={product} />
+                                                <ProductCard key={product._id} product={product} />
                                             </SwiperSlide>
                                         ))}
                                     </div>
                                 </Swiper>
-                                <button onClick={goNext} className="ml-4 text-[#0B5F82]">
+                                <button onClick={goNext} className="ml-4 text-[#080567]">
                                     <FaCircleRight size={32} />
                                 </button>
                             </div>
