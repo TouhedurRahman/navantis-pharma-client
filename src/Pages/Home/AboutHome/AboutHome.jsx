@@ -8,7 +8,7 @@ const AboutHome = () => {
                     About Us
                 </p>
                 <p className="mb-3 text-justify text-sm">
-                    Welcome to Navantis Pharma Limited, your premier destination for cutting-edge derma skincare solutions in Bangladesh. We started our company in 2019 as RB Pharma Distributor then in 2024 for expanding our business. We shifted as Navantis Pharma Limited has swiftly emerged as a trusted name in the pharmaceutical industry.
+                    Welcome to Navantis Pharma Limited, your premier destination for cutting-edge derma skincare solutions in Bangladesh. We, Navantis Pharma Limited is a trusted name in the pharmaceutical industry, specializing in importing top-quality dermatological medicines from renowned international manufacturers.
                 </p>
                 <Link
                     to='/company-profile'
