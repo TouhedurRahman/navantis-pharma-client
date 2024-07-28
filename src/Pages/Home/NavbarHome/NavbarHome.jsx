@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import useProducts from "../../../Hooks/useProducts";
 import { ImSearch } from "react-icons/im";
 import { RxCross2 } from "react-icons/rx";
-import classNames from "classnames"; // Import classnames
+import classNames from "classnames";
 
 const NavbarHome = () => {
     const [products] = useProducts();

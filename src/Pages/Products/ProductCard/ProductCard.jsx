@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
                     alt="Loading..."
                 />
             </div>
-            <div className="w-[70%] mx-3">
+            <div className="w-[70%] mx-3 py-2">
                 <p className="font-bold">
                     {product.forSearch}
                 </p>
