@@ -136,7 +136,7 @@ const Navbar = () => {
                         <div
                             tabIndex={0}
                             role="button"
-                            className="btn btn-ghost lg:hidden bg-transparent shadow-lg p-2 rounded-md">
+                            className="btn btn-ghost lg:hidden bg-transparent  p-2 rounded-md">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
@@ -144,12 +144,12 @@ const Navbar = () => {
                         {/***** for small screen *****/}
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content mt-3 z-10 p-4 shadow-lg bg-white text-black w-[280px] left-0 right-0 mx-auto rounded-lg space-y-2"
+                            className="menu dropdown-content mt-3 z-10 p-4 shadow-lg bg-white text-black w-[280px] -left-5 right-0 mx-auto rounded-r-lg space-y-2"
                         >
-                            <li className="py-2 border-b"><Link to='/products' reloadDocument>PRODUCTS</Link></li>
-                            <li className="py-2 border-b"><Link to='/our-partner' reloadDocument>PARTNER</Link></li>
-                            <li className="py-2 border-b"><Link to='/news-room' reloadDocument>NEWS ROOM</Link></li>
-                            <li className="py-2 border-b"><Link to='/careers' reloadDocument>CAREERS</Link></li>
+                            <li className="py-2"><Link to='/products' reloadDocument>PRODUCTS</Link></li>
+                            <li className="py-2"><Link to='/our-partner' reloadDocument>PARTNER</Link></li>
+                            <li className="py-2"><Link to='/news-room' reloadDocument>NEWS ROOM</Link></li>
+                            <li className="py-2"><Link to='/careers' reloadDocument>CAREERS</Link></li>
                             <li className="py-2"><Link to='/contact-us' reloadDocument>CONTACT US</Link></li>
                         </ul>
                     </div>
