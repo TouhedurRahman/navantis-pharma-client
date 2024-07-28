@@ -11,7 +11,7 @@ const ProgressHome = () => {
                     alt="Loading..."
                 />
             </div>
-            <div className="w-full md:w-1/2 p-5 flex flex-col justify-center items-start">
+            <div className="w-full md:w-1/2 pt-5 lg:p-5 lg:pr-0 flex flex-col justify-center items-start">
                 <p className="mb-3 font-bold text-2xl">
                     Pursue Progress - Discover Extraordinary
                 </p>
