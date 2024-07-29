@@ -140,15 +140,24 @@ const NavbarHome = () => {
                             </svg>
                         </div>
 
+                        {/***** for small screen *****/}
                         <ul
                             tabIndex={0}
-                            className="menu dropdown-content mt-3 z-10 p-4 shadow-lg bg-white text-black w-[280px] -left-5 right-0 mx-auto rounded-r-lg space-y-2"
+                            className="dropdown-content mt-3 z-10 p-4 shadow-lg bg-white text-black w-[280px] -left-5 right-0 mx-auto rounded-r-lg space-y-4"
                         >
-                            <li className="py-2"><Link to='/products' reloadDocument>PRODUCTS</Link></li>
-                            <li className="py-2"><Link to='/our-partner' reloadDocument>PARTNER</Link></li>
-                            <li className="py-2"><Link to='/news-room' reloadDocument>NEWS ROOM</Link></li>
-                            <li className="py-2"><Link to='/careers' reloadDocument>CAREERS</Link></li>
-                            <li className="py-2"><Link to='/contact-us' reloadDocument>CONTACT US</Link></li>
+                            <li>
+                                <Link to='/products' className={`py-2 hover:text-[#080567] ${location.pathname === '/products' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`} reloadDocument>PRODUCTS</Link>
+                            </li>
+                            <li>
+                                <Link to='/our-partner' className={`py-2 hover:text-[#080567] ${location.pathname === '/our-partner' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`} reloadDocument>PARTNER</Link>
+                            </li>
+                            <li>
+                                <Link to='/news-room' className={`py-2 hover:text-[#080567] ${location.pathname === '/news-room' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`} reloadDocument>NEWS ROOM</Link>
+                            </li>
+                            <li>
+                                <Link to='/careers' className={`py-2 hover:text-[#080567] ${location.pathname === '/careers' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`} reloadDocument>CAREERS</Link>
+                            </li>
+                            <li><Link to='/contact-us' className={`py-2 hover:text-[#080567] ${location.pathname === '/contact-us' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`} reloadDocument>CONTACT US</Link></li>
                         </ul>
                     </div>
                     <div className="ml-3 w-full flex justify-between items-center lg:hidden">
@@ -169,7 +178,7 @@ const NavbarHome = () => {
 
                         <div className="flex justify-end items-center">
                             <div
-                                className={`flex justify-center ${!isScrolled && 'text-white'} items-center btn bg-transparent border-none`}
+                                className={`flex justify-center ${!isScrolled && 'text-white'} items-center btn bg-transparent border-none shadow-none`}
                                 onClick={() => document.getElementById('search_modal').showModal()}
                             >
                                 <ImSearch
@@ -199,24 +208,31 @@ const NavbarHome = () => {
                     </div>
                     <div className="flex justify-end items-center">
                         <div>
-                            <ul className="menu menu-horizontal z-10">
-                                <li className="ml-3 flex justify-center items-center"><Link to='/products'>PRODUCTS</Link></li>
-                                <li className="ml-3 flex justify-center items-center"><Link to='/our-partner'>PARTNER</Link></li>
-                                <li className="ml-3 flex justify-center items-center"><Link to='/news-room'>NEWS ROOM</Link></li>
-                                <li className="ml-3 flex justify-center items-center"><Link to='/careers'>CAREERS</Link></li>
-                                <li className="ml-3 flex justify-center items-center"><Link to='/contact-us'>CONTACT US</Link></li>
+                            <ul className="menu-horizontal z-10">
+                                <li>
+                                    <Link to='/products' className={`mx-3 ${isScrolled && 'hover:text-[#080567]'} inline-block ${location.pathname === '/products' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`}>PRODUCTS</Link>
+                                </li>
+                                <li>
+                                    <Link to='/our-partner' className={`mx-3 ${isScrolled && 'hover:text-[#080567]'} inline-block ${location.pathname === '/our-partner' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`}>PARTNER</Link>
+                                </li>
+                                <li>
+                                    <Link to='/news-room' className={`mx-3 ${isScrolled && 'hover:text-[#080567]'} inline-block ${location.pathname === '/news-room' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`}>NEWS ROOM</Link>
+                                </li>
+                                <li>
+                                    <Link to='/careers' className={`mx-3 ${isScrolled && 'hover:text-[#080567]'} inline-block ${location.pathname === '/careers' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`}>CAREERS</Link>
+                                </li>
+                                <li>
+                                    <Link to='/contact-us' className={`mx-3 ${isScrolled && 'hover:text-[#080567]'} inline-block ${location.pathname === '/contact-us' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`}>CONTACT US</Link>
+                                </li>
                             </ul>
                         </div>
-
-                        <div className="flex justify-end items-center">
-                            <div
-                                className={`flex justify-center ${!isScrolled && 'text-white'} items-center btn bg-transparent border-none`}
-                                onClick={() => document.getElementById('search_modal').showModal()}
-                            >
-                                <ImSearch
-                                    className="cursor-pointer"
-                                />
-                            </div>
+                        <div
+                            className="ml-4 bg-transparent border-none shadow-none inline-block"
+                            onClick={() => document.getElementById('search_modal').showModal()}
+                        >
+                            <ImSearch
+                                className="cursor-pointer"
+                            />
                         </div>
                     </div>
                 </div>
