@@ -38,23 +38,23 @@ const CareerOpportunities = () => {
                     Career Opportunities
                 </p>
                 <div>
-                    <div className="flex flex-col lg:flex-row lg:justify-start items-center lg:items-start mb-10 space-x-4 space-y-4 md:space-y-0">
-                        <div className='flex justify-center items-center'>
+                    <div className="flex flex-col lg:flex-row lg:justify-start items-center lg:items-start mb-10 lg:space-x-4 space-y-4 md:space-y-0">
+                        <div className='flex justify-center items-center w-full lg:w-auto'>
                             <input
                                 type="text"
-                                placeholder="Search jobs"
+                                placeholder="Search by designation"
                                 value={searchTerm}
                                 onChange={handleSearch}
-                                className="h-12 w-28 border-2 border-r-0 px-3 py-1 rounded-l-full focus:outline-none p-5"
+                                className="h-12 w-full border-2 border-r-0 px-3 py-1 rounded-l-lg focus:outline-none lg:w-52 lg:p-5"
                             />
-                            <div className='h-12 flex justify-center items-center border-2 border-l-0 p-3 rounded-r-full  text-[#080567] font-extrabold text-shadow-xl'>
+                            <div className='h-12 flex justify-center items-center border-2 border-l-0 p-3 rounded-r-lg text-[#080567] font-extrabold text-shadow-xl'>
                                 <ImSearch />
                             </div>
                         </div>
                         <select
                             value={selectedDepartment}
                             onChange={handleDepartmentChange}
-                            className="h-12 border-2 px-3 py-1 rounded-lg focus:outline-none p-5 cursor-pointer shadow-lg"
+                            className="h-12 w-full border-2 px-3 py-1 rounded-lg focus:outline-none p-5 cursor-pointer shadow-lg lg:w-auto"
                         >
                             <option value="">All Departments</option>
                             {departments.map((department, index) => (
@@ -66,7 +66,7 @@ const CareerOpportunities = () => {
                         <select
                             value={selectedLocation}
                             onChange={handleLocationChange}
-                            className="h-12 border-2 px-3 py-1 rounded-lg focus:outline-none p-5 cursor-pointer shadow-lg"
+                            className="h-12 w-full border-2 px-3 py-1 rounded-lg focus:outline-none p-5 cursor-pointer shadow-lg lg:w-auto"
                         >
                             <option value="">All Job Locations</option>
                             {locations.map((location, index) => (
