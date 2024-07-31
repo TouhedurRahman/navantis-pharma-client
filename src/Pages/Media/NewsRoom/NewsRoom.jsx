@@ -36,7 +36,11 @@ const NewsRoom = () => {
                                                     <div>
                                                         <p className=" mb-2 text-sm">
                                                             {
-                                                                event.date
+                                                                new Date(event.date).toLocaleDateString('en-US', {
+                                                                    year: 'numeric',
+                                                                    month: 'long',
+                                                                    day: 'numeric',
+                                                                })
                                                             }
                                                         </p>
                                                         <p className="text-sm">
@@ -100,7 +104,11 @@ const NewsRoom = () => {
                                                         <div>
                                                             <p className="mt-5 mb-2 text-sm">
                                                                 {
-                                                                    event.date
+                                                                    new Date(event.date).toLocaleDateString('en-US', {
+                                                                        year: 'numeric',
+                                                                        month: 'long',
+                                                                        day: 'numeric',
+                                                                    })
                                                                 }
                                                             </p>
                                                             <p className="mb-5 text-2xl font-bold">
