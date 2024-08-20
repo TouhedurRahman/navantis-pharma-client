@@ -12,7 +12,7 @@ const LeadershipHome = () => {
                     alt=""
                 />
             </div>
-            <div className="w-full md:w-1/2 pt-5 lg:p-5 lg:pr-0 flex flex-col justify-center items-start">
+            <div className="w-full md:w-1/2 pt-5 lg:p-5 lg:pr-0 md:ml-5 lg:ml-0 flex flex-col justify-center items-start">
                 <p className="mb-3 font-bold text-2xl">
                     Leadership
                 </p>

@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 const ValueHome = () => {
     return (
         <div className="m-5 my-36 flex flex-col-reverse md:flex-row lg:justify-between items-center rounded-lg">
-            <div className="w-full md:w-1/2 pt-5 lg:p-5 lg:pl-0 flex flex-col justify-center items-start">
+            <div className="w-full md:w-1/2 pt-5 lg:p-5 lg:pl-0 md:mr-5 lg:mr-0 flex flex-col justify-center items-start">
                 <p className="mb-3 font-bold text-2xl">
                     Our values
                 </p>
