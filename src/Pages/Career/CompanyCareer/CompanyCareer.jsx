@@ -1,7 +1,7 @@
 const CompanyCareer = () => {
     return (
         <div className="m-5 mt-0 flex flex-col-reverse md:flex-row-reverse lg:justify-between items-center rounded-lg">
-            <div className="w-full md:w-1/2 pt-5 lg:pl-10 flex flex-col justify-center items-start">
+            <div className="w-full md:w-1/2 pt-5 md:pl-5 lg:pl-10 flex flex-col justify-center items-start">
                 <p className="mb-3 font-bold text-2xl">
                     Why join with us
                 </p>
