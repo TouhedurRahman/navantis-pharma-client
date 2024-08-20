@@ -38,7 +38,7 @@ const CareerOpportunities = () => {
                     Career Opportunities
                 </p>
                 <div>
-                    <div className="flex flex-col lg:flex-row lg:justify-start items-center lg:items-start mb-10 lg:space-x-4 space-y-4 md:space-y-0">
+                    <div className="flex flex-col lg:flex-row lg:justify-start items-center lg:items-start mb-10 lg:space-x-4 space-y-4 lg:space-y-0">
                         <div className='flex justify-center items-center w-full lg:w-auto'>
                             <input
                                 type="text"
