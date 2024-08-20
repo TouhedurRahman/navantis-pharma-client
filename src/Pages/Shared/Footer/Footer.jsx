@@ -37,15 +37,13 @@ const Footer = () => {
                     </Link>
                 </div>
             </div>
-            <div>
-                <div className="avatar flex justify-center items-center">
-                    <div className="w-[400px] lg:w-[1500px] h-[140px] lg:h-[140px] mx-auto overflow-hidden">
-                        <img
-                            src="https://i.ibb.co/8dPmXT8/fotter-bottom-icon-1500x140.png"
-                            alt="Loading..."
-                            className="w-full h-full object-cover"
-                        />
-                    </div>
+            <div className="relative flex justify-center items-center overflow-hidden" style={{ height: '140px' }}>
+                <div className="relative w-full h-full overflow-hidden">
+                    <img
+                        src="https://i.ibb.co/8dPmXT8/fotter-bottom-icon-1500x140.png"
+                        alt="Loading..."
+                        className="absolute inset-0 w-full h-full object-cover"
+                    />
                 </div>
             </div>
         </div>
