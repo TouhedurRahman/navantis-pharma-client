@@ -24,8 +24,8 @@ const SingleNews = () => {
                             :
                             <>
 
-                                <div className="flex flex-col-reverse md:flex-row-reverse lg:justify-between items-start rounded-lg">
-                                    <div className="w-full md:w-1/2 pt-10 lg:pt-0 md:ms-10 flex flex-col justify-start items-start">
+                                <div className="flex flex-col-reverse lg:flex-row-reverse lg:justify-between items-start rounded-lg">
+                                    <div className="w-full lg:w-1/2 pt-10 lg:pt-0 lg:ms-10 flex flex-col justify-start items-start">
                                         <div className="mb-2">
                                             <p className='text-2xl text-[#080567] font-extrabold'>
                                                 {event.title}
@@ -49,7 +49,7 @@ const SingleNews = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="w-full md:w-1/2 lg:rounded-r-lg">
+                                    <div className="w-full lg:w-1/2 lg:rounded-r-lg">
                                         <img
                                             src={event.imageURL}
                                             className="w-full h-full lg:h-96 rounded-lg"
