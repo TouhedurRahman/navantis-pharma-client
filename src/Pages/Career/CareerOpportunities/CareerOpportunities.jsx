@@ -38,66 +38,81 @@ const CareerOpportunities = () => {
                     Career Opportunities
                 </p>
                 <div>
-                    <div className="flex flex-col lg:flex-row lg:justify-start items-center lg:items-start mb-10 lg:space-x-4 space-y-4 lg:space-y-0">
-                        <div className='flex justify-center items-center w-full lg:w-auto'>
-                            <input
-                                type="text"
-                                placeholder="Search by designation"
-                                value={searchTerm}
-                                onChange={handleSearch}
-                                className="h-12 w-full border-2 border-r-0 px-3 py-1 rounded-l-lg focus:outline-none lg:w-52 lg:p-5"
-                            />
-                            <div className='h-12 flex justify-center items-center border-2 border-l-0 p-3 rounded-r-lg text-[#080567] font-extrabold text-shadow-xl'>
-                                <ImSearch />
+                    {
+                        careers.length !== 0
+                        &&
+                        <div className="flex flex-col lg:flex-row lg:justify-start items-center lg:items-start mb-10 lg:space-x-4 space-y-4 lg:space-y-0">
+                            <div className='flex justify-center items-center w-full lg:w-auto'>
+                                <input
+                                    type="text"
+                                    placeholder="Search by designation"
+                                    value={searchTerm}
+                                    onChange={handleSearch}
+                                    className="h-12 w-full border-2 border-r-0 px-3 py-1 rounded-l-lg focus:outline-none lg:w-52 lg:p-5"
+                                />
+                                <div className='h-12 flex justify-center items-center border-2 border-l-0 p-3 rounded-r-lg text-[#080567] font-extrabold text-shadow-xl'>
+                                    <ImSearch />
+                                </div>
                             </div>
+                            <select
+                                value={selectedDepartment}
+                                onChange={handleDepartmentChange}
+                                className="h-12 w-full border-2 px-3 py-1 rounded-lg focus:outline-none p-5 cursor-pointer shadow-lg lg:w-auto"
+                            >
+                                <option value="">All Departments</option>
+                                {departments.map((department, index) => (
+                                    <option key={index} value={department}>
+                                        {department}
+                                    </option>
+                                ))}
+                            </select>
+                            <select
+                                value={selectedLocation}
+                                onChange={handleLocationChange}
+                                className="h-12 w-full border-2 px-3 py-1 rounded-lg focus:outline-none p-5 cursor-pointer shadow-lg lg:w-auto"
+                            >
+                                <option value="">All Job Locations</option>
+                                {locations.map((location, index) => (
+                                    <option key={index} value={location}>
+                                        {location}
+                                    </option>
+                                ))}
+                            </select>
                         </div>
-                        <select
-                            value={selectedDepartment}
-                            onChange={handleDepartmentChange}
-                            className="h-12 w-full border-2 px-3 py-1 rounded-lg focus:outline-none p-5 cursor-pointer shadow-lg lg:w-auto"
-                        >
-                            <option value="">All Departments</option>
-                            {departments.map((department, index) => (
-                                <option key={index} value={department}>
-                                    {department}
-                                </option>
-                            ))}
-                        </select>
-                        <select
-                            value={selectedLocation}
-                            onChange={handleLocationChange}
-                            className="h-12 w-full border-2 px-3 py-1 rounded-lg focus:outline-none p-5 cursor-pointer shadow-lg lg:w-auto"
-                        >
-                            <option value="">All Job Locations</option>
-                            {locations.map((location, index) => (
-                                <option key={index} value={location}>
-                                    {location}
-                                </option>
-                            ))}
-                        </select>
-                    </div>
+                    }
                 </div>
                 <div>
                     {
-                        loading
+                        filteredCareers.length === 1
                             ?
-                            <Loader />
+                            <>
+                                {
+                                    loading
+                                        ?
+                                        <Loader />
+                                        :
+                                        <div className='shadow-lg'>
+                                            <>
+                                                {
+                                                    filteredCareers.map(career =>
+                                                        <CareerCardList
+                                                            key={career._id}
+                                                            career={career}
+                                                        ></CareerCardList>
+                                                    )
+                                                }
+                                            </>
+                                        </div>
+                                }
+                            </>
                             :
-                            <div className='shadow-lg'>
-                                <>
-                                    {
-                                        filteredCareers.map(career =>
-                                            <CareerCardList
-                                                key={career._id}
-                                                career={career}
-                                            ></CareerCardList>
-                                        )
-                                    }
-                                </>
+                            <div className='flex justify-center items-center text-xl font-bold text-gray-500'>
+                                <p className='text-center'>
+                                    No jobs are available right now. See our contact us page and stay connected with us for more updates.
+                                </p>
                             </div>
                     }
                 </div>
-
             </div>
         </div>
     );
