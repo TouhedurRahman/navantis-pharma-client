@@ -132,7 +132,7 @@ const ContactUs = () => {
                 ></BannerOnlyText>
                 <div>
                     <p>
-                        NEED TO TALK TO US? WERE LISTENING.
+                        NEED TO TALK TO US? WE'RE LISTENING.
                     </p>
                     <p className="mb-10 text-sm">
                         REPORT AN ADVERSE EVENT
