@@ -167,9 +167,9 @@ const NavbarHome = () => {
                                     src={
                                         isScrolled
                                             ?
-                                            'https://i.ibb.co/WHdtY9y/Logo-Navantis.png'
+                                            'https://i.ibb.co.com/LxpjK12/Navantis-Logo-Black-Wo-I.png'
                                             :
-                                            'https://i.ibb.co/pfr6VxM/Logo-Navantis-png-white.png'
+                                            'https://i.ibb.co.com/x6PRgNc/Navantis-Logo-White-Wo-I.png'
                                     }
                                     className="w-[150px] lg:w-[180px] h-[40px]"
                                 />
@@ -197,9 +197,9 @@ const NavbarHome = () => {
                                     src={
                                         isScrolled
                                             ?
-                                            'https://i.ibb.co/WHdtY9y/Logo-Navantis.png'
+                                            'https://i.ibb.co.com/LxpjK12/Navantis-Logo-Black-Wo-I.png'
                                             :
-                                            'https://i.ibb.co/pfr6VxM/Logo-Navantis-png-white.png'
+                                            'https://i.ibb.co.com/x6PRgNc/Navantis-Logo-White-Wo-I.png'
                                     }
                                     className="w-[150px] lg:w-[180px] h-[40px]"
                                 />

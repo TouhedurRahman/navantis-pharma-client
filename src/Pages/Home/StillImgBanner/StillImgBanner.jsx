@@ -1,13 +1,11 @@
-const VideoBanner = () => {
+const StillImgBanner = () => {
     return (
         <div className="w-full h-screen overflow-hidden">
-            <video
+            <img
                 className="absolute top-0 left-0 w-full h-full object-cover"
-                src='/home-bnanner-video.mp4'
-                autoPlay
-                loop
-                muted
-            ></video>
+                src='https://i.ibb.co.com/C9kSpGC/skincare-banner.jpg'
+                alt="Loading..."
+            ></img>
             <div className="absolute inset-0 bg-black bg-opacity-60 flex items-start justify-center">
                 <div className="text-center text-white my-auto lg:mt-24">
                     {/* <h1 className="text-2xl lg:text-5xl font-bold">N A V A N T I S</h1> */}
@@ -22,4 +20,4 @@ const VideoBanner = () => {
     );
 };
 
-export default VideoBanner;
+export default StillImgBanner;
