@@ -11,7 +11,7 @@ const CompanyCareer = () => {
             </div>
             <div className="w-full md:w-1/2 lg:rounded-r-lg">
                 <img
-                    src="https://i.ibb.co/3zZ0FRj/CAREERS.jpg"
+                    src="https://i.ibb.co.com/F5G0DxD/CAREERS-HAND-SHAKE.jpg"
                     className="w-full h-full rounded-lg"
                     alt="Loading"
                 />
