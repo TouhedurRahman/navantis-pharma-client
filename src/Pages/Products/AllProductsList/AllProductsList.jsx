@@ -117,7 +117,7 @@ const AllProductsList = () => {
                                     Array.from({ length: totalPages }, (_, index) => (
                                         <button
                                             key={index}
-                                            className={`mx-1 flex justify-center items-center w-6 h-6 border border-black rounded-[4px] ${currentPage === index + 1 ? 'bg-[#080567] text-white font-mono font-extrabold italic border-2 border-green-900' : ''
+                                            className={`mx-1 flex justify-center items-center w-6 h-6 border border-black rounded-[4px] ${currentPage === index + 1 ? 'bg-gray-700 text-white font-mono font-extrabold italic border-2 border-green-900' : ''
                                                 }`}
                                             onClick={() => changePage(index + 1)}
                                         >

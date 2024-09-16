@@ -140,18 +140,18 @@ const Navbar = () => {
                             className="dropdown-content mt-3 z-10 p-4 shadow-lg bg-white text-black w-[280px] -left-5 right-0 mx-auto rounded-r-lg space-y-4"
                         >
                             <li>
-                                <Link to='/products' className={`py-2 hover:text-[#080567] ${location.pathname === '/products' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`} reloadDocument>PRODUCTS</Link>
+                                <Link to='/products' className={`py-2 hover:text-gray-700 ${location.pathname === '/products' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>PRODUCTS</Link>
                             </li>
                             <li>
-                                <Link to='/our-partner' className={`py-2 hover:text-[#080567] ${location.pathname === '/our-partner' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`} reloadDocument>PARTNER</Link>
+                                <Link to='/our-partner' className={`py-2 hover:text-gray-700 ${location.pathname === '/our-partner' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>PARTNER</Link>
                             </li>
                             <li>
-                                <Link to='/news-room' className={`py-2 hover:text-[#080567] ${location.pathname === '/news-room' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`} reloadDocument>NEWS ROOM</Link>
+                                <Link to='/news-room' className={`py-2 hover:text-gray-700 ${location.pathname === '/news-room' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>NEWS ROOM</Link>
                             </li>
                             <li>
-                                <Link to='/careers' className={`py-2 hover:text-[#080567] ${location.pathname === '/careers' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`} reloadDocument>CAREERS</Link>
+                                <Link to='/careers' className={`py-2 hover:text-gray-700 ${location.pathname === '/careers' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>CAREERS</Link>
                             </li>
-                            <li><Link to='/contact-us' className={`py-2 hover:text-[#080567] ${location.pathname === '/contact-us' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`} reloadDocument>CONTACT US</Link></li>
+                            <li><Link to='/contact-us' className={`py-2 hover:text-gray-700 ${location.pathname === '/contact-us' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>CONTACT US</Link></li>
                         </ul>
                     </div>
                     <div className="ml-3 w-full flex justify-between items-center lg:hidden">
@@ -194,19 +194,19 @@ const Navbar = () => {
                         <div>
                             <ul className="menu-horizontal z-10">
                                 <li>
-                                    <Link to='/products' className={`mx-3 hover:text-[#080567] inline-block ${location.pathname === '/products' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`}>PRODUCTS</Link>
+                                    <Link to='/products' className={`mx-3 hover:text-gray-700 inline-block ${location.pathname === '/products' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>PRODUCTS</Link>
                                 </li>
                                 <li>
-                                    <Link to='/our-partner' className={`mx-3 hover:text-[#080567] inline-block ${location.pathname === '/our-partner' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`}>PARTNER</Link>
+                                    <Link to='/our-partner' className={`mx-3 hover:text-gray-700 inline-block ${location.pathname === '/our-partner' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>PARTNER</Link>
                                 </li>
                                 <li>
-                                    <Link to='/news-room' className={`mx-3 hover:text-[#080567] inline-block ${location.pathname === '/news-room' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`}>NEWS ROOM</Link>
+                                    <Link to='/news-room' className={`mx-3 hover:text-gray-700 inline-block ${location.pathname === '/news-room' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>NEWS ROOM</Link>
                                 </li>
                                 <li>
-                                    <Link to='/careers' className={`mx-3 hover:text-[#080567] inline-block ${location.pathname === '/careers' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`}>CAREERS</Link>
+                                    <Link to='/careers' className={`mx-3 hover:text-gray-700 inline-block ${location.pathname === '/careers' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>CAREERS</Link>
                                 </li>
                                 <li>
-                                    <Link to='/contact-us' className={`mx-3 hover:text-[#080567] inline-block ${location.pathname === '/contact-us' ? 'text-[#080567] font-bold border-b-2 border-[#080567]' : ''}`}>CONTACT US</Link>
+                                    <Link to='/contact-us' className={`mx-3 hover:text-gray-700 inline-block ${location.pathname === '/contact-us' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>CONTACT US</Link>
                                 </li>
                             </ul>
                         </div>
@@ -231,7 +231,7 @@ const Navbar = () => {
                 >
                     <div>
                         <div className="flex justify-center">
-                            <div className='flex justify-center items-center border-2 border-[#080567] p-3 rounded-l-lg bg-[#080567] text-white font-extrabold text-shadow-xl'>
+                            <div className='flex justify-center items-center border-2 border-gray-700 p-3 rounded-l-lg bg-gray-700 text-white font-extrabold text-shadow-xl'>
                                 <ImSearch />
                             </div>
                             <input
@@ -243,9 +243,9 @@ const Navbar = () => {
                                     setSearchText(e.target.value);
                                     setSelectedIndex(-1); // Reset selection when search text changes
                                 }}
-                                className="border-2 border-[#080567] border-r-0 px-3 py-2 focus:outline-none focus:ring-[#080567] transition duration-300"
+                                className="border-2 border-gray-700 border-r-0 px-3 py-2 focus:outline-none focus:ring-gray-700 transition duration-300"
                             />
-                            <div className='flex justify-center items-center bg-white border-2 border-[#080567] border-l-0 p-3 rounded-r-lg text-[#080567] font-extrabold text-shadow-xl '>
+                            <div className='flex justify-center items-center bg-white border-2 border-gray-700 border-l-0 p-3 rounded-r-lg text-gray-700 font-extrabold text-shadow-xl '>
                                 <RxCross2
                                     className="hover:text-white hover:bg-red-600 rounded-lg cursor-pointer"
                                     onClick={() => {
@@ -259,13 +259,13 @@ const Navbar = () => {
                         <div className="relative lg:px-3 z-10">
                             {searchResults.length > 0 && searchText !== "" && (
                                 <div className="absolute top-full left-0 w-full bg-white shadow-lg rounded mt-2 z-10 text-black font-normal">
-                                    <ul className="divide-y divide-[#080567]">
+                                    <ul className="divide-y divide-gray-700">
                                         {searchResults.map((product, index) => (
                                             <>
                                                 <Link to={`/products/${product.category}/${product._id}`}>
                                                     <li
                                                         key={product.id}
-                                                        className={`py-2 px-3 cursor-pointer transition-all duration-300 ${selectedIndex === index ? 'bg-[#080567] text-white font-bold' : 'hover:bg-[#080567] hover:text-white hover:font-bold'
+                                                        className={`py-2 px-3 cursor-pointer transition-all duration-300 ${selectedIndex === index ? 'bg-gray-700 text-white font-bold' : 'hover:bg-gray-700 hover:text-white hover:font-bold'
                                                             }`}
                                                         onClick={() => {
                                                             handleProductClick();

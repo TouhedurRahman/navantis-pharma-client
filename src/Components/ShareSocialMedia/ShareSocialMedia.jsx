@@ -40,10 +40,10 @@ const ShareSocialMedia = ({ url }) => {
                 />
             </div>
             {/* <div className='w-full flex justify-center items-center'>
-                <hr className="w-[45%] border-[#080567] border-2 rounded-full" />
+                <hr className="w-[45%] border-gray-700 border-2 rounded-full" />
             </div>
             <div className='w-full flex justify-center items-center'>
-                <hr className="w-[45%] border-[#080567] border-2 rounded-full" />
+                <hr className="w-[45%] border-gray-700 border-2 rounded-full" />
             </div> */}
         </div>
     );

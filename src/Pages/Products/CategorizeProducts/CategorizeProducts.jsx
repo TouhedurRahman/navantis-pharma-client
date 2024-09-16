@@ -43,13 +43,13 @@ const CategorizeProducts = () => {
 
     return (
         <div>
-            <div className='px-3 lg:px-5 lg:border-l-2 lg:border-[#080567]'>
+            <div className='px-3 lg:px-5 lg:border-l-2 lg:border-gray-700'>
                 <div className='mx-3 lg:w-full lg:mx-auto'>
                     <div className='flex flex-col lg:flex-row justify-between items-center'>
                         <div className=''>
                             {/* Search Input */}
                             <div className="flex justify-center mb-5 ounded-l-lg group">
-                                <div className='flex justify-center items-center border-2 border-[#080567] p-3 rounded-l-lg bg-[#080567] text-white font-extrabold text-shadow-xl'>
+                                <div className='flex justify-center items-center border-2 border-gray-700 p-3 rounded-l-lg bg-gray-700 text-white font-extrabold text-shadow-xl'>
                                     <ImSearch />
                                 </div>
                                 <input
@@ -57,7 +57,7 @@ const CategorizeProducts = () => {
                                     placeholder="Search products"
                                     value={searchTerm}
                                     onChange={handleSearch}
-                                    className="border-2 border-[#080567] border-l-0 px-3 py-1 rounded-r-lg focus:outline-none"
+                                    className="border-2 border-gray-700 border-l-0 px-3 py-1 rounded-r-lg focus:outline-none"
                                 />
                             </div>
                         </div>
@@ -66,14 +66,14 @@ const CategorizeProducts = () => {
                                 <p className='text-xl flex justify-center items-center '>View</p>
                                 <div className='tooltip'>
                                     <MdViewList
-                                        className={`ml-2 cursor-pointer ${gridView === false ? 'text-[#FB923C]' : 'text-[#080567]'}`}
+                                        className={`ml-2 cursor-pointer ${gridView === false ? 'text-[#FB923C]' : 'text-gray-700'}`}
                                         onClick={() => setGridview(false)}
                                     />
                                     <span className="tooltiptext font-extralight text-xl">List View</span>
                                 </div>
                                 <div className='tooltip'>
                                     <MdGridView
-                                        className={`ml-2 cursor-pointer ${gridView === true ? 'text-[#FB923C]' : 'text-[#080567]'}`}
+                                        className={`ml-2 cursor-pointer ${gridView === true ? 'text-[#FB923C]' : 'text-gray-700'}`}
                                         onClick={() => setGridview(true)}
                                     />
                                     <span className="tooltiptext font-extralight text-xl">Grid View</span>
@@ -137,7 +137,7 @@ const CategorizeProducts = () => {
                         {Array.from({ length: totalPages }, (_, index) => (
                             <button
                                 key={index}
-                                className={`mx-1 px-3 py-1 border border-[#080567] rounded-lg shadow-lg ${currentPage === index + 1 ? ' bg-[#FB923C] text-white font-mono font-extrabold italic border-2 border-[#080567] rounded-badge' : ''
+                                className={`mx-1 px-3 py-1 border border-gray-700 rounded-lg shadow-lg ${currentPage === index + 1 ? ' bg-[#FB923C] text-white font-mono font-extrabold italic border-2 border-gray-700 rounded-badge' : ''
                                     }`}
                                 onClick={() => changePage(index + 1)}
                             >

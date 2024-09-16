@@ -3,7 +3,7 @@ const StillImgBanner = () => {
         <div className="w-full h-screen overflow-hidden">
             <img
                 className="absolute top-0 left-0 w-full h-full object-cover"
-                src='https://i.ibb.co.com/C9kSpGC/skincare-banner.jpg'
+                src='https://i.ibb.co.com/hy3ypw1/skin-ingredients-banner.jpg'
                 alt="Loading..."
             ></img>
             <div className="absolute inset-0 bg-black bg-opacity-60 flex items-start justify-center">

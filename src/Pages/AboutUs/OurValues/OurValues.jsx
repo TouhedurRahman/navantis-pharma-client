@@ -10,7 +10,7 @@ const OurValues = () => {
                             <p className='text-xl font-sans font-extralight'>
                                 OUR
                             </p>
-                            <p className='text-2xl text-[#080567] font-serif font-extrabold'>
+                            <p className='text-2xl text-gray-700 font-serif font-extrabold'>
                                 VALUES
                             </p>
                             <div className="flex justify-center items-center">

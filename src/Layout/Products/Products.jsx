@@ -42,7 +42,7 @@ const Products = () => {
                             <span className="font-bold hover:link">
                                 View All Products
                             </span>
-                            <span className="mx-2 text-[#080567]">
+                            <span className="mx-2 text-gray-700">
                                 <FaArrowRight />
                             </span>
                         </Link>
@@ -58,7 +58,7 @@ const Products = () => {
                                                 to={`/products/category/${onlyCategory.category}`}
                                             >
                                                 <li
-                                                    className={`mb-3 cursor-pointer inline-block ${selected === onlyCategory.category && 'text-[#080567] font-bold border-b-2 border-[#080567]'}`}
+                                                    className={`mb-3 cursor-pointer inline-block ${selected === onlyCategory.category && 'text-gray-700 font-bold border-b-2 border-gray-700'}`}
                                                     onClick={() => handleSelection(onlyCategory.category)}
                                                 >
                                                     <div className='flex justify-start items-center'>

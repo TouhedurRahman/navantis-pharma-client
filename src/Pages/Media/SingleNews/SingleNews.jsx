@@ -27,7 +27,7 @@ const SingleNews = () => {
                                 <div className="flex flex-col-reverse lg:flex-row-reverse lg:justify-between items-start rounded-lg">
                                     <div className="w-full lg:w-1/2 pt-10 lg:pt-0 lg:ms-10 flex flex-col justify-start items-start">
                                         <div className="mb-2">
-                                            <p className='text-2xl text-[#080567] font-extrabold'>
+                                            <p className='text-2xl text-gray-700 font-extrabold'>
                                                 {event.title}
                                             </p>
                                             <p className='text-xl font-sans font-extralight'>
@@ -107,7 +107,7 @@ const SingleNews = () => {
                                                                 <span className="font-bold hover:link">
                                                                     Read the event
                                                                 </span>
-                                                                <span className="mx-2 text-[#080567]" >
+                                                                <span className="mx-2 text-gray-700" >
                                                                     <FaArrowRight />
                                                                 </span>
                                                             </Link>

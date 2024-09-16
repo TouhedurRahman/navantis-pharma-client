@@ -250,7 +250,7 @@ const MyJob = () => {
 
                                         <button
                                             type="submit"
-                                            className='w-36 h-12 my-10 border-2 border-[#080567] text-black text-xl hover:bg-[#080567] hover:text-white font-bold py-2 px-4 rounded'
+                                            className='w-36 h-12 my-10 border-2 border-gray-700 text-black text-xl hover:bg-gray-700 hover:text-white font-bold py-2 px-4 rounded'
                                         >
                                             Submit
                                         </button>

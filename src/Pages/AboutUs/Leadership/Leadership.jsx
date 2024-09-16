@@ -10,7 +10,7 @@ const Leadership = () => {
                             <p className='text-xl font-sans font-extralight'>
                                 MESSAGE FROM
                             </p>
-                            <p className='text-2xl text-[#080567] font-serif font-extrabold'>
+                            <p className='text-2xl text-gray-700 font-serif font-extrabold'>
                                 LEADER
                             </p>
                             <div className="flex justify-center items-center">

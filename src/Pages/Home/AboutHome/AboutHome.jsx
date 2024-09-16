@@ -12,7 +12,7 @@ const AboutHome = () => {
                 </p>
                 <Link
                     to='/company-profile'
-                    className="my-5 px-10 py-2 bg-[#080567] text-white rounded-[8px]"
+                    className="my-5 px-10 py-2 bg-gray-700 text-white rounded-[8px]"
                 >
                     Read more
                 </Link>

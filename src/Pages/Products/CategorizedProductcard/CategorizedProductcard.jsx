@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const CategorizedProductcard = ({ product }) => {
     return (
         <Link to={`/products/${product.category}/${product._id}`}>
-            <div className="w-full bg-base-100 hover:text-[#080567] border-2 shadow-xl hover:shadow-[#080567]">
+            <div className="w-full bg-base-100 hover:text-gray-700 border-2 shadow-xl hover:shadow-gray-700">
                 <figure className="bg-white">
                     <img
                         src={product.imageURL}
@@ -28,7 +28,7 @@ const CategorizedProductcard = ({ product }) => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full flex justify-center items-center mt-3 bg-[#080567] text-white">
+                <div className="w-full flex justify-center items-center mt-3 bg-gray-700 text-white">
                     <p className="font-extralight font-mono">Find More</p>
                 </div>
             </div>
