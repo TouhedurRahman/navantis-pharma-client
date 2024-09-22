@@ -158,7 +158,7 @@ const Navbar = () => {
                         <Link to="/">
                             <div>
                                 <img
-                                    src="https://i.ibb.co.com/LxpjK12/Navantis-Logo-Black-Wo-I.png"
+                                    src="https://i.ibb.co.com/M2VMVXh/navantis-logo-black.png"
                                     className="w-[150px] lg:w-[180px] h-[40px]"
                                 />
                             </div>
@@ -184,7 +184,7 @@ const Navbar = () => {
                         <Link to="/">
                             <div>
                                 <img
-                                    src="https://i.ibb.co.com/LxpjK12/Navantis-Logo-Black-Wo-I.png"
+                                    src="https://i.ibb.co.com/M2VMVXh/navantis-logo-black.png"
                                     className="w-[150px] lg:w-[180px] h-[40px]"
                                 />
                             </div>
