@@ -7,7 +7,7 @@ const LeadershipHome = () => {
         <div className="m-5 my-36 flex flex-col md:flex-row lg:justify-between items-center rounded-lg">
             <div className="w-full md:w-1/2 lg:rounded-lg">
                 <img
-                    src="https://i.ibb.co/xzWQHCW/leadership-board.jpg"
+                    src="https://i.ibb.co.com/wRnchVq/navantis-leadership-home.jpg"
                     className="w-full h-full rounded-lg"
                     alt=""
                 />

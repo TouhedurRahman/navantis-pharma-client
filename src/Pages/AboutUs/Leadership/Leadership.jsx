@@ -31,7 +31,7 @@ const Leadership = () => {
                     </div>
                     <div className="w-full md:w-1/2 lg:rounded-r-lg">
                         <img
-                            src="https://i.ibb.co/9GCN17N/leader-photo.jpg"
+                            src="https://i.ibb.co.com/F6NPVX4/navantis-leader-inside.jpg"
                             className="w-full h-full rounded-lg"
                             alt="Loading"
                         />

@@ -19,7 +19,7 @@ const AboutHome = () => {
             </div>
             <div className="w-full md:w-1/2">
                 <img
-                    src="https://i.ibb.co/pxqTZPB/about-us.jpg"
+                    src="https://i.ibb.co.com/2PT58CR/navantis-about-us.jpg"
                     className="w-full h-full lg:rounded-r-lg"
                     alt="Loading"
                 />
