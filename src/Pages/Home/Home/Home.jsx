@@ -1,4 +1,5 @@
 import AboutHome from "../AboutHome/AboutHome";
+import Banner from "../Banner/Banner";
 import LeadershipHome from "../LeadershipHome/LeadershipHome";
 import MoreHome from "../MoreHome/MoreHome";
 import NavbarHome from "../NavbarHome/NavbarHome";
@@ -12,6 +13,7 @@ const Home = () => {
     return (
         <div>
             <NavbarHome />
+            {/* <Banner /> */}
             <VideoBanner />
             {/* <StillImgBanner /> */}
             <div className="lg:w-[90%] mx-auto">

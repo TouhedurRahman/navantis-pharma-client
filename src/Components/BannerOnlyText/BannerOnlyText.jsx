@@ -1,7 +1,7 @@
 const BannerOnlyText = ({ title }) => {
     return (
         <div>
-            <p className="text-center text-4xl py-20 font-bold">
+            <p className="text-gray-700 text-center text-4xl py-20 font-bold">
                 {title}
             </p>
         </div>

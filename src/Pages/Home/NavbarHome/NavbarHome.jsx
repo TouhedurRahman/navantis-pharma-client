@@ -119,13 +119,13 @@ const NavbarHome = () => {
     }, [searchResults, selectedIndex, navigate]);
 
     return (
-        <div className="text-black font-bold">
+        <div className="text-gray-700 font-bold">
             <div
                 className={classNames(
                     "navbar z-10 px-5 lg:px-[40px] transition-all duration-300 ease-in-out",
                     {
                         "bg-transparent text-white scroll-smooth relative": !isScrolled,
-                        "fixed top-0 scroll-smooth bg-white text-black shadow-lg": isScrolled,
+                        "fixed top-0 scroll-smooth bg-white text-gray-700 shadow-lg": isScrolled,
                     }
                 )}
             >
@@ -143,7 +143,7 @@ const NavbarHome = () => {
                         {/***** for small screen *****/}
                         <ul
                             tabIndex={0}
-                            className="dropdown-content mt-3 z-10 p-4 shadow-lg bg-white text-black w-[280px] -left-5 right-0 mx-auto rounded-r-lg space-y-4"
+                            className="dropdown-content mt-3 z-10 p-4 shadow-lg bg-white text-gray-700 w-[280px] -left-5 right-0 mx-auto rounded-r-lg space-y-4"
                         >
                             <li>
                                 <Link to='/products' className={`py-2 hover:text-gray-700 ${location.pathname === '/products' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>PRODUCTS</Link>
@@ -167,7 +167,7 @@ const NavbarHome = () => {
                                     src={
                                         isScrolled
                                             ?
-                                            'https://i.ibb.co.com/M2VMVXh/navantis-logo-black.png'
+                                            'https://i.ibb.co.com/g6PMJgs/navantis-logo-gray-700.png'
                                             :
                                             'https://i.ibb.co.com/r01ssLJ/navantis-logo-white.png'
                                     }
@@ -197,7 +197,7 @@ const NavbarHome = () => {
                                     src={
                                         isScrolled
                                             ?
-                                            'https://i.ibb.co.com/M2VMVXh/navantis-logo-black.png'
+                                            'https://i.ibb.co.com/g6PMJgs/navantis-logo-gray-700.png'
                                             :
                                             'https://i.ibb.co.com/r01ssLJ/navantis-logo-white.png'
                                     }
@@ -274,7 +274,7 @@ const NavbarHome = () => {
                         </div>
                         <div className="relative lg:px-3 z-10">
                             {searchResults.length > 0 && searchText !== "" && (
-                                <div className="absolute top-full left-0 w-full bg-white shadow-lg rounded mt-2 z-10 text-black font-normal">
+                                <div className="absolute top-full left-0 w-full bg-white shadow-lg rounded mt-2 z-10 text-gray-700 font-normal">
                                     <ul className="divide-y divide-gray-700">
                                         {searchResults.map((product, index) => (
                                             <>

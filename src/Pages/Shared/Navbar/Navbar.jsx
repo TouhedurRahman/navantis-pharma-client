@@ -118,9 +118,9 @@ const Navbar = () => {
     }, [searchResults, selectedIndex, navigate]);
 
     return (
-        <div className="bg-white text-black font-bold">
+        <div className="bg-white text-gray-700 font-bold">
             <div
-                className={`navbar z-10 px-5 lg:px-[40px] ${isScrolled ? 'fixed top-0 scroll-smooth bg-white text-black' : 'text-black scroll-smooth'
+                className={`navbar z-10 px-5 lg:px-[40px] ${isScrolled ? 'fixed top-0 scroll-smooth bg-white text-gray-700' : 'text-gray-700 scroll-smooth'
                     }`}
             >
                 <div className="navbar-start w-full">
@@ -137,7 +137,7 @@ const Navbar = () => {
                         {/***** for small screen *****/}
                         <ul
                             tabIndex={0}
-                            className="dropdown-content mt-3 z-10 p-4 shadow-lg bg-white text-black w-[280px] -left-5 right-0 mx-auto rounded-r-lg space-y-4"
+                            className="dropdown-content mt-3 z-10 p-4 shadow-lg bg-white text-gray-700 w-[280px] -left-5 right-0 mx-auto rounded-r-lg space-y-4"
                         >
                             <li>
                                 <Link to='/products' className={`py-2 hover:text-gray-700 ${location.pathname === '/products' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>PRODUCTS</Link>
@@ -158,7 +158,7 @@ const Navbar = () => {
                         <Link to="/">
                             <div>
                                 <img
-                                    src="https://i.ibb.co.com/M2VMVXh/navantis-logo-black.png"
+                                    src="https://i.ibb.co.com/g6PMJgs/navantis-logo-gray-700.png"
                                     className="w-[150px] lg:w-[180px] h-[40px]"
                                 />
                             </div>
@@ -184,7 +184,7 @@ const Navbar = () => {
                         <Link to="/">
                             <div>
                                 <img
-                                    src="https://i.ibb.co.com/M2VMVXh/navantis-logo-black.png"
+                                    src="https://i.ibb.co.com/g6PMJgs/navantis-logo-gray-700.png"
                                     className="w-[150px] lg:w-[180px] h-[40px]"
                                 />
                             </div>
@@ -258,7 +258,7 @@ const Navbar = () => {
                         </div>
                         <div className="relative lg:px-3 z-10">
                             {searchResults.length > 0 && searchText !== "" && (
-                                <div className="absolute top-full left-0 w-full bg-white shadow-lg rounded mt-2 z-10 text-black font-normal">
+                                <div className="absolute top-full left-0 w-full bg-white shadow-lg rounded mt-2 z-10 text-gray-700 font-normal">
                                     <ul className="divide-y divide-gray-700">
                                         {searchResults.map((product, index) => (
                                             <>
