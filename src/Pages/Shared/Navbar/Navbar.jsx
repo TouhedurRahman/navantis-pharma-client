@@ -140,18 +140,18 @@ const Navbar = () => {
                             className="dropdown-content mt-3 z-10 p-4 shadow-lg bg-white text-gray-700 w-[280px] -left-5 right-0 mx-auto rounded-r-lg space-y-4"
                         >
                             <li>
-                                <Link to='/products' className={`py-2 hover:text-gray-700 ${location.pathname === '/products' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>PRODUCTS</Link>
+                                <Link to='/products' className={`py-2 hover:text-gray-700 text-sm ${location.pathname === '/products' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>PRODUCTS</Link>
                             </li>
                             <li>
-                                <Link to='/our-partner' className={`py-2 hover:text-gray-700 ${location.pathname === '/our-partner' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>PARTNER</Link>
+                                <Link to='/our-partner' className={`py-2 hover:text-gray-700 text-sm ${location.pathname === '/our-partner' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>PARTNER</Link>
                             </li>
                             <li>
-                                <Link to='/news-room' className={`py-2 hover:text-gray-700 ${location.pathname === '/news-room' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>NEWS ROOM</Link>
+                                <Link to='/news-room' className={`py-2 hover:text-gray-700 text-sm ${location.pathname === '/news-room' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>NEWS ROOM</Link>
                             </li>
                             <li>
-                                <Link to='/careers' className={`py-2 hover:text-gray-700 ${location.pathname === '/careers' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>CAREERS</Link>
+                                <Link to='/careers' className={`py-2 hover:text-gray-700 text-sm ${location.pathname === '/careers' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>CAREERS</Link>
                             </li>
-                            <li><Link to='/contact-us' className={`py-2 hover:text-gray-700 ${location.pathname === '/contact-us' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>CONTACT US</Link></li>
+                            <li><Link to='/contact-us' className={`py-2 hover:text-gray-700 text-sm ${location.pathname === '/contact-us' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`} reloadDocument>CONTACT US</Link></li>
                         </ul>
                     </div>
                     <div className="ml-3 w-full flex justify-between items-center lg:hidden">
@@ -159,7 +159,7 @@ const Navbar = () => {
                             <div>
                                 <img
                                     src="https://i.ibb.co.com/g6PMJgs/navantis-logo-gray-700.png"
-                                    className="w-[150px] lg:w-[180px] h-[40px]"
+                                    className="w-[140px] h-[32px]"
                                 />
                             </div>
                         </Link>
@@ -185,7 +185,7 @@ const Navbar = () => {
                             <div>
                                 <img
                                     src="https://i.ibb.co.com/g6PMJgs/navantis-logo-gray-700.png"
-                                    className="w-[150px] lg:w-[180px] h-[40px]"
+                                    className="w-[140px] h-[32px]"
                                 />
                             </div>
                         </Link>
@@ -194,19 +194,19 @@ const Navbar = () => {
                         <div>
                             <ul className="menu-horizontal z-10">
                                 <li>
-                                    <Link to='/products' className={`mx-3 hover:text-gray-700 inline-block ${location.pathname === '/products' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>PRODUCTS</Link>
+                                    <Link to='/products' className={`mx-3 hover:text-gray-700 inline-block text-sm ${location.pathname === '/products' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>PRODUCTS</Link>
                                 </li>
                                 <li>
-                                    <Link to='/our-partner' className={`mx-3 hover:text-gray-700 inline-block ${location.pathname === '/our-partner' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>PARTNER</Link>
+                                    <Link to='/our-partner' className={`mx-3 hover:text-gray-700 inline-block text-sm ${location.pathname === '/our-partner' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>PARTNER</Link>
                                 </li>
                                 <li>
-                                    <Link to='/news-room' className={`mx-3 hover:text-gray-700 inline-block ${location.pathname === '/news-room' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>NEWS ROOM</Link>
+                                    <Link to='/news-room' className={`mx-3 hover:text-gray-700 inline-block text-sm ${location.pathname === '/news-room' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>NEWS ROOM</Link>
                                 </li>
                                 <li>
-                                    <Link to='/careers' className={`mx-3 hover:text-gray-700 inline-block ${location.pathname === '/careers' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>CAREERS</Link>
+                                    <Link to='/careers' className={`mx-3 hover:text-gray-700 inline-block text-sm ${location.pathname === '/careers' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>CAREERS</Link>
                                 </li>
                                 <li>
-                                    <Link to='/contact-us' className={`mx-3 hover:text-gray-700 inline-block ${location.pathname === '/contact-us' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>CONTACT US</Link>
+                                    <Link to='/contact-us' className={`mx-3 hover:text-gray-700 inline-block text-sm ${location.pathname === '/contact-us' ? 'text-gray-700 font-bold border-b-2 border-gray-700' : ''}`}>CONTACT US</Link>
                                 </li>
                             </ul>
                         </div>
