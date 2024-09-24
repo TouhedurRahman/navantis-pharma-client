@@ -1,3 +1,4 @@
+import Navbar from "../../Shared/Navbar/Navbar";
 import AboutHome from "../AboutHome/AboutHome";
 import Banner from "../Banner/Banner";
 import LeadershipHome from "../LeadershipHome/LeadershipHome";
@@ -12,9 +13,10 @@ import VideoBanner from "../VideoBanner/VideoBanner";
 const Home = () => {
     return (
         <div>
-            <NavbarHome />
-            {/* <Banner /> */}
-            <VideoBanner />
+            <Navbar />
+            {/* <NavbarHome /> */}
+            <Banner />
+            {/* <VideoBanner /> */}
             {/* <StillImgBanner /> */}
             <div className="lg:w-[90%] mx-auto">
                 <AboutHome />

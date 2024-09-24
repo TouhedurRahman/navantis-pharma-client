@@ -6,19 +6,19 @@ const Banner = () => {
             _id: 1,
             title: "Health",
             subtitle: "Your Health Our Properties",
-            img: "https://i.ibb.co/SrrbYrt/health.jpg"
+            img: "https://i.ibb.co.com/F8Lbv5j/navantis-carousel-banner-01.jpg"
         },
         {
             _id: 2,
             title: "Happiness",
             subtitle: "Healthy Smile Healthy Life",
-            img: "https://i.ibb.co/PMtKmhT/happiness.jpg"
+            img: "https://i.ibb.co.com/MRTVyrL/navantis-carousel-banner-02.jpg"
         },
         {
             _id: 3,
             title: "Beauty",
             subtitle: "Clear Skin, Clear Confidence",
-            img: "https://i.ibb.co/kMz5wr4/beauty.jpg"
+            img: "https://i.ibb.co.com/CBCgCQf/navantis-carousel-banner-03.jpg"
         }
     ]
 
@@ -46,7 +46,7 @@ const Banner = () => {
                             className="object-cover"
                             data-aos="fade-right"
                         />
-                        <div
+                        {/* <div
                             className='absolute inset-0 right-[120px] flex items-center justify-end'
                             data-aos="fade-left"
                         >
@@ -77,7 +77,7 @@ const Banner = () => {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 ))}
             </div>
@@ -100,7 +100,7 @@ const Banner = () => {
                     <div
                         key={index}
                         onClick={() => setCurrentIndex(index)}
-                        className={`h-2 rounded-full ${currentIndex === index ? 'bg-[#FB923C] w-24' : 'bg-white w-8'}`}
+                        className={`h-2 rounded-full ${currentIndex === index ? 'bg-white w-24' : 'bg-gray-700 w-8'}`}
                     />
                 ))}
             </div>
