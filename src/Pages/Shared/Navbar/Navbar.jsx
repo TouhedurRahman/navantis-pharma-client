@@ -120,7 +120,7 @@ const Navbar = () => {
     return (
         <div className="bg-white text-gray-700 font-bold">
             <div
-                className={`navbar z-10 px-5 lg:px-[40px] ${isScrolled ? 'fixed top-0 scroll-smooth bg-[#F8F8F8] text-gray-700' : 'text-gray-700 scroll-smooth bg-[#F8F8F8]'
+                className={`navbar z-10 px-5 lg:px-[40px] ${isScrolled ? 'fixed top-0 scroll-smooth bg-white text-gray-700' : 'text-gray-700 scroll-smooth bg-white'
                     }`}
             >
                 <div className="navbar-start w-full">
