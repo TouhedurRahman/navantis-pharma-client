@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const LeadershipHome = () => {
     return (
-        <div className="m-5 my-36 flex flex-col md:flex-row lg:justify-between items-center rounded-lg">
+        <div className="m-5 my-16 md:my-36 flex flex-col md:flex-row lg:justify-between items-center rounded-lg">
             <div className="w-full md:w-1/2 lg:rounded-lg">
                 <img
                     src="https://i.ibb.co.com/wRnchVq/navantis-leadership-home.jpg"

@@ -34,7 +34,7 @@ const MoreHome = () => {
     ]
 
     return (
-        <div className='m-5 my-36'>
+        <div className='m-5 my-16 md:my-36'>
             <div>
                 <p className="mb-3 font-bold text-2xl">
                     Explore

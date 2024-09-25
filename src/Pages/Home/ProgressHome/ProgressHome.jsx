@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ProgressHome = () => {
     return (
-        <div className="m-5 my-36 flex flex-col md:flex-row lg:justify-between items-center rounded-lg">
+        <div className="m-5 my-16 md:my-36 flex flex-col md:flex-row lg:justify-between items-center rounded-lg">
             <div className="w-full md:w-1/2 lg:rounded-lg">
                 <img
                     src="https://i.ibb.co/51s10sq/Pursue-Progress.jpg"

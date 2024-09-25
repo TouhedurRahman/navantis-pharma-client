@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const AboutHome = () => {
     return (
-        <div className="m-5 my-36 border border-gray-500 flex flex-col-reverse md:flex-row lg:justify-between items-center rounded-lg">
+        <div className="m-5 my-16 md:my-36 border border-gray-500 flex flex-col-reverse md:flex-row lg:justify-between items-center rounded-lg">
             <div className="w-full md:w-1/2 p-5 flex flex-col justify-center items-start">
                 <p className="mb-3 font-bold text-2xl">
                     About Us
