@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const AboutHome = () => {
     return (
-        <div className="m-5 my-16 md:my-36 border border-gray-500 flex flex-col-reverse md:flex-row lg:justify-between items-center rounded-lg">
-            <div className="w-full md:w-1/2 p-5 flex flex-col justify-center items-start">
+        <div className="m-5 my-16 md:my-36 flex flex-col-reverse md:flex-row lg:justify-between items-center rounded-lg">
+            <div className="w-full md:w-1/2 pt-5 lg:p-5 lg:pl-0 md:mr-5 lg:mr-0 flex flex-col justify-center items-start">
                 <p className="mb-3 font-bold text-2xl">
                     About Us
                 </p>
@@ -20,7 +20,7 @@ const AboutHome = () => {
             <div className="w-full md:w-1/2">
                 <img
                     src="https://i.ibb.co.com/Qm5d2vG/navantis-about-us-home.jpg"
-                    className="w-full h-full lg:rounded-r-lg"
+                    className="w-full h-full rounded-lg"
                     alt="Loading"
                 />
             </div>
