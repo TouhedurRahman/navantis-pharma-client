@@ -80,7 +80,11 @@ const SingleProduct = () => {
                                     Apply
                                 </p>
                                 <p className='pl-4 pt-2'>
-                                    • {product?.apply}
+                                    {product?.apply.split('. ').map((line, index) => (
+                                        <p key={index} className="list-disc pl-4 text-justify">
+                                            • {line}{index === product.apply.split('. ').length - 1 ? '' : '.'}
+                                        </p>
+                                    ))}
                                 </p>
                             </div>
                             <ShareSocialMedia url={url} />
