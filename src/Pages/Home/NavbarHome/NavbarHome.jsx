@@ -167,7 +167,7 @@ const NavbarHome = () => {
                                     src={
                                         isScrolled
                                             ?
-                                            'https://i.ibb.co.com/g6PMJgs/navantis-logo-gray-700.png'
+                                            'https://i.ibb.co.com/744CD9s/navantis-374151.png'
                                             :
                                             'https://i.ibb.co.com/r01ssLJ/navantis-logo-white.png'
                                     }
@@ -197,7 +197,7 @@ const NavbarHome = () => {
                                     src={
                                         isScrolled
                                             ?
-                                            'https://i.ibb.co.com/g6PMJgs/navantis-logo-gray-700.png'
+                                            'https://i.ibb.co.com/744CD9s/navantis-374151.png'
                                             :
                                             'https://i.ibb.co.com/r01ssLJ/navantis-logo-white.png'
                                     }
